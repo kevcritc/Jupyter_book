@@ -1,0 +1,783 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Metal Nanoparticles – Lecture Notes &#8212; Introduction to Nanotechnology PHAS1500</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Lecture11';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Localized Surface Plasmon Resonance (LSPR) to Semiconductors" href="Lecture12.html" />
+    <link rel="prev" title="Notes on Carbon Nanomaterials" href="Lecture10.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Nanotechnology PHAS1500</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Jupyter Nanotechnology Course Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lecture1.html"><strong>PHAS1500: An Introduction to Nanotechnology</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2 Notes: The Smallest Things</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Introducing Scaling Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">1. Referencing and Citations in Essays</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html"><strong>Lecture Notes: The Bohr Model and Quantum Mechanics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture6.html">Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Quantum Mechanics and Electronic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html"><strong>Molecular Orbitals and Covalent Bonding</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">Carbon Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">Notes on Carbon Nanomaterials</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Metal Nanoparticles – Lecture Notes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture12.html">Localized Surface Plasmon Resonance (LSPR) to Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture13.html">Semiconductors to Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture14.html"><strong>1. Semiconductor Materials and Quantum Dots</strong></a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture15.html">Quantum Dot Applications, Colliodal Stability and Self-Assembled Monolayers.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture16.html"><strong>Nanotechnology &amp; Biology</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture17.html">🧬 From Bionano to Nanomedicine – Lecture Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture18.html">⚕️ Nanomedicine – Medical Nanoparticles (Part 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture19.html">🧬 Nanomedicine (Part 3) – Cancer Targeting, Theranostics &amp; Ethics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Lecture11.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Metal Nanoparticles – Lecture Notes</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metallic-binding"><strong>1. Metallic Binding</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#historical-use-of-metal-nanoparticles"><strong>2. Historical Use of Metal Nanoparticles</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-to-volume-ratio-effects"><strong>3. Surface-to-Volume Ratio Effects</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-properties"><strong>Thermal Properties</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-surface-to-volume-ratio"><strong>4. Example Problem: Surface-to-Volume Ratio</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-statement"><strong>Problem Statement</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solution"><strong>Solution</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion"><strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cataylsis"><strong>Cataylsis</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-catalytic-activity"><strong>6. Example Problem: Catalytic Activity</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Problem Statement</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Solution</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thomson-equation-for-melting-point-depression"><strong>7. Thomson Equation for Melting Point Depression</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-gold-nanoparticles"><strong>Example: Gold Nanoparticles</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optical-properties-of-gold-nanoparticles"><strong>8. Optical Properties of Gold Nanoparticles</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#localized-surface-plasmon-resonance-lspr"><strong>Localized Surface Plasmon Resonance (LSPR)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lspr-equation"><strong>LSPR Equation</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-lspr"><strong>Applications of LSPR</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-rayleigh-scattering"><strong>9. Example Problem: Rayleigh Scattering</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><strong>Problem Statement</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><strong>Solution</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaways"><strong>Key Takeaways</strong></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="metal-nanoparticles-lecture-notes">
+<h1><strong>Metal Nanoparticles – Lecture Notes</strong><a class="headerlink" href="#metal-nanoparticles-lecture-notes" title="Link to this heading">#</a></h1>
+<section id="metallic-binding">
+<h2><strong>1. Metallic Binding</strong><a class="headerlink" href="#metallic-binding" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Metallic bonds</strong> form when valence electrons are shared across many atoms.</p></li>
+<li><p><strong>Free electrons</strong> move within the positive ion lattice, providing cohesion.</p></li>
+<li><p><strong>Models to describe metallic behavior</strong>:</p>
+<ul>
+<li><p><strong>Classical Model</strong>: Treats electrons as particles colliding as they move.</p></li>
+<li><p><strong>Quantum Model</strong>: Required to explain some electronic behaviors at the nanoscale.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="historical-use-of-metal-nanoparticles">
+<h2><strong>2. Historical Use of Metal Nanoparticles</strong><a class="headerlink" href="#historical-use-of-metal-nanoparticles" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>290–350 AD</strong>: Early applications of metal nanoparticles.</p></li>
+<li><p><strong>800 AD</strong>: Damascus steel blades contained nanoparticles.</p></li>
+<li><p><strong>13th–15th Century</strong>: Luster pottery used metal nanoparticles for color effects.</p></li>
+<li><p><strong>Notre Dame Stained Glass</strong>: Light scattering by nanoparticles created vibrant colors.</p></li>
+<li><p><strong>Lycurgus Cup</strong>: A Roman artifact whose color changes based on the light source.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="surface-to-volume-ratio-effects">
+<h2><strong>3. Surface-to-Volume Ratio Effects</strong><a class="headerlink" href="#surface-to-volume-ratio-effects" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Nanoparticles behave differently from bulk materials</strong> due to their high surface area.</p></li>
+<li><p><strong>A significant fraction of atoms</strong> are surface atoms, altering physical properties.</p></li>
+</ul>
+<section id="thermal-properties">
+<h3><strong>Thermal Properties</strong><a class="headerlink" href="#thermal-properties" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Melting point decreases</strong> as particle size decreases.</p></li>
+<li><p><strong>Atoms become more mobile</strong> due to weaker surface binding.</p></li>
+<li><p>The effect is particularly strong for nanoparticles <strong>&lt; 20 nm</strong>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="example-problem-surface-to-volume-ratio">
+<h2><strong>4. Example Problem: Surface-to-Volume Ratio</strong><a class="headerlink" href="#example-problem-surface-to-volume-ratio" title="Link to this heading">#</a></h2>
+<section id="problem-statement">
+<h3><strong>Problem Statement</strong><a class="headerlink" href="#problem-statement" title="Link to this heading">#</a></h3>
+<p>Compare the surface-to-volume ratio of a <strong>10 nm</strong> gold nanoparticle to that of a <strong>1 mm</strong> gold particle.</p>
+</section>
+<section id="solution">
+<h3><strong>Solution</strong><a class="headerlink" href="#solution" title="Link to this heading">#</a></h3>
+<p>For a <strong>spherical particle</strong>, the surface-to-volume ratio is:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\text{Surface Area}}{\text{Volume}} = \frac{4 \pi r^2}{\frac{4}{3} \pi r^3} = \frac{3}{r}
+\]</div>
+<p>For a <strong>10 nm</strong> (<span class="math notranslate nohighlight">\(10^{-8}\)</span> m) particle:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{3}{10^{-8} \text{ m}} = 3 \times 10^8 \text{ m}^{-1}
+\]</div>
+<p>For a <strong>1 mm</strong> (<span class="math notranslate nohighlight">\(10^{-3}\)</span> m) particle:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{3}{10^{-3} \text{ m}} = 3 \times 10^3 \text{ m}^{-1}
+\]</div>
+</section>
+<section id="conclusion">
+<h3><strong>Conclusion</strong><a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The <strong>10 nm</strong> particle has a <strong>100,000 times</strong> higher surface-to-volume ratio than the <strong>1 mm</strong> particle.</p></li>
+<li><p>This explains why <strong>nanoparticles are highly reactive</strong> and show <strong>melting point depression</strong>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="cataylsis">
+<h2><strong>Cataylsis</strong><a class="headerlink" href="#cataylsis" title="Link to this heading">#</a></h2>
+<img src="catalysis.png" alt="Cartoon of catalytic activity from NPs" width="50%"><ul class="simple">
+<li><p>Increased activity comes first from the increased surface area.</p></li>
+<li><p>Apexes and edges  are generally more active</p></li>
+<li><p>Certain face might be more sticky to molecules and therefore more effective.</p></li>
+<li><p>Small nanoparticle might have free electrons</p></li>
+<li><p>Some nanoparticles will be more ‘molecule-like’ and this might be an advantage.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="example-problem-catalytic-activity">
+<h2><strong>6. Example Problem: Catalytic Activity</strong><a class="headerlink" href="#example-problem-catalytic-activity" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3><strong>Problem Statement</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>A <strong>bulk platinum (Pt) catalyst</strong> has a surface area of <strong>5 m²/g</strong>, while <strong>Pt nanoparticles</strong> have a surface area of <strong>200 m²/g</strong>. How much more efficient is the nanoparticle catalyst?</p>
+</section>
+<section id="id2">
+<h3><strong>Solution</strong><a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Since catalytic efficiency is proportional to surface area:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Efficiency Factor} = \frac{\text{Surface Area of Nanoparticles}}{\text{Surface Area of Bulk Material}} = \frac{200 \text{ m}^2/\text{g}}{5 \text{ m}^2/\text{g}} = 40
+\]</div>
+</section>
+<section id="id3">
+<h3><strong>Conclusion</strong><a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Pt nanoparticles are <strong>40 times more efficient</strong> than bulk Pt.</p></li>
+<li><p>This is why <strong>nanoparticles are widely used in catalysis</strong>, e.g., in <strong>fuel cells</strong>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="thomson-equation-for-melting-point-depression">
+<h2><strong>7. Thomson Equation for Melting Point Depression</strong><a class="headerlink" href="#thomson-equation-for-melting-point-depression" title="Link to this heading">#</a></h2>
+<p>The <strong>Thomson equation</strong> quantifies how nanoparticle size affects melting point:</p>
+<div class="math notranslate nohighlight">
+\[
+T_m(D) = T_{\text{bulk}} \left( 1 - \frac{C}{D} \right)
+\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(T_m(D)\)</span> = melting point of the nanoparticle,</p></li>
+<li><p><span class="math notranslate nohighlight">\(T_{\text{bulk}}\)</span> = bulk melting point of the material,</p></li>
+<li><p><span class="math notranslate nohighlight">\(D\)</span> = diameter of the nanoparticle,</p></li>
+<li><p><span class="math notranslate nohighlight">\(C\)</span> = material-dependent constant.</p></li>
+</ul>
+<section id="example-gold-nanoparticles">
+<h3><strong>Example: Gold Nanoparticles</strong><a class="headerlink" href="#example-gold-nanoparticles" title="Link to this heading">#</a></h3>
+<p>For <strong>gold</strong>, <span class="math notranslate nohighlight">\(T_{\text{bulk}} = 1064^\circ C\)</span> and <span class="math notranslate nohighlight">\(C \approx 3.5\)</span> nm.</p>
+<p>For a <strong>5 nm</strong> gold nanoparticle:</p>
+<div class="math notranslate nohighlight">
+\[
+T_m(5) = 1064 \times \left(1 - \frac{3.5}{5} \right)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+T_m(5) = 1064 \times 0.3 = 319.2^\circ C
+\]</div>
+</section>
+<section id="id4">
+<h3><strong>Conclusion</strong><a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>A <strong>5 nm gold nanoparticle</strong> melts at <strong>319°C</strong>, much lower than the bulk melting point.</p></li>
+<li><p>This explains <strong>why nanoparticles behave differently in thermal applications</strong>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="optical-properties-of-gold-nanoparticles">
+<h2><strong>8. Optical Properties of Gold Nanoparticles</strong><a class="headerlink" href="#optical-properties-of-gold-nanoparticles" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The color of gold nanoparticles <strong>changes with size</strong> due to <strong>Surface Plasmon Resonance (SPR).</strong></p></li>
+<li><p><strong>Surface Plasmon Resonance (SPR)</strong>:</p>
+<ul>
+<li><p>Free electrons in the nanoparticle <strong>oscillate</strong> in response to light.</p></li>
+<li><p>Different sizes and shapes influence <strong>light absorption and scattering</strong>.</p></li>
+</ul>
+</li>
+</ul>
+<section id="localized-surface-plasmon-resonance-lspr">
+<h3><strong>Localized Surface Plasmon Resonance (LSPR)</strong><a class="headerlink" href="#localized-surface-plasmon-resonance-lspr" title="Link to this heading">#</a></h3>
+<p>Localized Surface Plasmon Resonance (LSPR) occurs when free electrons in <strong>small gold nanoparticles</strong> collectively oscillate in response to incident light.</p>
+<section id="lspr-equation">
+<h4><strong>LSPR Equation</strong><a class="headerlink" href="#lspr-equation" title="Link to this heading">#</a></h4>
+<p>For small <strong>spherical</strong> metal nanoparticles  (<span class="math notranslate nohighlight">\(R &lt;&lt;\lambda\)</span>) the extinction cross-section, <span class="math notranslate nohighlight">\(C_{\text{ext}}(\lambda)\)</span> is given by:</p>
+<div class="math notranslate nohighlight">
+\[C_{\text{ext}}=\frac{24 \pi^2 R^3 \epsilon_m^\frac{3}{2}}{\lambda}\frac{\epsilon_i}{\left(\epsilon_r+2\epsilon_m \right)^2+\epsilon_i^2}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\epsilon_m\)</span> is the dielectric constant of the medium e.g. water,<span class="math notranslate nohighlight">\(\epsilon\)</span> is the dielectric of the nanoparticle, which is given by, <span class="math notranslate nohighlight">\(\epsilon(\lambda)=\epsilon_r(\lambda)+i\epsilon_i(\lambda)\)</span> where <span class="math notranslate nohighlight">\(\epsilon_r\)</span> and <span class="math notranslate nohighlight">\(\epsilon_i\)</span> are the real and imaginary parts.  Also, $<span class="math notranslate nohighlight">\(\epsilon_m=n_m^2\)</span>$</p>
+<p>This means that LSPR occurs (resonance) when the <strong>real part of the nanoparticle’s dielectric function</strong> satisfies:</p>
+<div class="math notranslate nohighlight">
+\[
+\epsilon_r(\lambda) = -2\epsilon_m
+\]</div>
+<p>because <span class="math notranslate nohighlight">\(C_{\text{ext}}\)</span></p>
+<img src="SPR_plot.jpeg" alt="Gold Nanoparticle SPR" width="50%">
+</section>
+<section id="applications-of-lspr">
+<h4><strong>Applications of LSPR</strong><a class="headerlink" href="#applications-of-lspr" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Biomedical Imaging</strong>: Enhanced contrast in imaging techniques.</p></li>
+<li><p><strong>Biosensors</strong>: LSPR <strong>shifts</strong> when molecules bind to the nanoparticle surface.</p></li>
+<li><p><strong>Photothermal Therapy</strong>: Gold nanoparticles absorb light and convert it to <strong>heat</strong>, useful for <strong>cancer treatment</strong>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="example-problem-rayleigh-scattering">
+<h2><strong>9. Example Problem: Rayleigh Scattering</strong><a class="headerlink" href="#example-problem-rayleigh-scattering" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3><strong>Problem Statement</strong><a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Using Rayleigh’s law, explain why the sky appears <strong>blue</strong> and sunsets appear <strong>red</strong>.</p>
+</section>
+<section id="id6">
+<h3><strong>Solution</strong><a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Rayleigh scattering states:</p>
+<div class="math notranslate nohighlight">
+\[
+I \propto \frac{1}{\lambda^4}
+\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I\)</span> = intensity of scattered light,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda\)</span> = wavelength of light.</p></li>
+</ul>
+<p>Since <strong>shorter wavelengths scatter more</strong>:</p>
+<ul class="simple">
+<li><p><strong>Blue light</strong> (450 nm) is scattered much more than <strong>red light</strong> (650 nm), making the sky appear <strong>blue</strong>.</p></li>
+<li><p>At <strong>sunset</strong>, light travels through <strong>more atmosphere</strong>, so <strong>blue light is mostly scattered away</strong>, leaving <strong>red/orange hues</strong>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="key-takeaways">
+<h2><strong>Key Takeaways</strong><a class="headerlink" href="#key-takeaways" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Surface-to-Volume Ratio</strong>: Nanoparticles have <strong>higher reactivity</strong> due to their high surface area.</p></li>
+<li><p><strong>Catalytic Efficiency</strong>: Nanoparticles are <strong>far more effective catalysts</strong> than bulk materials.</p></li>
+<li><p><strong>Melting Point Depression</strong>: Smaller nanoparticles <strong>melt at much lower temperatures</strong> than bulk materials.</p></li>
+<li><p><strong>Localized Surface Plasmon Resonance (LSPR)</strong>: Gold nanoparticles <strong>change color</strong> due to light interaction.</p></li>
+<li><p><strong>Rayleigh Scattering</strong>: Explains why <strong>blue light scatters more than red</strong>, making the sky <strong>blue</strong> and gold nanoparticles *<em>red</em>.!</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Lecture10.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Notes on Carbon Nanomaterials</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lecture12.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Localized Surface Plasmon Resonance (LSPR) to Semiconductors</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metallic-binding"><strong>1. Metallic Binding</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#historical-use-of-metal-nanoparticles"><strong>2. Historical Use of Metal Nanoparticles</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-to-volume-ratio-effects"><strong>3. Surface-to-Volume Ratio Effects</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-properties"><strong>Thermal Properties</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-surface-to-volume-ratio"><strong>4. Example Problem: Surface-to-Volume Ratio</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-statement"><strong>Problem Statement</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solution"><strong>Solution</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion"><strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cataylsis"><strong>Cataylsis</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-catalytic-activity"><strong>6. Example Problem: Catalytic Activity</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Problem Statement</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Solution</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thomson-equation-for-melting-point-depression"><strong>7. Thomson Equation for Melting Point Depression</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-gold-nanoparticles"><strong>Example: Gold Nanoparticles</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optical-properties-of-gold-nanoparticles"><strong>8. Optical Properties of Gold Nanoparticles</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#localized-surface-plasmon-resonance-lspr"><strong>Localized Surface Plasmon Resonance (LSPR)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lspr-equation"><strong>LSPR Equation</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-lspr"><strong>Applications of LSPR</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem-rayleigh-scattering"><strong>9. Example Problem: Rayleigh Scattering</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><strong>Problem Statement</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><strong>Solution</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaways"><strong>Key Takeaways</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Critchley
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

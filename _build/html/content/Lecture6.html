@@ -1,0 +1,693 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Quantum Mechanics and Atomic Structure &#8212; Introduction to Nanotechnology PHAS1500</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Lecture6';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quantum Mechanics and Electronic Structure" href="Lecture7.html" />
+    <link rel="prev" title="Lecture Notes: The Bohr Model and Quantum Mechanics" href="Lecture5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Nanotechnology PHAS1500</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Jupyter Nanotechnology Course Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lecture1.html"><strong>PHAS1500: An Introduction to Nanotechnology</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2 Notes: The Smallest Things</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Introducing Scaling Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">1. Referencing and Citations in Essays</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html"><strong>Lecture Notes: The Bohr Model and Quantum Mechanics</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Quantum Mechanics and Electronic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html"><strong>Molecular Orbitals and Covalent Bonding</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">Carbon Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">Notes on Carbon Nanomaterials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture11.html"><strong>Metal Nanoparticles – Lecture Notes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture12.html">Localized Surface Plasmon Resonance (LSPR) to Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture13.html">Semiconductors to Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture14.html"><strong>1. Semiconductor Materials and Quantum Dots</strong></a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture15.html">Quantum Dot Applications, Colliodal Stability and Self-Assembled Monolayers.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture16.html"><strong>Nanotechnology &amp; Biology</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture17.html">🧬 From Bionano to Nanomedicine – Lecture Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture18.html">⚕️ Nanomedicine – Medical Nanoparticles (Part 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture19.html">🧬 Nanomedicine (Part 3) – Cancer Targeting, Theranostics &amp; Ethics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Lecture6.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Quantum Mechanics and Atomic Structure</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-quantum-mechanics">1. Introduction to Quantum Mechanics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-the-hamiltonian-operator">2. The Role of the Hamiltonian Operator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-one-dimensional-1d-box-problem">3. The One-Dimensional (1D) Box Problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-numbers-and-electron-configurations">4. Quantum Numbers and Electron Configurations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-quantum-number-n"><strong>Principal Quantum Number (n)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orbital-quantum-number-l"><strong>Orbital Quantum Number (l)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetic-quantum-number-m"><strong>Magnetic Quantum Number (m)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spin-quantum-number-s"><strong>Spin Quantum Number (s)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-orbitals-and-their-shapes">5. Atomic Orbitals and Their Shapes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantized-angular-momentum-bohr-model-vs-quantum-mechanics">6. Quantized Angular Momentum: Bohr Model vs. Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-model-and-its-assumptions"><strong>Bohr Model and Its Assumptions</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-mechanical-angular-momentum"><strong>Quantum Mechanical Angular Momentum</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-the-bohr-model-was-incorrect"><strong>Why the Bohr Model Was Incorrect</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-spin-and-the-pauli-exclusion-principle">7. Electron Spin and the Pauli Exclusion Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermions-vs-bosons"><strong>Fermions vs. Bosons</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">8. Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="quantum-mechanics-and-atomic-structure">
+<h1>Quantum Mechanics and Atomic Structure<a class="headerlink" href="#quantum-mechanics-and-atomic-structure" title="Link to this heading">#</a></h1>
+<section id="introduction-to-quantum-mechanics">
+<h2>1. Introduction to Quantum Mechanics<a class="headerlink" href="#introduction-to-quantum-mechanics" title="Link to this heading">#</a></h2>
+<p>Quantum mechanics is a fundamental theory in physics that describes the behavior of matter and energy at atomic and subatomic scales. Classical mechanics fails to explain many phenomena observed in microscopic systems, such as the stability of atoms and the discrete energy levels of electrons.</p>
+<p>In quantum mechanics, the <strong>wavefunction (Ψ)</strong> represents the state of a quantum system, and its square (|Ψ|²) gives the probability of finding a particle in a given region of space. The behavior of the wavefunction is governed by the <strong>Schrödinger equation</strong>, which determines the allowed energy levels of quantum systems.</p>
+</section>
+<section id="the-role-of-the-hamiltonian-operator">
+<h2>2. The Role of the Hamiltonian Operator<a class="headerlink" href="#the-role-of-the-hamiltonian-operator" title="Link to this heading">#</a></h2>
+<p>The <strong>Hamiltonian operator</strong> <span class="math notranslate nohighlight">\(\hat{H}\)</span> represents the total energy of a quantum system. It consists of kinetic and potential energy terms:</p>
+<div class="math notranslate nohighlight">
+\[\hat{H} \Psi = E \Psi\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\hat{H} \)</span> is the Hamiltonian operator,</p></li>
+<li><p><span class="math notranslate nohighlight">\( E \)</span> is the total energy of the system,</p></li>
+<li><p><span class="math notranslate nohighlight">\( \Psi \)</span> is the wavefunction.</p></li>
+</ul>
+<p>The Hamiltonian depends on the system being studied. In the case of an electron in an atom, the potential energy comes from the Coulomb attraction between the negatively charged electron and the positively charged nucleus.</p>
+</section>
+<section id="the-one-dimensional-1d-box-problem">
+<h2>3. The One-Dimensional (1D) Box Problem<a class="headerlink" href="#the-one-dimensional-1d-box-problem" title="Link to this heading">#</a></h2>
+<p>One of the simplest quantum mechanical models is the <strong>particle in a one-dimensional box</strong>, where a particle is confined to move in a region with impenetrable walls. The wavefunction solutions are <strong>standing waves</strong>, and the allowed energy levels are <strong>quantized</strong>:</p>
+<div class="math notranslate nohighlight">
+\[E_n = \frac{n^2 h^2}{8mL^2}\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( n \)</span> is a positive integer (quantum number),</p></li>
+<li><p><span class="math notranslate nohighlight">\( h \)</span> is Planck’s constant,</p></li>
+<li><p><span class="math notranslate nohighlight">\( m \)</span> is the mass of the particle,</p></li>
+<li><p><span class="math notranslate nohighlight">\( L \)</span> is the length of the box.</p></li>
+</ul>
+<p>This quantization of energy is a fundamental feature of quantum systems.</p>
+</section>
+<section id="quantum-numbers-and-electron-configurations">
+<h2>4. Quantum Numbers and Electron Configurations<a class="headerlink" href="#quantum-numbers-and-electron-configurations" title="Link to this heading">#</a></h2>
+<p>In three-dimensional quantum systems, such as atoms, the position of an electron is best described in <strong>spherical coordinates (r, θ, ϕ)</strong>. The quantum numbers that arise from solving the Schrödinger equation in this system determine the electron’s allowed states.</p>
+<section id="principal-quantum-number-n">
+<h3><strong>Principal Quantum Number (n)</strong><a class="headerlink" href="#principal-quantum-number-n" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Symbol: <code class="docutils literal notranslate"><span class="pre">n</span></code></p></li>
+<li><p>Values: <code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">...</span></code></p></li>
+<li><p>Represents the <strong>energy level</strong> and <strong>size</strong> of the orbital.</p></li>
+<li><p>Higher values of <code class="docutils literal notranslate"><span class="pre">n</span></code> correspond to orbitals that are farther from the nucleus.</p></li>
+</ul>
+</section>
+<section id="orbital-quantum-number-l">
+<h3><strong>Orbital Quantum Number (l)</strong><a class="headerlink" href="#orbital-quantum-number-l" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Symbol: <code class="docutils literal notranslate"><span class="pre">l</span></code></p></li>
+<li><p>Values: <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">(n-1)</span></code></p></li>
+<li><p>Defines the <strong>shape</strong> of the orbital.</p></li>
+<li><p>Corresponds to different orbital types:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">0</span></code> → <strong>s-orbital</strong> (spherical)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">1</span></code> → <strong>p-orbital</strong> (dumbbell-shaped)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">2</span></code> → <strong>d-orbital</strong> (cloverleaf-shaped)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">3</span></code> → <strong>f-orbital</strong> (complex shape)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="magnetic-quantum-number-m">
+<h3><strong>Magnetic Quantum Number (m)</strong><a class="headerlink" href="#magnetic-quantum-number-m" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Symbol: <code class="docutils literal notranslate"><span class="pre">m</span></code></p></li>
+<li><p>Values: <code class="docutils literal notranslate"><span class="pre">-l,</span> <span class="pre">...,</span> <span class="pre">0,</span> <span class="pre">...,</span> <span class="pre">+l</span></code></p></li>
+<li><p>Determines the <strong>orientation</strong> of the orbital in space.</p></li>
+</ul>
+</section>
+<section id="spin-quantum-number-s">
+<h3><strong>Spin Quantum Number (s)</strong><a class="headerlink" href="#spin-quantum-number-s" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Symbol: <code class="docutils literal notranslate"><span class="pre">s</span></code></p></li>
+<li><p>Values: <code class="docutils literal notranslate"><span class="pre">+½</span></code> (spin-up) or <code class="docutils literal notranslate"><span class="pre">-½</span></code> (spin-down)</p></li>
+<li><p>Represents the <strong>intrinsic angular momentum</strong> (spin) of the electron.</p></li>
+<li><p>Electrons in the same orbital must have opposite spins due to the <strong>Pauli Exclusion Principle</strong>.</p></li>
+</ul>
+</section>
+</section>
+<section id="atomic-orbitals-and-their-shapes">
+<h2>5. Atomic Orbitals and Their Shapes<a class="headerlink" href="#atomic-orbitals-and-their-shapes" title="Link to this heading">#</a></h2>
+<p>The solutions to the Schrödinger equation for an electron confined in a spherical potential define the <strong>atomic orbitals</strong>. These orbitals describe the probability of finding an electron in different regions of space around the nucleus.</p>
+<ul class="simple">
+<li><p><strong>s-orbitals (<code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">0</span></code>)</strong>: Spherical in shape, centered around the nucleus.</p></li>
+<li><p><strong>p-orbitals (<code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">1</span></code>)</strong>: Dumbbell-shaped, oriented along the x, y, and z axes.</p></li>
+<li><p><strong>d-orbitals (<code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">2</span></code>)</strong>: More complex shapes, often resembling cloverleaves.</p></li>
+<li><p><strong>f-orbitals (<code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">3</span></code>)</strong>: Even more intricate shapes, important in heavy elements.</p></li>
+</ul>
+<p>These orbitals do not describe <strong>the path</strong> of an electron but rather the regions where the electron is most likely to be found.</p>
+</section>
+<section id="quantized-angular-momentum-bohr-model-vs-quantum-mechanics">
+<h2>6. Quantized Angular Momentum: Bohr Model vs. Quantum Mechanics<a class="headerlink" href="#quantized-angular-momentum-bohr-model-vs-quantum-mechanics" title="Link to this heading">#</a></h2>
+<section id="bohr-model-and-its-assumptions">
+<h3><strong>Bohr Model and Its Assumptions</strong><a class="headerlink" href="#bohr-model-and-its-assumptions" title="Link to this heading">#</a></h3>
+<p>In the Bohr model:</p>
+<ul>
+<li><p>Electrons move in <strong>fixed circular orbits</strong> around the nucleus.</p></li>
+<li><p>The angular momentum of an electron in orbit is <strong>quantized</strong> according to the equation:</p>
+<div class="math notranslate nohighlight">
+\[L =  n \hbar \]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\hbar \)</span> is the <strong>reduced Planck’s constant</strong> <span class="math notranslate nohighlight">\( h/2\pi\)</span>,</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="quantum-mechanical-angular-momentum">
+<h3><strong>Quantum Mechanical Angular Momentum</strong><a class="headerlink" href="#quantum-mechanical-angular-momentum" title="Link to this heading">#</a></h3>
+<p>The <strong>orbital angular momentum</strong> in quantum mechanics is given by:</p>
+<div class="math notranslate nohighlight">
+\[L = \hbar \sqrt{l(l+1)}\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(L\)</span> is the magnitude of the angular momentum,</p></li>
+<li><p><span class="math notranslate nohighlight">\( l\)</span> is the <strong>orbital quantum number</strong> <span class="math notranslate nohighlight">\(( l = 0, 1, 2, ..., n-1 )\)</span>.</p></li>
+</ul>
+</section>
+<section id="why-the-bohr-model-was-incorrect">
+<h3><strong>Why the Bohr Model Was Incorrect</strong><a class="headerlink" href="#why-the-bohr-model-was-incorrect" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Fails for Multi-Electron Atoms</strong></p></li>
+<li><p><strong>Electrons Are Not Classical Particles</strong></p></li>
+<li><p><strong>Orbital Angular Momentum in the Ground State</strong>:</p>
+<ul class="simple">
+<li><p>The Bohr model predicts nonzero angular momentum for <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">1</span></code>.</p></li>
+<li><p>Quantum mechanics predicts <code class="docutils literal notranslate"><span class="pre">L</span> <span class="pre">=</span> <span class="pre">0</span></code> for <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">l</span> <span class="pre">=</span> <span class="pre">0</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Electron Motion is Defined by Wavefunctions</strong>.</p></li>
+</ol>
+</section>
+</section>
+<section id="electron-spin-and-the-pauli-exclusion-principle">
+<h2>7. Electron Spin and the Pauli Exclusion Principle<a class="headerlink" href="#electron-spin-and-the-pauli-exclusion-principle" title="Link to this heading">#</a></h2>
+<p>In addition to orbital angular momentum, electrons have an <strong>intrinsic angular momentum</strong>, known as <strong>spin</strong>. The concept of spin was first introduced by <strong>Paul Dirac</strong> through a relativistic interpretation of quantum mechanics.</p>
+<ul class="simple">
+<li><p><strong>Spin quantum number (<code class="docutils literal notranslate"><span class="pre">s</span></code>)</strong>: Takes values of <code class="docutils literal notranslate"><span class="pre">+½</span></code> or <code class="docutils literal notranslate"><span class="pre">-½</span></code>.</p></li>
+<li><p>The <strong>Stern-Gerlach experiment (1922)</strong> provided experimental evidence for electron spin.</p></li>
+</ul>
+<p>The <strong>Pauli Exclusion Principle</strong>, formulated by Wolfgang Pauli, states:</p>
+<blockquote>
+<div><p><em>No two fermions (such as electrons) can occupy the same quantum state simultaneously.</em></p>
+</div></blockquote>
+<section id="fermions-vs-bosons">
+<h3><strong>Fermions vs. Bosons</strong><a class="headerlink" href="#fermions-vs-bosons" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Fermions</strong> (e.g., electrons, neutrons, protons) obey the Pauli Exclusion Principle and have <strong>half-integer spin</strong> (<code class="docutils literal notranslate"><span class="pre">±½</span></code>).</p></li>
+<li><p><strong>Bosons</strong> (e.g., photons, gluons) do <strong>not</strong> obey the exclusion principle and have <strong>integer spin</strong> (<code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...</span></code>).</p></li>
+</ul>
+</section>
+</section>
+<section id="summary">
+<h2>8. Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Quantum mechanics describes particles using wavefunctions governed by the Schrödinger equation.</p></li>
+<li><p>Quantum numbers (<code class="docutils literal notranslate"><span class="pre">n,</span> <span class="pre">l,</span> <span class="pre">ml,</span> <span class="pre">s</span></code>) define the allowed energy states and spatial distribution of electrons.</p></li>
+<li><p>Atomic orbitals determine where electrons are likely to be found.</p></li>
+<li><p>Electrons have both orbital and intrinsic angular momentum (spin).</p></li>
+<li><p>The Pauli Exclusion Principle dictates electron configurations in atoms.</p></li>
+</ul>
+<p>These principles are fundamental to understanding <strong>atomic structure, chemical bonding, and nanotechnology applications</strong>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Lecture5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Lecture Notes: The Bohr Model and Quantum Mechanics</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lecture7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Quantum Mechanics and Electronic Structure</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-quantum-mechanics">1. Introduction to Quantum Mechanics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-the-hamiltonian-operator">2. The Role of the Hamiltonian Operator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-one-dimensional-1d-box-problem">3. The One-Dimensional (1D) Box Problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-numbers-and-electron-configurations">4. Quantum Numbers and Electron Configurations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-quantum-number-n"><strong>Principal Quantum Number (n)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orbital-quantum-number-l"><strong>Orbital Quantum Number (l)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetic-quantum-number-m"><strong>Magnetic Quantum Number (m)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spin-quantum-number-s"><strong>Spin Quantum Number (s)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-orbitals-and-their-shapes">5. Atomic Orbitals and Their Shapes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantized-angular-momentum-bohr-model-vs-quantum-mechanics">6. Quantized Angular Momentum: Bohr Model vs. Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-model-and-its-assumptions"><strong>Bohr Model and Its Assumptions</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-mechanical-angular-momentum"><strong>Quantum Mechanical Angular Momentum</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-the-bohr-model-was-incorrect"><strong>Why the Bohr Model Was Incorrect</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-spin-and-the-pauli-exclusion-principle">7. Electron Spin and the Pauli Exclusion Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermions-vs-bosons"><strong>Fermions vs. Bosons</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">8. Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Critchley
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
