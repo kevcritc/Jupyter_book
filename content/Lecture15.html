@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Quantum Dot Applications, Colliodal Stability and Self-Assembled Monolayers. &#8212; Introduction to Nanotechnology PHAS1500</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Lecture15';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Nanotechnology &amp; Biology" href="Lecture16.html" />
+    <link rel="prev" title="1. Semiconductor Materials and Quantum Dots" href="Lecture14.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Nanotechnology PHAS1500</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Jupyter Nanotechnology Course Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lecture1.html"><strong>PHAS1500: An Introduction to Nanotechnology</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">Lecture 2 Notes: The Smallest Things</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Introducing Scaling Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">1. Referencing and Citations in Essays</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html"><strong>Lecture Notes: The Bohr Model and Quantum Mechanics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture6.html">Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Quantum Mechanics and Electronic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html"><strong>Molecular Orbitals and Covalent Bonding</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">Carbon Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">Notes on Carbon Nanomaterials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture11.html"><strong>Metal Nanoparticles – Lecture Notes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture12.html">Localized Surface Plasmon Resonance (LSPR) to Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture13.html">Semiconductors to Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture14.html"><strong>1. Semiconductor Materials and Quantum Dots</strong></a></li>
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quantum Dot Applications, Colliodal Stability and Self-Assembled Monolayers.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture16.html"><strong>Nanotechnology &amp; Biology</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture17.html">🧬 From Bionano to Nanomedicine – Lecture Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture18.html">⚕️ Nanomedicine – Medical Nanoparticles (Part 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture19.html">🧬 Nanomedicine (Part 3) – Cancer Targeting, Theranostics &amp; Ethics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Lecture15.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Quantum Dot Applications, Colliodal Stability and Self-Assembled Monolayers.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-dot-applications-electronic"><strong>1. Quantum Dot Applications (Electronic)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-dot-technology-in-displays"><strong>Quantum Dot Technology in Displays</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colloidal-stability"><strong>2. Colloidal Stability</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-colloidal-stability"><strong>What is Colloidal Stability?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forces-affecting-nanoparticle-stability"><strong>Forces Affecting Nanoparticle Stability</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steric-hindrance-how-it-works"><strong>Steric Hindrance: How It Works</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanism-of-steric-hindrance"><strong>Mechanism of Steric Hindrance</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-electrostatic-vs-steric-stabilization"><strong>Comparison: Electrostatic vs. Steric Stabilization</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#achieving-colloidal-stability"><strong>Achieving Colloidal Stability</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assembled-monolayers-sams-and-thin-films"><strong>3. Self-Assembled Monolayers (SAMs) and Thin Films</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-thin-films"><strong>What are Thin Films?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assembled-monolayers-sams"><strong>Self-Assembled Monolayers (SAMs)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-alkane-chain-affects-order"><strong>How the Alkane Chain Affects Order</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hexagonal-packing-and-molecular-tilt-angle"><strong>Hexagonal Packing and Molecular Tilt Angle</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-functional-groups-in-sams"><strong>Examples of Functional Groups in SAMs</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-sams-influence-surfaces"><strong>How SAMs Influence Surfaces</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-sams"><strong>Applications of SAMs</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-key-takeaways"><strong>Final Key Takeaways</strong></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="quantum-dot-applications-colliodal-stability-and-self-assembled-monolayers">
+<h1>Quantum Dot Applications, Colliodal Stability and Self-Assembled Monolayers.<a class="headerlink" href="#quantum-dot-applications-colliodal-stability-and-self-assembled-monolayers" title="Link to this heading">#</a></h1>
+<section id="quantum-dot-applications-electronic">
+<h2><strong>1. Quantum Dot Applications (Electronic)</strong><a class="headerlink" href="#quantum-dot-applications-electronic" title="Link to this heading">#</a></h2>
+<section id="quantum-dot-technology-in-displays">
+<h3><strong>Quantum Dot Technology in Displays</strong><a class="headerlink" href="#quantum-dot-technology-in-displays" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Quantum Dot Light-Emitting Diodes (QD-LEDs)</strong>:</p>
+<ul>
+<li><p>Used in <strong>display technologies</strong> (e.g., QD-TVs, monitors, and smartphone screens).</p></li>
+<li><p><strong>Mechanism</strong>:</p>
+<ul>
+<li><p><strong>Blue backlight</strong> provides illumination.</p></li>
+<li><p><strong>Red and Green Quantum Dots (QDs)</strong> convert part of the light into required colors.</p></li>
+<li><p><strong>Liquid crystals</strong> switch pixels <strong>on/off</strong> using cross-polarizers.</p></li>
+</ul>
+</li>
+<li><p><strong>Benefits</strong>:</p>
+<ul>
+<li><p><strong>Improved color accuracy</strong> (wide color gamut).</p></li>
+<li><p><strong>Energy-efficient</strong> compared to traditional displays.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Electroluminescent QD Devices</strong>:</p>
+<ul>
+<li><p>Similar to <strong>OLED technology</strong> but with QDs.</p></li>
+<li><p><strong>Device structure</strong>:</p>
+<ul>
+<li><p><strong>ITO (Indium Tin Oxide) on glass</strong>.</p></li>
+<li><p><strong>QD layer</strong> (e.g., InP/ZnSe/ZnS or CuInS₂/ZnS).</p></li>
+<li><p><strong>Charge injection</strong> → <strong>electron-hole recombination</strong> → <strong>light emission</strong>.</p></li>
+</ul>
+</li>
+<li><p>Used in <strong>photodetectors, transistors, and chemical sensors</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Other QD Applications</strong>:</p>
+<ul>
+<li><p><strong>Modified LEDs</strong> → More efficient lighting.</p></li>
+<li><p><strong>Solar Cells</strong> → QDs enhance absorption across multiple wavelengths.</p></li>
+<li><p><strong>Quantum Computing</strong> → QDs used as <strong>qubits</strong>.</p></li>
+<li><p><strong>Photocatalysts</strong> → Aid in chemical reactions.</p></li>
+<li><p><strong>Temperature sensors</strong> → QDs change optical properties with temperature shifts.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="colloidal-stability">
+<h2><strong>2. Colloidal Stability</strong><a class="headerlink" href="#colloidal-stability" title="Link to this heading">#</a></h2>
+<section id="what-is-colloidal-stability">
+<h3><strong>What is Colloidal Stability?</strong><a class="headerlink" href="#what-is-colloidal-stability" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Definition</strong>: The ability of nanoparticles to <strong>resist aggregation and flocculation</strong>.</p></li>
+<li><p>Important for maintaining <strong>optical, electronic, and chemical properties</strong>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="forces-affecting-nanoparticle-stability">
+<h3><strong>Forces Affecting Nanoparticle Stability</strong><a class="headerlink" href="#forces-affecting-nanoparticle-stability" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Attractive Forces (Cause Aggregation)</strong></p>
+<ul class="simple">
+<li><p><strong>Van der Waals Interactions</strong> → Weak but cause <strong>particles to attract</strong>.</p></li>
+<li><p><strong>Magnetic &amp; Electric Fields</strong> → Affect <strong>charged/magnetic nanoparticles</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Repulsive Forces (Prevent Aggregation)</strong></p>
+<ul class="simple">
+<li><p><strong>Electrostatic Repulsion</strong> → Charged particles experience <strong>Coulombic repulsion</strong>.</p></li>
+<li><p><strong>Steric Hindrance</strong> → <strong>Polymer or surfactant layers physically block particles from aggregating</strong>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="steric-hindrance-how-it-works">
+<h3><strong>Steric Hindrance: How It Works</strong><a class="headerlink" href="#steric-hindrance-how-it-works" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Steric stabilization</strong> prevents nanoparticles from sticking together by using <strong>long-chain molecules or polymers</strong> adsorbed onto the particle surface.</p></li>
+<li><p>When two particles approach, their <strong>coating layers overlap</strong>, creating a <strong>repulsive force</strong> that <strong>prevents aggregation</strong>.</p></li>
+</ul>
+<section id="mechanism-of-steric-hindrance">
+<h4><strong>Mechanism of Steric Hindrance</strong><a class="headerlink" href="#mechanism-of-steric-hindrance" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Entropic Repulsion</strong>:</p>
+<ul class="simple">
+<li><p>Overlapping polymer chains experience <strong>compression</strong>, reducing <strong>entropy</strong>.</p></li>
+<li><p>Since <strong>entropy maximization is favored</strong>, this leads to <strong>repulsion</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Excluded Volume Effect</strong>:</p>
+<ul class="simple">
+<li><p>Polymer layers <strong>physically occupy space</strong>, preventing particles from <strong>coming too close</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Solvent Interaction</strong>:</p>
+<ul class="simple">
+<li><p>In a <strong>good solvent</strong>, polymer chains remain <strong>solvated</strong> and steric hindrance is maximized.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="comparison-electrostatic-vs-steric-stabilization">
+<h3><strong>Comparison: Electrostatic vs. Steric Stabilization</strong><a class="headerlink" href="#comparison-electrostatic-vs-steric-stabilization" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>Electrostatic Stabilization</p></th>
+<th class="head"><p>Steric Stabilization</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Mechanism</strong></p></td>
+<td><p>Charge-based repulsion</p></td>
+<td><p>Polymer layer repulsion</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Medium Required</strong></p></td>
+<td><p>Ionic solutions</p></td>
+<td><p>Organic solvents</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Salt Tolerance</strong></p></td>
+<td><p>Poor (aggregation in high salt)</p></td>
+<td><p>High stability</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Applications</strong></p></td>
+<td><p>Aqueous dispersions</p></td>
+<td><p>Non-aqueous nanomaterials</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="achieving-colloidal-stability">
+<h3><strong>Achieving Colloidal Stability</strong><a class="headerlink" href="#achieving-colloidal-stability" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Electrostatic Repulsion</strong>:</p>
+<ul class="simple">
+<li><p>Particles acquire <strong>surface charges</strong>, leading to <strong>double-layer repulsion</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Steric Stabilization</strong>:</p>
+<ul class="simple">
+<li><p><strong>Polymers or surfactants</strong> coat the particles, preventing <strong>aggregation</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Surfactants &amp; Self-Assembled Monolayers (SAMs)</strong>:</p>
+<ul class="simple">
+<li><p>Used to control <strong>surface properties</strong> and <strong>enhance stability</strong>.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="self-assembled-monolayers-sams-and-thin-films">
+<h2><strong>3. Self-Assembled Monolayers (SAMs) and Thin Films</strong><a class="headerlink" href="#self-assembled-monolayers-sams-and-thin-films" title="Link to this heading">#</a></h2>
+<section id="what-are-thin-films">
+<h3><strong>What are Thin Films?</strong><a class="headerlink" href="#what-are-thin-films" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Thin films</strong> modify a surface’s properties.</p></li>
+<li><p>Used in <strong>biosensors, coatings, and nanoelectronics</strong>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="self-assembled-monolayers-sams">
+<h3><strong>Self-Assembled Monolayers (SAMs)</strong><a class="headerlink" href="#self-assembled-monolayers-sams" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Definition</strong>: <strong>Single molecular layers</strong> that form <strong>spontaneously</strong> on a substrate.</p></li>
+<li><p><strong>Highly ordered structures</strong> due to <strong>self-assembly</strong>.</p></li>
+</ul>
+</section>
+<section id="how-the-alkane-chain-affects-order">
+<h3><strong>How the Alkane Chain Affects Order</strong><a class="headerlink" href="#how-the-alkane-chain-affects-order" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Longer alkane chains = Higher order</strong>:</p>
+<ul>
+<li><p><strong>Van der Waals interactions between chains</strong> increase <strong>stability</strong>.</p></li>
+<li><p><strong>Ordered layers reduce defects</strong>, improving <strong>functional performance</strong>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="hexagonal-packing-and-molecular-tilt-angle">
+<h3><strong>Hexagonal Packing and Molecular Tilt Angle</strong><a class="headerlink" href="#hexagonal-packing-and-molecular-tilt-angle" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Hexagonal Packing</strong>:</p>
+<ul>
+<li><p>SAM molecules arrange in a <strong>hexagonal lattice</strong>.</p></li>
+<li><p>Each molecule interacts with <strong>six neighbors</strong>.</p></li>
+<li><p>Provides <strong>high density, stability, and uniformity</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Molecular Tilt Angle</strong>:</p>
+<ul>
+<li><p>SAM molecules do not stand <strong>perfectly upright</strong>.</p></li>
+<li><p>Instead, they <strong>tilt (~30° from normal)</strong> to <strong>optimize packing</strong>.</p></li>
+<li><p><strong>Why does tilting occur?</strong></p>
+<ul>
+<li><p>Maximizes <strong>van der Waals forces</strong> between chains.</p></li>
+<li><p>Reduces <strong>steric hindrance</strong> for <strong>dense monolayer formation</strong>.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="examples-of-functional-groups-in-sams">
+<h3><strong>Examples of Functional Groups in SAMs</strong><a class="headerlink" href="#examples-of-functional-groups-in-sams" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Head Groups</strong> (Bind to the surface):</p>
+<ul>
+<li><p><strong>Thiol (-SH)</strong> → Binds to <strong>gold, silver, platinum</strong>.</p></li>
+<li><p><strong>Amine (-NH₂)</strong> → Binds to <strong>metal oxides</strong>.</p></li>
+<li><p><strong>Silane (SiX₃)</strong> → Binds to <strong>silicon, glass</strong>.</p></li>
+<li><p><strong>Carboxylic Acid (-COOH)</strong> → Binds to <strong>metal surfaces</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Tail Groups</strong> (Determine surface properties):</p>
+<ul>
+<li><p><strong>Hydrophobic (CH₃, CF₃, benzene)</strong></p></li>
+<li><p><strong>Hydrophilic (-OH, -COOH, polyethylene glycol)</strong></p></li>
+<li><p><strong>Reactive (-NH₂, -SH, -COOH)</strong></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="how-sams-influence-surfaces">
+<h3><strong>How SAMs Influence Surfaces</strong><a class="headerlink" href="#how-sams-influence-surfaces" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Change Surface Charge</strong> → Alters <strong>interactions with ions</strong>.</p></li>
+<li><p><strong>Modify Adhesion</strong> → Enhances or reduces <strong>material attachment</strong>.</p></li>
+<li><p><strong>Enable Chemical Reactions</strong> → Used in <strong>biosensing</strong>.</p></li>
+<li><p><strong>Resist Biomolecule Adsorption</strong> → Used in <strong>medical applications</strong>.</p></li>
+<li><p><strong>Alter Work Function</strong> → Used in <strong>electronics</strong>.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="applications-of-sams">
+<h3><strong>Applications of SAMs</strong><a class="headerlink" href="#applications-of-sams" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Biosensors</strong> → Functionalized surfaces for <strong>molecular detection</strong>.</p></li>
+<li><p><strong>Corrosion Protection</strong> → Prevents oxidation of metals.</p></li>
+<li><p><strong>Nanoelectronics</strong> → Modifies <strong>electrical conductivity</strong>.</p></li>
+<li><p><strong>Nanoparticle Stabilization</strong> → <strong>Prevents aggregation</strong> of QDs.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="final-key-takeaways">
+<h2><strong>Final Key Takeaways</strong><a class="headerlink" href="#final-key-takeaways" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Quantum dots (QDs) are used in QD-LEDs, solar cells, and sensors</strong>.</p></li>
+<li><p><strong>Colloidal stability is crucial for preventing aggregation, achieved via electrostatic or steric stabilization</strong>.</p></li>
+<li><p><strong>Steric hindrance relies on polymer coatings, preventing aggregation through entropic repulsion and excluded volume effects</strong>.</p></li>
+<li><p><strong>Self-Assembled Monolayers (SAMs) modify surfaces, with alkane chains promoting high order through van der Waals interactions</strong>.</p></li>
+<li><p><strong>Molecular tilt angle (~30°) optimizes packing density, balancing van der Waals and steric effects</strong>.</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Lecture14.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>1. Semiconductor Materials and Quantum Dots</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lecture16.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Nanotechnology &amp; Biology</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-dot-applications-electronic"><strong>1. Quantum Dot Applications (Electronic)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-dot-technology-in-displays"><strong>Quantum Dot Technology in Displays</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colloidal-stability"><strong>2. Colloidal Stability</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-colloidal-stability"><strong>What is Colloidal Stability?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#forces-affecting-nanoparticle-stability"><strong>Forces Affecting Nanoparticle Stability</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steric-hindrance-how-it-works"><strong>Steric Hindrance: How It Works</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanism-of-steric-hindrance"><strong>Mechanism of Steric Hindrance</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-electrostatic-vs-steric-stabilization"><strong>Comparison: Electrostatic vs. Steric Stabilization</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#achieving-colloidal-stability"><strong>Achieving Colloidal Stability</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assembled-monolayers-sams-and-thin-films"><strong>3. Self-Assembled Monolayers (SAMs) and Thin Films</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-thin-films"><strong>What are Thin Films?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#self-assembled-monolayers-sams"><strong>Self-Assembled Monolayers (SAMs)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-alkane-chain-affects-order"><strong>How the Alkane Chain Affects Order</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hexagonal-packing-and-molecular-tilt-angle"><strong>Hexagonal Packing and Molecular Tilt Angle</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-functional-groups-in-sams"><strong>Examples of Functional Groups in SAMs</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-sams-influence-surfaces"><strong>How SAMs Influence Surfaces</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-sams"><strong>Applications of SAMs</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-key-takeaways"><strong>Final Key Takeaways</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Critchley
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

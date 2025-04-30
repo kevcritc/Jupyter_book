@@ -1,0 +1,632 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lecture 2 Notes: The Smallest Things &#8212; Introduction to Nanotechnology PHAS1500</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Lecture2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introducing Scaling Laws" href="Lecture3.html" />
+    <link rel="prev" title="PHAS1500: An Introduction to Nanotechnology" href="Lecture1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Nanotechnology PHAS1500</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Jupyter Nanotechnology Course Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lecture1.html"><strong>PHAS1500: An Introduction to Nanotechnology</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lecture 2 Notes: The Smallest Things</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">Introducing Scaling Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">1. Referencing and Citations in Essays</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html"><strong>Lecture Notes: The Bohr Model and Quantum Mechanics</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture6.html">Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Quantum Mechanics and Electronic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html"><strong>Molecular Orbitals and Covalent Bonding</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">Carbon Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">Notes on Carbon Nanomaterials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture11.html"><strong>Metal Nanoparticles – Lecture Notes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture12.html">Localized Surface Plasmon Resonance (LSPR) to Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture13.html">Semiconductors to Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture14.html"><strong>1. Semiconductor Materials and Quantum Dots</strong></a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture15.html">Quantum Dot Applications, Colliodal Stability and Self-Assembled Monolayers.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture16.html"><strong>Nanotechnology &amp; Biology</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture17.html">🧬 From Bionano to Nanomedicine – Lecture Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture18.html">⚕️ Nanomedicine – Medical Nanoparticles (Part 2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture19.html">🧬 Nanomedicine (Part 3) – Cancer Targeting, Theranostics &amp; Ethics</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Lecture2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lecture 2 Notes: The Smallest Things</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#essay-coursework-overview">Essay Coursework Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essay-overview-objectives">Essay Overview &amp; Objectives</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-details">Assignment Details</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#essay-structure">Essay Structure:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mark-breakdown">Mark Breakdown:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foundations-of-nanotechnology">Foundations of Nanotechnology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-classical-view-of-atoms">The Classical View of Atoms</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-scale">Mass &amp; Scale</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#so-how-small-is-small">So How Small is “Small”?</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-2-notes-the-smallest-things">
+<h1>Lecture 2 Notes: The Smallest Things<a class="headerlink" href="#lecture-2-notes-the-smallest-things" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="essay-coursework-overview">
+<h2>Essay Coursework Overview<a class="headerlink" href="#essay-coursework-overview" title="Link to this heading">#</a></h2>
+<section id="essay-overview-objectives">
+<h3>Essay Overview &amp; Objectives<a class="headerlink" href="#essay-overview-objectives" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Value:</strong> 20% of module grade</p></li>
+<li><p><strong>Word Limit:</strong> Less than 2000 words</p></li>
+<li><p><strong>Deadline:</strong> 2 PM, Thursday 10th March 2025 Online Submission</p></li>
+</ul>
+</section>
+<section id="assignment-details">
+<h3>Assignment Details<a class="headerlink" href="#assignment-details" title="Link to this heading">#</a></h3>
+<p>Write an essay on a nanotechnology application currently being researched or already in everyday life. The essay could be about applications of:</p>
+<ol class="arabic simple">
+<li><p><strong>Quantum Dots</strong></p></li>
+<li><p><strong>Graphene</strong></p></li>
+<li><p><strong>Carbon Nanotubes</strong></p></li>
+<li><p><strong>Nanoparticles</strong></p></li>
+</ol>
+<p>The focus should be on explaining the <strong>science behind</strong> the technology in a way that is understandable for a non-expert reader. Your essay should discuss how the chosen technology works, its potential applications, and current research challenges.</p>
+<ul class="simple">
+<li><p>Use <strong>at least six references</strong>, with at least two not being websites.</p></li>
+<li><p>Include at least <strong>two figures</strong> with captions and proper labels.</p></li>
+</ul>
+<section id="essay-structure">
+<h4>Essay Structure:<a class="headerlink" href="#essay-structure" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Introduction (~300 words):</strong> Provide a concise summary of the technology and outline the key points.</p></li>
+<li><p><strong>Background:</strong></p>
+<ul class="simple">
+<li><p>Describe the problem being addressed by the chosen nanotechnology application.</p></li>
+<li><p>Explain the underlying science and how the technology works.</p></li>
+<li><p>Provide context on its discovery and development.</p></li>
+</ul>
+</li>
+<li><p><strong>Discussion:</strong></p>
+<ul class="simple">
+<li><p>Analyze the benefits and potential applications of the technology.</p></li>
+<li><p>Critically evaluate current research, challenges, and potential future developments.</p></li>
+<li><p>Consider safety, ethical, and environmental implications.</p></li>
+</ul>
+</li>
+<li><p><strong>Conclusion:</strong> Summarize the key points and provide a final statement on the potential impact of the technology.</p></li>
+</ol>
+</section>
+<section id="mark-breakdown">
+<h4>Mark Breakdown:<a class="headerlink" href="#mark-breakdown" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Introduction: <strong>15%</strong></p></li>
+<li><p>Background: <strong>25%</strong></p></li>
+<li><p>Discussion: <strong>25%</strong></p></li>
+<li><p>Style &amp; Presentation (Title, grammar, structure, figures): <strong>10%</strong></p></li>
+<li><p>Conclusion: <strong>10%</strong></p></li>
+<li><p>Quality of Research/References: <strong>15%</strong></p></li>
+</ul>
+<p>**Important do not wait to be taught about these materials!!</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="foundations-of-nanotechnology">
+<h2>Foundations of Nanotechnology<a class="headerlink" href="#foundations-of-nanotechnology" title="Link to this heading">#</a></h2>
+<p>If we take a piece of iron and split it, it’s still iron - just a bit smaller.  Imagine if it was possible to keep splitting until it is not posible to split it anymore.  This is idea that the Greeks philosophers where thinking about.  Is it possible to split an infinte number of times or is there a limit (assuming tools is not the limitation).  We will come back to this idea in the next lecture.  For now, we know that atoms are the limit.</p>
+<section id="the-classical-view-of-atoms">
+<h3>The Classical View of Atoms<a class="headerlink" href="#the-classical-view-of-atoms" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Nucleus</strong>: Composed of <strong>protons</strong> (+ve charge) and <strong>neutrons</strong> (neutral).</p></li>
+<li><p>Surrounded by <strong>electrons</strong> (-ve charge), creating a balance where the number of protons equals the number of electrons.</p></li>
+<li><p><strong>Atomic number (Z)</strong>: Number of protons.</p></li>
+<li><p><strong>Atomic weight (A)</strong>: Sum of protons and neutrons (<strong>A = N + Z</strong>).</p></li>
+</ul>
+<section id="mass-scale">
+<h4>Mass &amp; Scale<a class="headerlink" href="#mass-scale" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Proton Mass</strong>: ~1.673 x 10<sup>-27</sup> kg (or 1 atomic mass unit, amu/u).</p></li>
+<li><p><strong>Electron Mass</strong>: ~9.110 x 10<sup>-31</sup> kg (electrons are ~2000x lighter than protons).</p></li>
+<li><p><strong>Nuclear Radius</strong>: Typically <strong>0.8-10 femtometers (fm)</strong> (1 fm = <strong>10<sup>-15</sup> meters</strong>).</p></li>
+<li><p><strong>Scale comparison</strong>: A <strong>1 cm</strong> nucleus corresponds to a <strong>1 km</strong> atom in size.</p></li>
+</ul>
+<p><img alt="an electron orbiting a proton" src="content/attachment:orbital.png" />
+Figure 1.  The electron can be thought of as like a planet orbiting a star.</p>
+<p>The mathematics of an electron orbiting a proton are indentical to a planet orbiting the Sun in our solar system.  This latter solution maths was famously developed Newton who is the father of Mechanics and therefore it is unsuprising that wehn it is applied to the Atom it becomes ‘Quantum’ Mechanics.  We will address Quantum mechanics in later lectures without worrying too much about the actual mathematics.  The importance of atoms to nanotechnology cannot be understated.</p>
+</section>
+</section>
+<section id="so-how-small-is-small">
+<h3>So How Small is “Small”?<a class="headerlink" href="#so-how-small-is-small" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The <strong>nanometer scale</strong> involves sizes of <strong>1-100 nm</strong> (1 nm = <strong>10<sup>-9</sup> meters</strong>).</p></li>
+<li><p><strong>Atoms</strong> range in size from approximately <strong>0.1-0.4 nm</strong>. A single device or machine that is just a few atoms thick would be around <strong>1 nm</strong> in size.</p></li>
+<li><p>Understanding scale:</p>
+<ul>
+<li><p><strong>1 nm</strong> is to <strong>1 meter</strong> as a <strong>marble</strong> is to the <strong>Earth</strong>.</p></li>
+</ul>
+</li>
+</ul>
+<p>Nanotechnology requires assembling <strong>10s to 1000s of atoms</strong> to create functional structures. This is why nanomachines are often at least <strong>1 nm</strong> thick.</p>
+<p><strong>Question:</strong> If we took a gold ring and halved it, and the took the half and halved that, such that the gold piece is halved n times. Approximately what is the maxiumum value for n?</p>
+<details>
+  <summary>**Click for a Solution**</summary>
+<p>** Potential Solution:**</p>
+<p>A ring is about <span class="math notranslate nohighlight">\(m_{ring}= 0.010\)</span> kg</p>
+<p>mass of a single atom= <span class="math notranslate nohighlight">\(m_{atom}= 196.96657 \times 1.66054 e^{-27}\)</span> kg</p>
+<p><span class="math notranslate nohighlight">\(newmass=\frac{m_{ring}}{2^n}\)</span></p>
+<p>therefore set the new mass a the minimum mass it could be.</p>
+<p><span class="math notranslate nohighlight">\(m_{atom}=\frac{m_{ring}}{2^n}\)</span></p>
+<p><span class="math notranslate nohighlight">\(n = \log_2{\frac{m_{ring}}{m_{atom}}}\)</span></p>
+</details>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Lecture1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>PHAS1500: An Introduction to Nanotechnology</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lecture3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introducing Scaling Laws</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#essay-coursework-overview">Essay Coursework Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essay-overview-objectives">Essay Overview &amp; Objectives</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-details">Assignment Details</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#essay-structure">Essay Structure:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mark-breakdown">Mark Breakdown:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#foundations-of-nanotechnology">Foundations of Nanotechnology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-classical-view-of-atoms">The Classical View of Atoms</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-scale">Mass &amp; Scale</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#so-how-small-is-small">So How Small is “Small”?</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Critchley
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
