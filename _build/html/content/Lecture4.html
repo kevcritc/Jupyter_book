@@ -186,7 +186,7 @@
 
 
 <li class="toctree-l1"><a class="reference internal" href="Lecture5.html"><strong>Lecture Notes: The Bohr Model and Quantum Mechanics</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lecture6.html">Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture6a.html">Quantum Mechanics and Atomic Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture7.html">Quantum Mechanics and Electronic Structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture8.html"><strong>Molecular Orbitals and Covalent Bonding</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lecture9.html">Carbon Materials</a></li>
@@ -618,8 +618,8 @@ document.write(`
 </ul>
 </li>
 </ul>
-<p><img alt="Plot of metabolic rate against mass" src="content/attachment:image-3.png" />
-Figure 1. Plot of Metabolic Rate versus mass for a few example animals.</p>
+ <img src="images/met_rate.png" alt="Plot of metabolic rate against mass" width="500">
+Figure 1. Plot of Metabolic Rate versus mass for a few example animals.
 </section>
 <section id="strength-and-bone-scaling">
 <h3>3.6.2 Strength and Bone Scaling**<a class="headerlink" href="#strength-and-bone-scaling" title="Link to this heading">#</a></h3>
@@ -696,8 +696,8 @@ Figure 1. Plot of Metabolic Rate versus mass for a few example animals.</p>
 </table>
 </div>
 <p>This explains why <strong>biological structures adapt in specific ways to size changes</strong>, influencing evolution, survival, and behavior!</p>
-<p><img alt="Plot of lifespan against mass" src="content/attachment:image-2.png" />
-Figure 2. Plot of expected lifespan versus mass for a few example animals. Note there are exceptions to the the rule.</p>
+<img src="images/life_span.png" alt="Plot of lifespan against mass" width="500">
+Figure 2. Plot of expected lifespan versus mass for a few example animals. Note there are exceptions to the the rule.
 <hr class="docutils" />
 </section>
 </section>
@@ -714,8 +714,8 @@ Figure 2. Plot of expected lifespan versus mass for a few example animals. Note 
 </ul>
 </li>
 </ul>
-<p><img alt="Moore's law plot expoential nature" src="content/attachment:image-4.png" /></p>
-<p>Figure 3. Moores law - transister count by date of introduction</p>
+<img src="images/moores_law1.png" alt="Moore's law plot exponential nature" width="800"> 
+Figure 3. Moores law - transister count by date of introduction
 <hr class="docutils" />
 </section>
 <section id="writing-a-technical-report">
@@ -747,8 +747,8 @@ Figure 2. Plot of expected lifespan versus mass for a few example animals. Note 
 <li><p><strong>1800s:</strong> Spectroscopic studies revealed <strong>distinct emission lines</strong> for different gases.</p></li>
 <li><p>Example: <strong>Hydrogen, Helium, Sodium, Potassium</strong>.</p></li>
 </ul>
-<p><img alt="Visible spectrum showing hydrogen emission lines" src="content/attachment:image-5.png" /></p>
-<p>Figure 4.  The Hydrogen spectral lines in the visible spectrum.</p>
+<img src="images/H_lines.png" alt="Visible spectrum showing hydrogen emission lines" width="800">
+Figure 4.  The Hydrogen spectral lines in the visible spectrum.
 </section>
 <section id="the-rydberg-formula">
 <h2>6.2 The Rydberg Formula<a class="headerlink" href="#the-rydberg-formula" title="Link to this heading">#</a></h2>
@@ -762,49 +762,37 @@ Figure 2. Plot of expected lifespan versus mass for a few example animals. Note 
 <h2>6.3 Classical View of the Atom<a class="headerlink" href="#classical-view-of-the-atom" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Coulomb’s Law</strong> governs attraction between <strong>electrons and nucleus</strong>.</p></li>
-<li><p>Circular motion of electrons leads to <strong>centripetal force</strong>.
-<img alt="An orbiting electron with the electrostatic attractive force against the centripetal force from the circular motion" src="content/attachment:image-6.png" /></p></li>
+<li><p>Circular motion of electrons leads to <strong>centripetal force</strong>.</p></li>
 </ul>
-<p>Figure 5.  The Classical model of the atom with the forces added.</p>
-<p>Coulomb’s law is the starting point with the nuclear charge <span class="math notranslate nohighlight">\(Ze\)</span> and charge of the electron <span class="math notranslate nohighlight">\(e\)</span>.
-\begin{equation}
-F=\frac{kZe^2}{r^2} \tag{1}
-\end{equation}</p>
-<p>This force is equal the centripetal force
-\begin{equation}
-F=\frac{mv^2}{r} \tag{2}
-\end{equation}</p>
+<img src="images/classical_atom.png" alt="An orbiting electron with the electrostatic attractive force against the centripetal force from the circular motion" width="300"> 
+Figure 5.  The Classical model of the atom with the forces added.
+<p>Coulomb’s law is the starting point with the nuclear charge <span class="math notranslate nohighlight">\(Ze\)</span> and charge of the electron <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(F=\frac{kZe^2}{r^2}\)</span>   ….. eq 1</p>
+<p>This force is equal the centripetal force</p>
+<p><span class="math notranslate nohighlight">\(F=\frac{mv^2}{r} \)</span>    ….. eq 2</p>
 <p>where <span class="math notranslate nohighlight">\(v\)</span> is the speed of the electron, <span class="math notranslate nohighlight">\(m\)</span> is the mass, and <span class="math notranslate nohighlight">\(r\)</span> is the distance from the centre of the atom.
 Equating 1 and 2 and simplifying gives,</p>
-<p>\begin{equation}
-mv^2=\frac{kZe^2}{r} \tag{3}
-\end{equation}</p>
-<p>Note that by multipling by $\frac{1}{2} we arrive at an expression for the kinetic energy (K).
-\begin{equation}
-\frac{1}{2}mv^2=\frac{kZe^2}{2r}\tag{4}
-\end{equation}</p>
+<p><span class="math notranslate nohighlight">\( mv^2=\frac{kZe^2}{r} \)</span>  ….. eq 3</p>
+<p>Note that by multipling by <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> we arrive at an expression for the kinetic energy (K).</p>
+<p><span class="math notranslate nohighlight">\(\frac{1}{2}mv^2=\frac{kZe^2}{2r}\)</span>   ….. eq 4</p>
 </section>
 <section id="energy-of-the-electron">
 <h2>6.4 Energy of the Electron<a class="headerlink" href="#energy-of-the-electron" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Potential Energy (PE)</strong>: Work done moving the electron to distance  r .
-\begin{equation}
-U=\frac{-kZe^2}{r}\tag{5}
-\end{equation}</p></li>
+<li><p><strong>Potential Energy (PE)</strong> :Work done moving the electron to distance  r .</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(U=\frac{-kZe^2}{r}\)</span>  ….. eq 5</p>
+<ul class="simple">
 <li><p><strong>Kinetic Energy (KE)</strong>: Motion of electron around nucleus.
-Remember from Eq. 4 we have:
-\begin{equation}
-K=\frac{1}{2}mv^2=\frac{kZe^2}{2r}\tag{6}
-\end{equation}</p></li>
+Remember from Eq. 4 we have:</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(K=\frac{1}{2}mv^2=\frac{kZe^2}{2r}\)</span> ….. eq 6</p>
+<ul class="simple">
 <li><p><strong>Total Energy (E)</strong>:</p></li>
 </ul>
-<p>\begin{equation}
-E=U+K \tag{7}
-\end{equation}</p>
+<p><span class="math notranslate nohighlight">\(E=U+K\)</span>    ….. eq 7</p>
 <p>Sub in Eq. 5 and Eq. 6 into 7 to get the total energy, E</p>
-<p>\begin{equation}
-E=-\frac{1}{2}\frac{kZe^2}{r} \tag{8}
-\end{equation}</p>
+<p><span class="math notranslate nohighlight">\(E=-\frac{1}{2}\frac{kZe^2}{r}\)</span>   ….. eq 8</p>
 <ul class="simple">
 <li><p>Classical mechanics predicts <strong>electron should spiral into nucleus</strong>, which does not happen.</p></li>
 <li><p>This problem led to the <strong>development of quantum mechanics</strong>.</p></li>

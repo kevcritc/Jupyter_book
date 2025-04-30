@@ -1,5 +1,11 @@
 title: Introduction to Nanotechnology PHAS1500
 author: Kevin Critchley
 
+
+  
+html:
+  extra_static_files:
+    - content/images
+    
 execute:
   execute_notebooks: force
