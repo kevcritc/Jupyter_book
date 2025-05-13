@@ -353,7 +353,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-field">4.6 Electric Field</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capacitance">4.7 Capacitance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inductance">4.8 Inductance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-transfer-scaling">4.9 Heat Transfer Scaling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-transfer-scaling">4.9 Heat Transfer Scaling</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-transfer-through-conduction">4.9.1 Heat transfer through conduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-cooling-law">4.9.1 Newton’s Cooling Law</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scaling-in-optics">4.10 Scaling in Optics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biological-scaling-laws">4.11 Biological Scaling Laws</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolic-scaling-kleibers-law">4.11.1 Metabolic Scaling (Kleiber’s Law)</a></li>
@@ -504,6 +508,8 @@ document.write(`
 </section>
 <section id="heat-transfer-scaling">
 <h2>4.9 Heat Transfer Scaling<a class="headerlink" href="#heat-transfer-scaling" title="Link to this heading">#</a></h2>
+<section id="heat-transfer-through-conduction">
+<h3>4.9.1 Heat transfer through conduction<a class="headerlink" href="#heat-transfer-through-conduction" title="Link to this heading">#</a></h3>
 <p>This one is where there is a size range that breaks the simple scaling law.  Lets start witht he simple macroscopic case:</p>
 <div class="math notranslate nohighlight">
 \[ Q=-k_c A \frac{\Delta T}{\Delta x} \]</div>
@@ -511,11 +517,55 @@ document.write(`
 <p>However as the size reduced to microscopic scale <span class="math notranslate nohighlight">\(k_c\)</span> which is a macroscopic material thermal conductivity constant starts to itself scale with size.  There we have, for L&lt; 1µm,</p>
 <div class="math notranslate nohighlight">
 \[ Q \propto \frac{LL^2}{L} \propto L^2 \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="k">def</span> <span class="nf">Q_scaling</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">Lc</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns Q ~ a*L^2 when L &lt; Lc (ballistic),</span>
+<span class="sd">             a*L     when L &gt;= Lc (diffusive-like)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">L</span> <span class="o">&lt;</span> <span class="n">Lc</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="n">L</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="n">L</span><span class="p">)</span>
+
+<span class="n">L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>  <span class="c1"># 1 nm to 1 cm</span>
+<span class="n">Q_vals</span> <span class="o">=</span> <span class="n">Q</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">Q_vals</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;L / m&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Q / $Q_0$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Size-dependent thermal transport&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">12</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">L</span> <span class="o">&lt;</span> <span class="n">Lc</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="n">L</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="n">L</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="n">L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>  <span class="c1"># 1 nm to 1 cm</span>
+<span class="ne">---&gt; </span><span class="mi">12</span> <span class="n">Q_vals</span> <span class="o">=</span> <span class="n">Q</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="n">plt</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">Q_vals</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;L / m&quot;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;Q&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here we have smmothed the transition from small to large because of the arbitary threshold would lead to a jump.</p>
+</section>
+<section id="newton-s-cooling-law">
+<h3>4.9.1 Newton’s Cooling Law<a class="headerlink" href="#newton-s-cooling-law" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Energy needed</strong> to heat a material scales with mass <span class="math notranslate nohighlight">\( L^3 \)</span> because <span class="math notranslate nohighlight">\(Q=mc \Delta T\)</span> and there is a mass term.</p></li>
 <li><p><strong>Heat flux</strong> follows <strong>Newton’s Cooling Law</strong>.
 $<span class="math notranslate nohighlight">\( Q=hA \Delta T \propto L^2 \)</span>$</p></li>
 </ul>
+</section>
 </section>
 <section id="scaling-in-optics">
 <h2>4.10 Scaling in Optics<a class="headerlink" href="#scaling-in-optics" title="Link to this heading">#</a></h2>
@@ -724,7 +774,11 @@ $<span class="math notranslate nohighlight">\( Q=hA \Delta T \propto L^2 \)</spa
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electric-field">4.6 Electric Field</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capacitance">4.7 Capacitance</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inductance">4.8 Inductance</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-transfer-scaling">4.9 Heat Transfer Scaling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-transfer-scaling">4.9 Heat Transfer Scaling</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-transfer-through-conduction">4.9.1 Heat transfer through conduction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-cooling-law">4.9.1 Newton’s Cooling Law</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scaling-in-optics">4.10 Scaling in Optics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biological-scaling-laws">4.11 Biological Scaling Laws</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolic-scaling-kleibers-law">4.11.1 Metabolic Scaling (Kleiber’s Law)</a></li>
