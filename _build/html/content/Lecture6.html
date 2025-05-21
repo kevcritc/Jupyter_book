@@ -420,8 +420,46 @@ document.write(`
 <ul class="simple">
 <li><p>This led to the concept of <strong>quantised electron waves</strong> around the nucleus.</p></li>
 </ul>
-<p><img alt="Wave-packet" src="../_images/wavepack.jpg" />.
-Fig 6.1 An cartoon of a 1D wavepacket representing a particle.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="sd">&#39;&#39;&#39; We can make a sketch of a wavepaket by </span>
+<span class="sd">combining a Guassian funciton with a cosine wave&#39;&#39;&#39;</span>
+
+<span class="c1"># Parameters for the wavepacket</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>        <span class="c1"># position array</span>
+<span class="n">k0</span> <span class="o">=</span> <span class="mf">0.4</span>                                <span class="c1"># central wavenumber</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">20</span>                              <span class="c1"># width of the Gaussian envelope</span>
+
+<span class="c1"># Gaussian envelope</span>
+<span class="n">envelope</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="c1"># Carrier wave</span>
+<span class="n">carrier</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">k0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">wavepacket</span> <span class="o">=</span> <span class="n">envelope</span> <span class="o">*</span> <span class="n">carrier</span>
+
+<span class="c1"># Plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">wavepacket</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Wavepacket&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">envelope</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Envelope&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">envelope</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;A Gaussian Wavepacket&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Position /x&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Amplitude&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/4a221b781ac4828db4876d33ebb6f294c9868792bed9af6e4a3296d06629433a.png" src="../_images/4a221b781ac4828db4876d33ebb6f294c9868792bed9af6e4a3296d06629433a.png" />
+</div>
+</div>
+<p>Fig 6.1 An cartoon of a 1D wavepacket representing a particle.</p>
 </section>
 <hr class="docutils" />
 <section id="double-slit-experiment-and-wave-particle-duality">
