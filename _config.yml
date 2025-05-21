@@ -9,3 +9,6 @@ html:
     
 execute:
   execute_notebooks: force
+
+interactive:
+  thebe: true

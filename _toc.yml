@@ -7,7 +7,7 @@ chapters:
   - file: content/Lecture3
   - file: content/Lecture4
   - file: content/Lecture5
-  - file: content/Lecture6a
+  - file: content/Lecture6
   - file: content/Lecture7
   - file: content/Lecture8
   - file: content/Lecture9
@@ -21,3 +21,4 @@ chapters:
   - file: content/Lecture17
   - file: content/Lecture18
   - file: content/Lecture19
+  - file: content/Lecture20
