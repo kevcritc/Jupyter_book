@@ -1,11 +1,5 @@
-# macOS
-.DS_Store
-
-# Jupyter Book build output
 _build/
-**/.doctrees/
-
-# Jupyter / Python cruft
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+.DS_Store
