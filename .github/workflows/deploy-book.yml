@@ -27,7 +27,8 @@ jobs:
 
       - name: Build the book
         run: |
-          jb build .
+          python -m pip show jupyter-book
+          python -m jupyter_book build .
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
