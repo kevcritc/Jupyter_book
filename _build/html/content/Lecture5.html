@@ -371,14 +371,17 @@
 </ul>
 <p><img alt="Visible spectrum showing hydrogen emission lines" src="../_images/H_lines.png" /></p>
 <p>Figure 5.1  The Hydrogen spectral lines in the visible spectrum.</p>
+<p>The challenge was to intepret these rather than just accepting the ‘fingerprint’ for identification purposes, could a model of the atom be formed.  The first clue came from the hydrogen lines and rather than a model a general mathematical formula was developed which works very well indeed.</p>
 </section>
 <section id="the-rydberg-formula">
 <h2>5.2 The Rydberg Formula<a class="headerlink" href="#the-rydberg-formula" title="Link to this heading">#</a></h2>
+<p>Balmer came first, a Swiss maths teacher, found a formula that worked for some of the lines, but not all.  Rydberg and Ritz took it futher and found a more general expression.</p>
 <ul class="simple">
 <li><p>General formula for <strong>hydrogen spectral lines</strong>:</p></li>
 </ul>
 <p><span class="math notranslate nohighlight">\(\frac{1}{\lambda}=R\left(\frac{1}{n_1^2} -\frac{1}{n_2^2}\right)\)</span></p>
-<p>where, <span class="math notranslate nohighlight">\(n_1\)</span> and <span class="math notranslate nohighlight">\(n_2\)</span> are <span class="math notranslate nohighlight">\(&gt;0\)</span>, <span class="math notranslate nohighlight">\(n_2&gt;n_1\)</span>, and <span class="math notranslate nohighlight">\(R = 1.097776 \times 10^7 \text{m}^{-1}\)</span></p>
+<p>where, <span class="math notranslate nohighlight">\(n_1\)</span> and <span class="math notranslate nohighlight">\(n_2\)</span> are integers that are <span class="math notranslate nohighlight">\(&gt;0\)</span>, <span class="math notranslate nohighlight">\(n_2&gt;n_1\)</span>, and <span class="math notranslate nohighlight">\(R = 1.097776 \times 10^7 \text{m}^{-1}\)</span></p>
+<p>Below is a python code to plot the series.  Hopefully you can match with Fig 5.1.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -409,21 +412,23 @@
 </section>
 <section id="classical-view-of-the-atom">
 <h2>5.3 Classical View of the Atom<a class="headerlink" href="#classical-view-of-the-atom" title="Link to this heading">#</a></h2>
+<p>Having a formlua is great but tells us very little about what the atom is doing.  WHat we did know what that the atom consisted of charged particles protons and electrons.  So a starting place is to make a classical model where the electron orbits around the nucleus rather like planets orbiting the Sun.  Here we can combine electrostatics (assume thet are point charges) and Newton’s laws of motion.  In physics we usually ask the question what is the energy of the system? So clearly, we have an electron with kinetic energy and some electrostatic potential energy.  The sum of these is the total energy.  However, <span class="math notranslate nohighlight">\(\frac{1}{2}mv^2\)</span> is not very usefull because we do not know the speed of the electron. We can solve this by resolving the forces shown below.</p>
 <ul class="simple">
 <li><p><strong>Coulomb’s Law</strong> governs attraction between <strong>electrons and nucleus</strong>.</p></li>
 <li><p>Circular motion of electrons leads to <strong>centripetal force</strong>.</p></li>
 </ul>
 <p><img alt="An orbiting electron with the electrostatic attractive force against the centripetal force from the circular motion" src="../_images/classical_atom.png" /></p>
 <p>Figure 5.2  The Classical model of the atom with the forces added.</p>
-<p>Coulomb’s law is the starting point with the nuclear charge <span class="math notranslate nohighlight">\(Ze\)</span> and charge of the electron <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<p>Coulomb’s law is the starting point with the nuclear charge <span class="math notranslate nohighlight">\(Ze\)</span> and charge of the electron <span class="math notranslate nohighlight">\(e\)</span>.  For point charges the force is given eq 1.</p>
 <p><span class="math notranslate nohighlight">\(F=\frac{kZe^2}{r^2}\)</span>   ….. eq 1</p>
-<p>This force is equal the centripetal force</p>
-<p><span class="math notranslate nohighlight">\(F=\frac{mv^2}{r}\)</span>    ….. eq 2</p>
+<p>Here <span class="math notranslate nohighlight">\(k\)</span> is the Coulomb constant, <span class="math notranslate nohighlight">\(Z\)</span> is the atomic number, <span class="math notranslate nohighlight">\(e\)</span> is the charge of an electron, and <span class="math notranslate nohighlight">\(r\)</span> is the radius of the orbit.  This force is equal the centripetal force,</p>
+<p><span class="math notranslate nohighlight">\(F=\frac{mv^2}{r}\)</span>    ….. eq 2,</p>
 <p>where <span class="math notranslate nohighlight">\(v\)</span> is the speed of the electron, <span class="math notranslate nohighlight">\(m\)</span> is the mass, and <span class="math notranslate nohighlight">\(r\)</span> is the distance from the centre of the atom.
 Equating 1 and 2 and simplifying gives,</p>
 <p><span class="math notranslate nohighlight">\( mv^2=\frac{kZe^2}{r} \)</span>  ….. eq 3</p>
-<p>Note that by multipling by <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> we arrive at an expression for the kinetic energy (K).</p>
+<p>Note that by multipling by <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> we arrive at an expression for the kinetic energy (KE).</p>
 <p><span class="math notranslate nohighlight">\(\frac{1}{2}mv^2=\frac{kZe^2}{2r}\)</span>   ….. eq 4</p>
+<p>Now we have KE in terms of charge, radius, and a constant.</p>
 </section>
 <section id="energy-of-the-electron">
 <h2>5.4 Energy of the Electron<a class="headerlink" href="#energy-of-the-electron" title="Link to this heading">#</a></h2>
@@ -444,6 +449,7 @@ Remember from Eq. 4 we have:</p></li>
 <p><span class="math notranslate nohighlight">\(E=-\frac{1}{2}\frac{kZe^2}{r}\)</span>   ….. eq 8</p>
 <ul class="simple">
 <li><p>Classical mechanics predicts <strong>electron should spiral into nucleus</strong>, which does not happen.</p></li>
+<li><p>Any charge moving in a circular motion according to Maxwell’s equations leads to electromagnetic radiation.  Think current passing through a coil - you get a magnetic field.</p></li>
 <li><p>This problem led to the <strong>development of quantum mechanics</strong>.</p></li>
 </ul>
 </section>
@@ -453,7 +459,7 @@ Remember from Eq. 4 we have:</p></li>
 <h3>5.5.1 Introduction to the Bohr Model<a class="headerlink" href="#introduction-to-the-bohr-model" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The Bohr model was developed as an improvement over classical physics to explain atomic structure, particularly the hydrogen atom.</p></li>
-<li><p>It successfully explained the discrete spectral lines of hydrogen.</p></li>
+<li><p>It successfully explained the discrete spectral lines of hydrogen and moved us away from the classical model.</p></li>
 <li><p>Bohr was awarded the <strong>Nobel Prize in 1922</strong> for this work.</p></li>
 </ul>
 </section>
@@ -474,7 +480,7 @@ Remember from Eq. 4 we have:</p></li>
 <ul class="simple">
 <li><p>The frequency of radiation emitted or absorbed by an electron is related to the energy difference between two stationary states:</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(E_f - E_i = h\nu \)</span></p>
+<p><span class="math notranslate nohighlight">\(E_f - E_i = h\nu \)</span> ….. eq 9</p>
 <p>where:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(E_f\)</span> and <span class="math notranslate nohighlight">\(E_i\)</span> are the final and initial energy levels.</p></li>
@@ -483,13 +489,15 @@ Remember from Eq. 4 we have:</p></li>
 </ul>
 <p><img alt="energy levels with an electron transistioning" src="../_images/bohr2.png" /></p>
 <p>Fig 5.4 Emission is a results of an electron moving from a higher energy orbit to a lower energy orbit.</p>
+<p>This one was so successful I imagine everyone reading this would think this is obvious of course it’s like that.  It was less clear back in the early 1900s.</p>
 </section>
 <section id="third-postulate-quantized-angular-momentum">
 <h4>5.5.2.3 Third Postulate: Quantized Angular Momentum<a class="headerlink" href="#third-postulate-quantized-angular-momentum" title="Link to this heading">#</a></h4>
+<p>Less obvious! angular momentum is not something we needed in our earlier calculations.  Angular moment of systems must be conserved by the way. The angular moment is given by <span class="math notranslate nohighlight">\(L=mvr\)</span>, its the momentum <span class="math notranslate nohighlight">\(mv\)</span> multiplied radius to get the angular momentum.</p>
 <ul class="simple">
 <li><p>The allowed electron orbits are determined by the condition that the electron’s <strong>angular momentum</strong> is quantised:</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(mvr = n \hbar \)</span></p>
+<p><span class="math notranslate nohighlight">\(L=mvr = n \hbar \)</span> ….. eq 10</p>
 <p>where:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(m\)</span> is the electron’s mass.</p></li>
@@ -497,8 +505,10 @@ Remember from Eq. 4 we have:</p></li>
 <li><p><span class="math notranslate nohighlight">\(r\)</span> is the radius of the orbit.</p></li>
 <li><p><span class="math notranslate nohighlight">\(n\)</span> is a positive integer <span class="math notranslate nohighlight">\( n = 1, 2, 3, ... \)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\hbar = \frac{h}{2\pi}\)</span> is the reduced Planck’s constant.</p></li>
-<li><p>This explains why only certain orbits are allowed and why electrons do not spiral into the nucleus.</p></li>
+<li><p>This explains why only certain orbits are allowed and why electrons do not spiral into the nucleus.
+To use this postulate we can go back to the classical model and substitue eq 10 into eq 3. From this we can derive an expression for the radii of the orbits.</p></li>
 </ul>
+<p><span class="math notranslate nohighlight">\(r = \frac{\hbar^2n^2}{kZme^2} \)</span> ….. eq 11</p>
 </section>
 </section>
 <hr class="docutils" />
@@ -507,14 +517,15 @@ Remember from Eq. 4 we have:</p></li>
 <ul class="simple">
 <li><p>The radius of the lowest energy orbit <span class="math notranslate nohighlight">\( n=1 \)</span> is known as the <strong>Bohr radius</strong>:</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(a_0 = \frac{4\pi\epsilon_0\hbar^2}{m e^2} \)</span></p>
+<p><span class="math notranslate nohighlight">\(a_0 = \frac{\hbar^2}{kZme^2} \)</span> ….. eq 12</p>
 <ul class="simple">
-<li><p>For hydrogen  Z=1 , the Bohr radius is:</p></li>
+<li><p>For hydrogen  Z=1 , the Bohr radius is 0.0529.  We can now write (for hydrogen)</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(a_0 = 0.0529 \text{nm}\)</span></p>
+<p><span class="math notranslate nohighlight">\(r = a_0n^2\)</span> ….. eq 13</p>
 <ul class="simple">
 <li><p>This result was derived using classical mechanics and electrostatic force principles.</p></li>
 </ul>
+<p>We can now sub eq 13 into eq 8 (the energy equation derived classically) to find the energy E.</p>
 </section>
 <hr class="docutils" />
 <section id="energy-levels-in-the-bohr-model">
@@ -522,7 +533,7 @@ Remember from Eq. 4 we have:</p></li>
 <ul class="simple">
 <li><p>The quantised energy levels for hydrogen are given by:</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(E_n = -\frac{E_0Z^2}{n^2} \)</span></p>
+<p><span class="math notranslate nohighlight">\(E_n = -\frac{E_0Z^2}{n^2} \)</span> ….. eq 14</p>
 <ul class="simple">
 <li><p>Key values:</p>
 <ul>
@@ -534,7 +545,7 @@ Remember from Eq. 4 we have:</p></li>
 </li>
 <li><p>The energy difference between levels determines the wavelength of emitted light:</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(\lambda = \frac{hc}{E} = \frac{1240 \text{ eV⋅nm}}{E} \)</span></p>
+<p><span class="math notranslate nohighlight">\(\lambda = \frac{hc}{E} = \frac{1240 \text{ eV⋅nm}}{E} \)</span> ….. eq 15</p>
 <ul class="simple">
 <li><p>This successfully explained the <strong>Rydberg formula</strong> for hydrogen’s spectral lines.</p></li>
 </ul>
