@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>7. Electronic Structure &#8212; Introduction to Nanotechnology PHAS1500</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Lecture7';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="8. Molecular Orbitals and Covalent Bonding" href="Lecture8.html" />
+    <link rel="prev" title="6. Quantum Mechanics and Atomic Structure" href="Lecture6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Nanotechnology PHAS1500</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Jupyter Nanotechnology Course Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1. Introduction to the Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2. The Smallest Things</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3. Introducing Scaling Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4. Importance of Physics Scaling Laws in Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5. Nanophysics - The Atom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6. Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Electronic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8. Molecular Orbitals and Covalent Bonding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9. Carbon Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10. Introduction to Carbon Nanomaterials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture11.html">11. Metal Nanoparticles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture12.html">12.  Introduction to Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture13.html">13. Semiconductors to Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture14.html">14. Semiconductor Materials and Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture15.html">15.  Colliodal Stability and Self-Assembled Monolayers.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture16.html">16. Nanotechnology &amp; Biology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture17.html">17. From Bionano to Nanomedicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture18.html">18. Nanomedicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture19.html">19. Nanomedicine – Cancer Targeting, Theranostics &amp; Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture20.html">20. Seeing the Nano World – Quick Introduction into Imaging Techniques in Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examfeedback2025.html">21. Exam Feedback from 2025 Exam Paper</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Lecture7.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>7. Electronic Structure</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-the-wavefunction-squared-for-probability">7.1 Why the Wavefunction Squared for Probability?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schrodinger-equation-and-its-solutions">7.2 Schrödinger Equation and Its Solutions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#re-cap-quantum-numbers-and-electron-configuration">7.3 Re-cap: Quantum Numbers and Electron Configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-exclusion-principle">7.3.1 Pauli Exclusion Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electronic-configuration">7.4 Electronic Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-electronic-configuration-of-sodium-z-11">7.4.1 Example: Electronic Configuration of Sodium (Z=11)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-shielding-and-orbital-energy">7.5 Electron Shielding and Orbital Energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hunds-rule-of-maximum-multiplicity">7.6 Hund’s Rule of Maximum Multiplicity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">7.6.1 Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-yourself">7.7 Test yourself</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-takeaways-from-the-lecture">7.8 Main Takeaways from the Lecture</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="electronic-structure">
+<h1>7. Electronic Structure<a class="headerlink" href="#electronic-structure" title="Link to this heading">#</a></h1>
+<section id="why-the-wavefunction-squared-for-probability">
+<h2>7.1 Why the Wavefunction Squared for Probability?<a class="headerlink" href="#why-the-wavefunction-squared-for-probability" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>The solutions to the Schrödinger equation are complex functions with imaginary components.</p></li>
+<li><p>To extract a measurable probability, we use <strong>Max Born’s probability density</strong>, which is the absolute square of the wavefunction.</p></li>
+<li><p>The probability of finding a particle at a given position is given by:</p>
+<div class="math notranslate nohighlight">
+\[ P(x) \propto |\psi(x)|^2 = \psi^*(x) \psi(x) \]</div>
+<p>where <span class="math notranslate nohighlight">\(\psi^*(x)\)</span> is the complex conjugate of <span class="math notranslate nohighlight">\( \psi(x) \)</span>.</p>
+</li>
+</ul>
+</section>
+<section id="schrodinger-equation-and-its-solutions">
+<h2>7.2 Schrödinger Equation and Its Solutions<a class="headerlink" href="#schrodinger-equation-and-its-solutions" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The <strong>Schrödinger equation</strong> is a fundamental equation in quantum mechanics that describes how the wavefunction of a system evolves.</p></li>
+<li><p>It provides <strong>two key pieces of information</strong>:</p>
+<ol class="arabic simple">
+<li><p><strong>Energy eigenvalues (E)</strong> - These are the allowed energy levels of the system.</p></li>
+<li><p><strong>Eigenfunctions (ψ)</strong> - These are the wavefunctions that describe the quantum states of the system.</p></li>
+</ol>
+</li>
+<li><p>The general time-independent Schrödinger equation is:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+  \hat{H} \psi = E \psi
+ \]</div>
+<p>where <span class="math notranslate nohighlight">\(\hat{H}\)</span> is the Hamiltonian operator representing the total energy of the system.</p>
+</section>
+<section id="re-cap-quantum-numbers-and-electron-configuration">
+<h2>7.3 Re-cap: Quantum Numbers and Electron Configuration<a class="headerlink" href="#re-cap-quantum-numbers-and-electron-configuration" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Principal Quantum Number (n)</strong>: Defines the energy level/shell (e.g., 1, 2, 3, …)</p></li>
+<li><p><strong>Orbital Quantum Number (l)</strong>: Defines the shape of the orbital (s, p, d, f) or  (l=0 ..n-1)</p></li>
+<li><p><strong>Magnetic Quantum Number (m_l)</strong>: Defines the orientation of the orbital (-l ..l)</p></li>
+<li><p><strong>Spin Quantum Number (s)</strong>: Defines the spin of the electron (+1/2 or -1/2)</p></li>
+</ul>
+<section id="pauli-exclusion-principle">
+<h3>7.3.1 Pauli Exclusion Principle<a class="headerlink" href="#pauli-exclusion-principle" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>No two electrons in an atom can have the same set of quantum numbers.</p></li>
+<li><p>This limits each orbital to hold <strong>only two electrons</strong> with opposite spins.</p></li>
+</ul>
+</section>
+<section id="electronic-configuration">
+<h3>7.4 Electronic Configuration<a class="headerlink" href="#electronic-configuration" title="Link to this heading">#</a></h3>
+<p>The order of the filling of the electrons is know as the auf bau principle.</p>
+<ul class="simple">
+<li><p>An s orbital has only one value of m and therefore can hold only two electrons.</p></li>
+<li><p>A p orbital has m=-1, m=0, and m=1 states and therefore can hold up to 6 electrons.</p></li>
+<li><p>A d orbital has m=-2, m=-1, m=0 , m=1, m=2 and can therefore hold up to ten electrons.</p></li>
+<li><p>An f orbital has m=-3, m=-2, m=-1, m=0 , m=1, m=2, m=3 and can therefore hold up to 14 electrons.</p></li>
+<li><p>A g orbital has m=-4, m=-3, m=-2, m=-1, m=0 , m=1, m=2, m=3, m=4 and can therefore hold up to 18 electrons.  Thankfully we won’t discuss much beyond d obitals!</p></li>
+</ul>
+<p>1s<br />
+2s 2p<br />
+3s 3p 3d<br />
+4s 4p 4d 4f<br />
+5s 5p 5d 5f 5g</p>
+<p>to work out the order use the above pattern and strike through diagonally from top right at 45 degrees downwards.</p>
+<p>Do first is 1s
+then 2s<br />
+then 2p 3s<br />
+then 3p 4s<br />
+then 3d 4p 5s<br />
+then 4d 5p</p>
+<p>So the order is 1s, 2s, 2p, 3s, 3p, <strong>4s</strong>, 3d, 4p, <strong>5s</strong>, 4d <strong>5p</strong> …</p>
+</section>
+<section id="example-electronic-configuration-of-sodium-z-11">
+<h3>7.4.1 Example: Electronic Configuration of Sodium (Z=11)<a class="headerlink" href="#example-electronic-configuration-of-sodium-z-11" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Sodium has 11 electrons.</p></li>
+<li><p>Following the <strong>Aufbau Principle</strong> (filling lower energy levels first):<br />
+1<span class="math notranslate nohighlight">\(s^2\)</span><br />
+2<span class="math notranslate nohighlight">\(s^2\)</span><br />
+2<span class="math notranslate nohighlight">\(p^6\)</span><br />
+3<span class="math notranslate nohighlight">\(s^1\)</span></p></li>
+</ol>
+<p>Final configuration: 1<span class="math notranslate nohighlight">\(s^2\)</span> 2<span class="math notranslate nohighlight">\(s^2\)</span> 2<span class="math notranslate nohighlight">\(p^6\)</span> 3<span class="math notranslate nohighlight">\(s^1\)</span></p>
+</section>
+<section id="electron-shielding-and-orbital-energy">
+<h3>7.5 Electron Shielding and Orbital Energy<a class="headerlink" href="#electron-shielding-and-orbital-energy" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Key point</strong> Inner electrons <strong>shield</strong> outer electrons from the full nuclear charge.</p></li>
+<li><p><strong>s-orbitals</strong> are closer to the nucleus than <strong>p-orbitals</strong>, causing energy shifts i.e. p-orbitals have lower ionisation energy than s orbitals of the same principle quantum number.</p></li>
+</ul>
+<p><img alt=" A diagram showing p electrons being sheilded from positive charge by the s orbital" src="../_images/sheilding.gif" /></p>
+<p>Fig 7.1 Electron shielding which shifts the p and d orbitals upwards in energy.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="hunds-rule-of-maximum-multiplicity">
+<h2>7.6 Hund’s Rule of Maximum Multiplicity<a class="headerlink" href="#hunds-rule-of-maximum-multiplicity" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Electrons prefer to occupy <strong>separate orbitals</strong> within a subshell before pairing up.</p></li>
+<li><p>This minimizes <strong>electron repulsion</strong> and stabilizes the atom.</p></li>
+</ul>
+<section id="example">
+<h3>7.6.1 Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
+<p>For oxygen (Z=8), the <strong>2p orbitals</strong> are filled as:</p>
+<p>First the 1s is filled <span class="math notranslate nohighlight">\(\uparrow \downarrow\)</span>
+then the 2s is filled <span class="math notranslate nohighlight">\(\uparrow \downarrow\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \uparrow \downarrow ,  \uparrow  ,  \uparrow \]</div>
+<p>instead of pairing up electrons in the same orbital too soon.</p>
+</section>
+</section>
+<section id="test-yourself">
+<h2>7.7 Test yourself<a class="headerlink" href="#test-yourself" title="Link to this heading">#</a></h2>
+<p>Which has higher energy, a 3d or a 4s orbital? Why?</p>
+<details>
+  <summary>**Click for A  Solution**</summary>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>**Solution:** Due to shielding effects, the 4s orbital is **lower in energy** than the 3d orbital in a neutral atom, leading to it filling first. However, when ionizing, the 4s electrons are removed first because they are higher in energy when considering electron repulsion.
+</pre></div>
+</div>
+</details></section>
+<section id="main-takeaways-from-the-lecture">
+<h2>7.8 Main Takeaways from the Lecture<a class="headerlink" href="#main-takeaways-from-the-lecture" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The Schrödinger equation provides solutions that describe both the <strong>allowed energy levels</strong> and <strong>wavefunctions</strong> of a system.</p></li>
+<li><p>Quantum numbers define the <strong>energy, shape, orientation, and spin</strong> of an electron in an atom.</p></li>
+<li><p>The <strong>Pauli exclusion principle</strong> and <strong>Hund’s rule</strong> govern electron configurations and orbital filling.</p></li>
+<li><p><strong>Electron shielding</strong> affects energy levels, leading to deviations from simple filling rules.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Lecture6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">6. Quantum Mechanics and Atomic Structure</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lecture8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">8. Molecular Orbitals and Covalent Bonding</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-the-wavefunction-squared-for-probability">7.1 Why the Wavefunction Squared for Probability?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schrodinger-equation-and-its-solutions">7.2 Schrödinger Equation and Its Solutions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#re-cap-quantum-numbers-and-electron-configuration">7.3 Re-cap: Quantum Numbers and Electron Configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pauli-exclusion-principle">7.3.1 Pauli Exclusion Principle</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electronic-configuration">7.4 Electronic Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-electronic-configuration-of-sodium-z-11">7.4.1 Example: Electronic Configuration of Sodium (Z=11)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-shielding-and-orbital-energy">7.5 Electron Shielding and Orbital Energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hunds-rule-of-maximum-multiplicity">7.6 Hund’s Rule of Maximum Multiplicity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">7.6.1 Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-yourself">7.7 Test yourself</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-takeaways-from-the-lecture">7.8 Main Takeaways from the Lecture</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Critchley
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

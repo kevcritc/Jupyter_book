@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2. The Smallest Things &#8212; Introduction to Nanotechnology PHAS1500</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="application/vnd.jupyter.widget-state+json">{"state": {"d0eb4cff2bfd424ca42a2addda471c58": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0e2267b52c6a4ee78ec3b5ff377831a0": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "5d24d4ecafd143e28e02303e56720764": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_d0eb4cff2bfd424ca42a2addda471c58", "placeholder": "\u200b", "style": "IPY_MODEL_0e2267b52c6a4ee78ec3b5ff377831a0", "tabbable": null, "tooltip": null, "value": "<b>Why is Lego used as a metaphor in nanotechnology?</b>"}}, "d9d96e8f3a69491c861610595dabd1d6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "4d41d31acde042359098644070db4603": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "546bfbaaec8d46f18d9f2feabd285d81": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Because it is colourful and fun", "Because it can be used to build tall towers", "You can build any structures from simple blocks"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "Answer:", "description_allow_html": false, "disabled": false, "index": 0, "layout": "IPY_MODEL_d9d96e8f3a69491c861610595dabd1d6", "orientation": "vertical", "style": "IPY_MODEL_4d41d31acde042359098644070db4603", "tabbable": null, "tooltip": null}}, "60b6c56d11544535ad098d066fbd472b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d8c5902e302a472ba8489b5848556d59": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_60b6c56d11544535ad098d066fbd472b", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "a7c730cd17ad4ae0849d329d3593b731": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e2a17d7438c744aa92d6517a9530b507": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "c3a3c84faa504eb58b3f8eaaa7960b75": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_a7c730cd17ad4ae0849d329d3593b731", "placeholder": "\u200b", "style": "IPY_MODEL_e2a17d7438c744aa92d6517a9530b507", "tabbable": null, "tooltip": null, "value": "<b>Which statement best describes the classical model of the atom?</b>"}}, "39f0cb1e344d4b2bb5aba7a545293dc3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "43c4b723293345eeb92c7fac5c202742": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "4a20c6aeaeb34d9297739e01f14a1121": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Electrons are embedded inside the nucleus", "Electrons orbit a nucleus made of protons and neutrons", "Atoms have no internal structure"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "Answer:", "description_allow_html": false, "disabled": false, "index": 0, "layout": "IPY_MODEL_39f0cb1e344d4b2bb5aba7a545293dc3", "orientation": "vertical", "style": "IPY_MODEL_43c4b723293345eeb92c7fac5c202742", "tabbable": null, "tooltip": null}}, "25868190d9ab436387845f96c055f5e9": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "76d2192bcec244969cb9c35715328f3a": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_25868190d9ab436387845f96c055f5e9", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "47aba23642164ed0a8a908670f200605": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0b0af5359281437d98279a0c93146fc1": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "97ff3b5f26be485cbf9deee33f78cede": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_47aba23642164ed0a8a908670f200605", "placeholder": "\u200b", "style": "IPY_MODEL_0b0af5359281437d98279a0c93146fc1", "tabbable": null, "tooltip": null, "value": "<b>Approximately how large is a single atom?</b>"}}, "aab20594048d443ebbcbf42a32626fee": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "cbf289c1243f4d249f9127a95f656dd5": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "b5e7fc873e264eee986a146c0fa6d6a3": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["1 nm", "0.1 micrometer (0.1 \u00b5m)", "0.1 to 0.4 nanometers (nm)"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "Answer:", "description_allow_html": false, "disabled": false, "index": 0, "layout": "IPY_MODEL_aab20594048d443ebbcbf42a32626fee", "orientation": "vertical", "style": "IPY_MODEL_cbf289c1243f4d249f9127a95f656dd5", "tabbable": null, "tooltip": null}}, "a98da1b4c27d4a39a07e6fd8fb1eafa5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d534a370c1fc4b1b93643744723e7ef2": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_a98da1b4c27d4a39a07e6fd8fb1eafa5", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "85854f4da5c94e56b2bae3572a1dfca8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0d9edc7791044dbdb997c957e49aa187": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "ac9a2a8449e847b58dac27378d1337f5": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_85854f4da5c94e56b2bae3572a1dfca8", "placeholder": "\u200b", "style": "IPY_MODEL_0d9edc7791044dbdb997c957e49aa187", "tabbable": null, "tooltip": null, "value": "<b>What does the Z number tell us?</b>"}}, "55f3fd48cb1746079fe86b15fe6cf39e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "f6271f7bae734587a45987bddeeb0d96": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "7d3b7a9fc6fe4b8e8daa0214e0317f8c": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["The atomic weight", "The number of electrons", "The number of protons and neutrons"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "Answer:", "description_allow_html": false, "disabled": false, "index": 0, "layout": "IPY_MODEL_55f3fd48cb1746079fe86b15fe6cf39e", "orientation": "vertical", "style": "IPY_MODEL_f6271f7bae734587a45987bddeeb0d96", "tabbable": null, "tooltip": null}}, "6a089b8d963740e9ac4af848b6dcd439": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b65a547abd644da1a9dd1f603cd1cbfd": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_6a089b8d963740e9ac4af848b6dcd439", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Lecture2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Introducing Scaling Laws" href="Lecture3.html" />
+    <link rel="prev" title="1. Introduction to the Nanotechnology" href="Lecture1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Nanotechnology PHAS1500</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Jupyter Nanotechnology Course Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1. Introduction to the Nanotechnology</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. The Smallest Things</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3. Introducing Scaling Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4. Importance of Physics Scaling Laws in Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5. Nanophysics - The Atom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6. Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7. Electronic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8. Molecular Orbitals and Covalent Bonding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9. Carbon Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10. Introduction to Carbon Nanomaterials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture11.html">11. Metal Nanoparticles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture12.html">12.  Introduction to Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture13.html">13. Semiconductors to Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture14.html">14. Semiconductor Materials and Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture15.html">15.  Colliodal Stability and Self-Assembled Monolayers.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture16.html">16. Nanotechnology &amp; Biology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture17.html">17. From Bionano to Nanomedicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture18.html">18. Nanomedicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture19.html">19. Nanomedicine – Cancer Targeting, Theranostics &amp; Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture20.html">20. Seeing the Nano World – Quick Introduction into Imaging Techniques in Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examfeedback2025.html">21. Exam Feedback from 2025 Exam Paper</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Lecture2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2. The Smallest Things</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-basic-building-blocks-atoms">2.1 The basic building blocks - atoms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-classical-view-of-atoms">2.1.1 The Classical View of Atoms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#so-how-small-is-small">2.1.2 So How Small is “Small”?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-understanding">2.2 Checking understanding</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question">2.2.1 Question:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.2.2 Question:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-smallest-things">
+<h1>2. The Smallest Things<a class="headerlink" href="#the-smallest-things" title="Link to this heading">#</a></h1>
+<p><img alt="Lego bricks in a box" src="../_images/lego.png" /></p>
+<p>Fig 2.1 Building things up from the bottom is a key point in nanotechnology.  Lego can be used to build anything you want.</p>
+<p>Bottom-up assembly is a key concept.  Lego is the best toy for this reason, you can build anything you want from basic building blocks.  Lets now consider the smallest building blocks.</p>
+<section id="the-basic-building-blocks-atoms">
+<h2>2.1 The basic building blocks - atoms<a class="headerlink" href="#the-basic-building-blocks-atoms" title="Link to this heading">#</a></h2>
+<p>If we take a piece of iron and split it, it’s still iron - just a bit smaller.  Imagine if it was possible to keep splitting until it is not posible to split it anymore.  This is idea that the Greeks philosophers where thinking about.  Is it possible to split an infinte number of times or is there a limit (assuming tools is not the limitation).  We will come back to this idea in the next lecture.  For now, we know that atoms are the limit.</p>
+<p><img alt="A picture of a smiling man with a beard" src="../_images/Democritus.png" /></p>
+<p>Fig 2.2   Artists impression of Democritus.</p>
+<section id="the-classical-view-of-atoms">
+<h3>2.1.1 The Classical View of Atoms<a class="headerlink" href="#the-classical-view-of-atoms" title="Link to this heading">#</a></h3>
+<p><img alt="A picture of an atom with electron orbits" src="../_images/the_atom.png" /></p>
+<p>Fig 2.3 A classical atom represetation with a nucleus of protons and neutrons, which are surrounded by electrons.</p>
+<ul class="simple">
+<li><p><strong>Nucleus</strong>: Composed of <strong>protons</strong> (+ve charge) and <strong>neutrons</strong> (neutral).</p></li>
+<li><p>Surrounded by <strong>electrons</strong> (-ve charge), creating a balance where the number of protons equals the number of electrons.</p></li>
+<li><p><strong>Atomic number (Z)</strong>: Number of protons which is equal to the number of electrons.</p></li>
+<li><p><strong>Atomic weight (A)</strong>: Sum of protons and neutrons (<strong>A = N + Z</strong>).</p></li>
+<li><p><strong>Proton Mass</strong>: ~1.673 x 10<sup>-27</sup> kg (or 1 atomic mass unit, amu/u).</p></li>
+<li><p><strong>Electron Mass</strong>: ~9.110 x 10<sup>-31</sup> kg (electrons are ~2000x lighter than protons).</p></li>
+<li><p><strong>Nuclear Radius</strong>: Typically <strong>0.8-10 femtometers (fm)</strong> (1 fm = <strong>10<sup>-15</sup> meters</strong>).</p></li>
+<li><p><strong>Scale comparison</strong>: A <strong>1 cm</strong> nucleus corresponds to a <strong>1 km</strong> atom in size.</p></li>
+</ul>
+<p><img alt="an electron orbiting a proton" src="../_images/orbital.png" /></p>
+<p>Fig 2.4 The electron can be thought of as like a planet orbiting a star.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Key point. The mathematics of a classsically electron orbiting a proton are indentical to a planet orbiting the Sun in our solar system.  This latter solution maths was famously developed Newton who is the father of Mechanics and therefore it is unsuprising that, a couple of hundred years later, when it is applied to the atom it becomes known as’Quantum’ Mechanics (QM).  In later lectures we will cover why this first model ultimately fails, but we will cover this as it is useful to understand the concepts and how they have developed. We will address Quantum mechanics in later lectures without worrying too much about the actual mathematics.  We will draw sketches of solutions rather than working about mathematical functions to try to make this topic inclusive.  Physics students will cover these models in detail as part of their core studies, but because of the importance of atoms to nanotechnology, we cannot wait for those QM models to fully explained for this course.</p>
+</div>
+</section>
+<section id="so-how-small-is-small">
+<h3>2.1.2 So How Small is “Small”?<a class="headerlink" href="#so-how-small-is-small" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The <strong>nanometer scale</strong> involves sizes of <strong>1-100 nm</strong> (1 nm = <strong>10<sup>-9</sup> meters</strong>).</p></li>
+<li><p><strong>Atoms</strong> range in size from approximately <strong>0.1-0.4 nm</strong>. A single device or machine that is just a few atoms thick would be around <strong>1 nm</strong> in size.</p></li>
+<li><p>Understanding scale:</p>
+<ul>
+<li><p><strong>1 nm</strong> is to <strong>1 meter</strong> as a <strong>glass marble</strong> is to the <strong>Earth</strong>.</p></li>
+</ul>
+</li>
+</ul>
+<p>Nanotechnology requires assembling <strong>10s to 1000s of atoms</strong> to create functional structures. This is why nanomachines are often at least <strong>1 nm</strong> thick.</p>
+</section>
+</section>
+<section id="checking-understanding">
+<h2>2.2 Checking understanding<a class="headerlink" href="#checking-understanding" title="Link to this heading">#</a></h2>
+<section id="question">
+<h3>2.2.1 Question:<a class="headerlink" href="#question" title="Link to this heading">#</a></h3>
+<p>If we took a gold ring and halved it, and the took the half and halved that, such that the gold piece is halved n times. Approximately what is the maxiumum value for n?</p>
+<details>
+  <summary>**Click for an example solution**</summary>
+<p>** Potential Solution:**</p>
+<p>A ring is about <span class="math notranslate nohighlight">\(m_{ring}= 0.010\)</span> kg</p>
+<p>mass of a single atom= <span class="math notranslate nohighlight">\(m_{atom}= 196.96657 \times 1.66054 e^{-27}\)</span> kg</p>
+<p><span class="math notranslate nohighlight">\(newmass=\frac{m_{ring}}{2^n}\)</span></p>
+<p>therefore set the new mass a the minimum mass it could be.</p>
+<p><span class="math notranslate nohighlight">\(m_{atom}=\frac{m_{ring}}{2^n}\)</span></p>
+<p><span class="math notranslate nohighlight">\(n = \log_2{\frac{m_{ring}}{m_{atom}}}\)</span></p>
+</details>
+</section>
+<section id="id1">
+<h3>2.2.2 Question:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>If a nanometre were the thickness of your fingernail, then what sort of distance would a metre be?</p>
+<details>
+  <summary>**Click for an example solution**</summary>
+<p>** Potential Solution:**</p>
+<p>Less say a fingernail is 0.5mm</p>
+<p>A metre is <span class="math notranslate nohighlight">\(10^9\)</span> times larger than a nanometre.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>S0:
+</pre></div>
+</div>
+<p><span class="math notranslate nohighlight">\(0.5 \times 10^{-3}\text{m} \times 10^9 =5 \times 10^5 \text{m} = 500 \text{km}\)</span></p>
+<p>500km is approximately the distance from London to Edinburgh</p>
+</details><div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">clear_output</span><span class="p">,</span> <span class="n">HTML</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;style&gt;</span>
+<span class="s2">.widget-radio-box label {</span>
+<span class="s2">    white-space: normal !important;  /* Allow wrapping */</span>
+<span class="s2">    display: block !important;       /* Force block layout */</span>
+<span class="s2">    margin: 6px 0px;                 /* Add vertical spacing */</span>
+<span class="s2">}</span>
+<span class="s2">.widget-label {</span>
+<span class="s2">    font-weight: bold;</span>
+<span class="s2">}</span>
+<span class="s2">&lt;/style&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<style>
+.widget-radio-box label {
+    white-space: normal !important;  /* Allow wrapping */
+    display: block !important;       /* Force block layout */
+    margin: 6px 0px;                 /* Add vertical spacing */
+}
+.widget-label {
+    font-weight: bold;
+}
+</style>
+</div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q1</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;Why is Lego used as a metaphor in nanotechnology?&lt;/b&gt;&quot;</span><span class="p">)</span>
+<span class="n">q1_options</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;Because it is colourful and fun&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Because it can be used to build tall towers&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;You can build any structures from simple blocks&quot;</span>
+    <span class="p">],</span>
+    <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">),</span>  <span class="c1"># Prevent forced shrinking</span>
+    <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Answer:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">q1_output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">q1_check</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="n">q1_output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">q1_output</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">change</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Because you can build complex structures from simple blocks&quot;</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;✅ **Correct!** This reflects the concept of bottom-up assembly in nanotech.&quot;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;❌ **Try again.** Think about the idea of building from small building blocks.&quot;</span><span class="p">))</span>
+
+<span class="n">q1_options</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">q1_check</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="n">q1_options</span><span class="p">,</span> <span class="n">q1_output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "5d24d4ecafd143e28e02303e56720764"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "546bfbaaec8d46f18d9f2feabd285d81"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "d8c5902e302a472ba8489b5848556d59"}</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q2</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;Which statement best describes the classical model of the atom?&lt;/b&gt;&quot;</span><span class="p">)</span>
+<span class="n">q2_options</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;Electrons are embedded inside the nucleus&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Electrons orbit a nucleus made of protons and neutrons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Atoms have no internal structure&quot;</span>
+    <span class="p">],</span>
+    <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">),</span>  <span class="c1"># Prevent forced shrinking</span>
+    <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Answer:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">q2_output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">q2_check</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="n">q2_output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">q2_output</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">change</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Electrons orbit a nucleus made of protons and neutrons&quot;</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;✅ **Correct!** This is the classical orbit model of atoms.&quot;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;❌ **Incorrect.** Review Fig 2.3 and the classical description.&quot;</span><span class="p">))</span>
+
+<span class="n">q2_options</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">q2_check</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">q2</span><span class="p">,</span> <span class="n">q2_options</span><span class="p">,</span> <span class="n">q2_output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "c3a3c84faa504eb58b3f8eaaa7960b75"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "4a20c6aeaeb34d9297739e01f14a1121"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "76d2192bcec244969cb9c35715328f3a"}</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q3</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;Approximately how large is a single atom?&lt;/b&gt;&quot;</span><span class="p">)</span>
+<span class="n">q3_options</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;1 nm&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;0.1 micrometer (0.1 µm)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;0.1 to 0.4 nanometers (nm)&quot;</span>
+    <span class="p">],</span>
+    <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">),</span>  <span class="c1"># Prevent forced shrinking</span>
+    <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Answer:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">q3_output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">q3_check</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="n">q3_output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">q3_output</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">change</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;0.1 to 0.4 nanometers (nm)&quot;</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;✅ **Correct!** Atom sizes are on the sub-nanometer scale.&quot;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;❌ **Incorrect.** Consider how small &#39;nano&#39; really is.&quot;</span><span class="p">))</span>
+<span class="n">q3_options</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">q3_check</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">q3</span><span class="p">,</span> <span class="n">q3_options</span><span class="p">,</span> <span class="n">q3_output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "97ff3b5f26be485cbf9deee33f78cede"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "b5e7fc873e264eee986a146c0fa6d6a3"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "d534a370c1fc4b1b93643744723e7ef2"}</script></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q4</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;What does the Z number tell us?&lt;/b&gt;&quot;</span><span class="p">)</span>
+<span class="n">q4_options</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;The atomic weight&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The number of electrons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;The number of protons and neutrons&quot;</span>
+    <span class="p">],</span>
+    <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">),</span>  <span class="c1"># Prevent forced shrinking</span>
+    <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Answer:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">q4_output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">q4_check</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="n">q4_output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">q4_output</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">change</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;The number of electrons&quot;</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;✅ **Correct!** It tells us the number of protons or electrons.&quot;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;❌ **Incorrect.** Check the notes&quot;</span><span class="p">))</span>
+<span class="n">q3_options</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">q4_check</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">q4</span><span class="p">,</span> <span class="n">q4_options</span><span class="p">,</span> <span class="n">q4_output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "ac9a2a8449e847b58dac27378d1337f5"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "7d3b7a9fc6fe4b8e8daa0214e0317f8c"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "b65a547abd644da1a9dd1f603cd1cbfd"}</script></div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Lecture1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">1. Introduction to the Nanotechnology</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lecture3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">3. Introducing Scaling Laws</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-basic-building-blocks-atoms">2.1 The basic building blocks - atoms</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-classical-view-of-atoms">2.1.1 The Classical View of Atoms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#so-how-small-is-small">2.1.2 So How Small is “Small”?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-understanding">2.2 Checking understanding</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question">2.2.1 Question:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.2.2 Question:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Critchley
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1086 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Introducing Scaling Laws &#8212; Introduction to Nanotechnology PHAS1500</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="application/vnd.jupyter.widget-state+json">{"state": {"56b0b2e7528f417c83297227c1442310": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "170b5774d32e474f88ad89c35ea6929c": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "39a2275599b947dc80f51def29b5a22c": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_56b0b2e7528f417c83297227c1442310", "placeholder": "\u200b", "style": "IPY_MODEL_170b5774d32e474f88ad89c35ea6929c", "tabbable": null, "tooltip": null, "value": "<b>How does resistance scale with size of material?</b>"}}, "c109b20cd0a74506a44d250f6220e3b3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "5c05ab4e274a4e0788e55d984fb71e11": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "a5855536d7eb4321b276620a9c1bb60c": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["Proportional to L", "Proportional to 1/L", "Proportional to 1/L\u00b2"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "Answer:", "description_allow_html": false, "disabled": false, "index": 0, "layout": "IPY_MODEL_c109b20cd0a74506a44d250f6220e3b3", "orientation": "vertical", "style": "IPY_MODEL_5c05ab4e274a4e0788e55d984fb71e11", "tabbable": null, "tooltip": null}}, "d2083116eef0499c948c9ca185cc7726": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2dc835e4f6ec44a78991a8fda5205634": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_d2083116eef0499c948c9ca185cc7726", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "76271230a91541c2a164c4c09b735c83": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "af3646284f0f41689cce041c57021733": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "b25607ffed4c40c18481622a9b4b44f2": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_76271230a91541c2a164c4c09b735c83", "placeholder": "\u200b", "style": "IPY_MODEL_af3646284f0f41689cce041c57021733", "tabbable": null, "tooltip": null, "value": "<b>If a 3 cm spring can have a maxiumum force of 25 N, what is the maximum force of a 1 mm spring?</b>"}}, "1f5c84eaba1f4b81abbe1c6bc0a9dace": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "e532b0809887453c9d6815640b23ffac": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "0cdf69fd6f094bdb88d40311ef63f38a": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["8.3 N", "0.83 N", "750 N", "75 N"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "Answer:", "description_allow_html": false, "disabled": false, "index": 0, "layout": "IPY_MODEL_1f5c84eaba1f4b81abbe1c6bc0a9dace", "orientation": "vertical", "style": "IPY_MODEL_e532b0809887453c9d6815640b23ffac", "tabbable": null, "tooltip": null}}, "e485b8c18dc04342b26bb76890e6f26d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8cbe05e6872d4daf8527560831d17e52": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_e485b8c18dc04342b26bb76890e6f26d", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}</script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script crossorigin="anonymous" data-jupyter-widgets-cdn="https://cdn.jsdelivr.net/npm/" src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.6/dist/embed-amd.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Lecture3';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Importance of Physics Scaling Laws in Nanotechnology" href="Lecture4.html" />
+    <link rel="prev" title="2. The Smallest Things" href="Lecture2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Nanotechnology PHAS1500</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Jupyter Nanotechnology Course Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1. Introduction to the Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2. The Smallest Things</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Introducing Scaling Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4. Importance of Physics Scaling Laws in Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5. Nanophysics - The Atom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture6.html">6. Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7. Electronic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8. Molecular Orbitals and Covalent Bonding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9. Carbon Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10. Introduction to Carbon Nanomaterials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture11.html">11. Metal Nanoparticles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture12.html">12.  Introduction to Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture13.html">13. Semiconductors to Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture14.html">14. Semiconductor Materials and Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture15.html">15.  Colliodal Stability and Self-Assembled Monolayers.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture16.html">16. Nanotechnology &amp; Biology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture17.html">17. From Bionano to Nanomedicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture18.html">18. Nanomedicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture19.html">19. Nanomedicine – Cancer Targeting, Theranostics &amp; Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture20.html">20. Seeing the Nano World – Quick Introduction into Imaging Techniques in Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examfeedback2025.html">21. Exam Feedback from 2025 Exam Paper</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Lecture3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>3. Introducing Scaling Laws</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-make-things-smaller">3.1 Why make things smaller?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#greater-efficiency-and-speed">3.1.1 Greater Efficiency and Speed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lower-power-consumption">3.1.2 Lower Power Consumption</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#portability-and-convenience">3.1.3 Portability and Convenience</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-reduction-at-scale">3.1.4  Cost Reduction (at scale)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-applications">3.1.5 New Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#improved-functionality">3.1.6 Improved Functionality</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-changes-in-functionality-and-size-of-mobile-phones-since-the-mid-1990s">3.2 Example: Changes in Functionality and Size of Mobile Phones Since the Mid-1990s</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#early-2000s-mid-2000s-miniaturisation-and-added-features">3.2.1 <strong>Early 2000s – Mid-2000s: Miniaturisation and Added Features</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mid-2000s-today-smartphones-connectivity-and-smart-integration">3.2.2 <strong>Mid-2000s – Today: Smartphones, Connectivity, and Smart Integration</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cost-and-size-of-data-storage-devices">3.3 The Cost and Size of Data Storage Devices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scaling-laws-in-nanotechnology">3.4 Scaling Laws in Nanotechnology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-scaling-laws">3.4.1 What are Scaling Laws?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-area-to-volume-ratio">3.4.2 Surface Area to Volume Ratio</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">3.4.3 Examples:</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#bergmann-s-rule">Bergmann’s Rule</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanical-scaling-laws">3.5 Mechanical Scaling Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-properties-scale">3.5.1 How Properties Scale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-mechanical-scaling-laws">3.6 Examples of Mechanical Scaling Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-can-a-mouse-survive-a-big-fall-but-a-human-can-t">3.6.1 Why can a mouse survive a big fall but a human can’t?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-force">Drag Force</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#force-due-to-gravity">Force due to gravity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-a-human">For a Human:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-a-mouse">For a Mouse:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-mechanical-scaling-laws">3.7 More Mechanical Scaling Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-resistance">3.8 Electrical Resistance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ohm-s-law">3.8.1 Ohm’s Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#this-results-in-high-resistance-for-small-ojbects-assuming-no-other-effects-note-this-is-a-log-scale">This results in high resistance for small ojbects (assuming no other effects!).  Note this is a log scale.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introducing-scaling-laws">
+<h1>3. Introducing Scaling Laws<a class="headerlink" href="#introducing-scaling-laws" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
+<section id="why-make-things-smaller">
+<h2>3.1 Why make things smaller?<a class="headerlink" href="#why-make-things-smaller" title="Link to this heading">#</a></h2>
+<p>Miniaturisation — making devices and components smaller — offers a wide range of benefits across science, engineering, and everyday technology:</p>
+<section id="greater-efficiency-and-speed">
+<h3>3.1.1 Greater Efficiency and Speed<a class="headerlink" href="#greater-efficiency-and-speed" title="Link to this heading">#</a></h3>
+<p>Smaller components can operate faster, especially in electronics where reduced distances for signals mean quicker processing. This is key in modern microprocessors and communication devices.</p>
+</section>
+<section id="lower-power-consumption">
+<h3>3.1.2 Lower Power Consumption<a class="headerlink" href="#lower-power-consumption" title="Link to this heading">#</a></h3>
+<p>Miniaturised devices often use less energy, which extends battery life in portable electronics and reduces energy costs in larger systems.</p>
+</section>
+<section id="portability-and-convenience">
+<h3>3.1.3 Portability and Convenience<a class="headerlink" href="#portability-and-convenience" title="Link to this heading">#</a></h3>
+<p>Smaller devices are easier to carry, install, and integrate — think of smartphones, wearables, or implantable medical sensors. They make technology more accessible and user-friendly.</p>
+</section>
+<section id="cost-reduction-at-scale">
+<h3>3.1.4  Cost Reduction (at scale)<a class="headerlink" href="#cost-reduction-at-scale" title="Link to this heading">#</a></h3>
+<p>Once developed, miniaturised components can often be mass-produced more cheaply, especially using techniques like photolithography in chip manufacturing.</p>
+</section>
+<section id="new-applications">
+<h3>3.1.5 New Applications<a class="headerlink" href="#new-applications" title="Link to this heading">#</a></h3>
+<p>Miniaturisation opens the door to new fields like <strong>nanomedicine</strong>, <strong>lab-on-a-chip</strong> technologies, <strong>MEMS</strong> (Micro-Electro-Mechanical Systems), and <strong>wearable tech</strong>, where larger versions simply wouldn’t work.</p>
+</section>
+<section id="improved-functionality">
+<h3>3.1.6 Improved Functionality<a class="headerlink" href="#improved-functionality" title="Link to this heading">#</a></h3>
+<p>Smaller doesn’t mean simpler — miniaturisation allows more features to be packed into the same space, like multiple sensors or antennas inside a single chip.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Key point. Miniaturisation has several key benefits. In otherwords there is motivation beyound doing things for the sake of it.  You should be able to recall a few of these points and application but you do not need to know specific values.  Have a go at thinking of your own examples.</p>
+</div>
+</section>
+</section>
+<section id="example-changes-in-functionality-and-size-of-mobile-phones-since-the-mid-1990s">
+<h2>3.2 Example: Changes in Functionality and Size of Mobile Phones Since the Mid-1990s<a class="headerlink" href="#example-changes-in-functionality-and-size-of-mobile-phones-since-the-mid-1990s" title="Link to this heading">#</a></h2>
+<p><strong>1990s - Early 2000s: Emergence of Mobile Phones</strong></p>
+<p><img alt="A schematic showing the size of phones since the 1990s" src="../_images/phones.png" />
+Fig 3.1 Mobile phones sizes over the last few decades.</p>
+<ul class="simple">
+<li><p><strong>Size</strong>:</p>
+<ul>
+<li><p>Large and bulky, often referred to as “bricks.”</p></li>
+<li><p>Primarily designed for basic voice calling.</p></li>
+</ul>
+</li>
+<li><p><strong>Functionality</strong>:</p>
+<ul>
+<li><p>Limited to <strong>voice calls</strong> and <strong>basic text messaging (SMS)</strong>.</p></li>
+<li><p>Small, <strong>monochrome displays</strong> mainly for dialing numbers.</p></li>
+</ul>
+</li>
+<li><p><strong>Battery Life</strong>:</p>
+<ul>
+<li><p>Large batteries with <strong>long standby times</strong> but short talk times.</p></li>
+<li><p>Phones were primarily used for <strong>short communication bursts</strong>.</p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<section id="early-2000s-mid-2000s-miniaturisation-and-added-features">
+<h3>3.2.1 <strong>Early 2000s – Mid-2000s: Miniaturisation and Added Features</strong><a class="headerlink" href="#early-2000s-mid-2000s-miniaturisation-and-added-features" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Size Reduction</strong>:</p>
+<ul>
+<li><p>Phones became <strong>smaller and lighter</strong> with the introduction of <strong>flip phones</strong> and <strong>candy-bar designs</strong> (e.g., Nokia, Motorola Razr).</p></li>
+</ul>
+</li>
+<li><p><strong>Functionality Improvements</strong>:</p>
+<ul>
+<li><p><strong>Texting and Multimedia</strong>:</p>
+<ul>
+<li><p>SMS became widespread, and <strong>MMS (Multimedia Messaging Service)</strong> allowed users to send pictures and videos.</p></li>
+</ul>
+</li>
+<li><p><strong>Basic Internet Access</strong>:</p>
+<ul>
+<li><p>Introduction of <strong>WAP (Wireless Application Protocol)</strong> enabled simple web browsing on mobile phones.</p></li>
+</ul>
+</li>
+<li><p><strong>Colour Screens</strong>:</p>
+<ul>
+<li><p>Displays evolved from monochrome to <strong>colour screens</strong>, significantly improving the visual experience.</p></li>
+</ul>
+</li>
+<li><p><strong>Games and Apps</strong>:</p>
+<ul>
+<li><p>Phones included simple built-in games (e.g., <em>Snake</em>) and supported <strong>limited downloadable apps</strong>, laying the groundwork for future app ecosystems.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="mid-2000s-today-smartphones-connectivity-and-smart-integration">
+<h3>3.2.2 <strong>Mid-2000s – Today: Smartphones, Connectivity, and Smart Integration</strong><a class="headerlink" href="#mid-2000s-today-smartphones-connectivity-and-smart-integration" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Touchscreen Revolution</strong>:</p>
+<ul>
+<li><p>The release of the <strong>iPhone (2007)</strong> and early <strong>Android</strong> phones marked a shift to <strong>large, capacitive touchscreens</strong>, replacing physical buttons.</p></li>
+</ul>
+</li>
+<li><p><strong>App Ecosystems</strong>:</p>
+<ul>
+<li><p>Introduction of <strong>App Stores</strong> enabled third-party developers to create apps, turning phones into multi-purpose tools for <strong>communication, productivity, entertainment, and navigation</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>High-Speed Connectivity</strong>:</p>
+<ul>
+<li><p>Evolution from <strong>3G</strong> to <strong>4G LTE</strong>, and now <strong>5G</strong>, has allowed for <strong>faster internet access</strong>, video streaming, real-time gaming, and cloud integration.</p></li>
+</ul>
+</li>
+<li><p><strong>High-Performance Hardware</strong>:</p>
+<ul>
+<li><p>Phones now include <strong>multi-core processors</strong>, <strong>high-resolution cameras</strong>, <strong>biometric sensors</strong> (fingerprint, face ID), and <strong>advanced GPUs</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>AI and Smart Features</strong>:</p>
+<ul>
+<li><p>Integration of <strong>artificial intelligence</strong> for <strong>voice assistants</strong> (e.g., Siri, Google Assistant), <strong>camera enhancements</strong>, and <strong>predictive text/input</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Integration with Other Devices</strong>:</p>
+<ul>
+<li><p>Smartphones now form hubs in a <strong>connected ecosystem</strong> including <strong>smartwatches</strong>, <strong>wireless earbuds</strong>, <strong>smart homes</strong>, and <strong>IoT devices</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Sustainability and Design Trends</strong>:</p>
+<ul>
+<li><p>Emphasis on <strong>sleek, minimal designs</strong>, <strong>larger edge-to-edge displays</strong>, and growing focus on <strong>repairability, recycling</strong>, and <strong>longer-lasting batteries</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>Storage and Memory Advancements</strong>:</p>
+<ul>
+<li><p>Phones evolved from having <strong>tens of megabytes</strong> of internal storage (e.g. 64 MB in early models) to <strong>hundreds of gigabytes</strong> or even <strong>1 TB</strong> in modern flagships.</p></li>
+<li><p><strong>RAM</strong> increased dramatically too — from <strong>tens or hundreds of megabytes</strong> to <strong>8 GB, 12 GB, or more</strong>, enabling smooth multitasking and running demanding apps.</p></li>
+<li><p>Introduction of <strong>cloud storage</strong> and <strong>on-device AI processing</strong> has further transformed how memory is used and managed.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="the-cost-and-size-of-data-storage-devices">
+<h2>3.3 The Cost and Size of Data Storage Devices<a class="headerlink" href="#the-cost-and-size-of-data-storage-devices" title="Link to this heading">#</a></h2>
+<p><strong>Data Storage Evolution</strong><br />
+Over time, the capacity of data storage has increased significantly, while the cost per gigabyte (GB) has decreased. Here’s a summary of historical milestones:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Year</p></th>
+<th class="head"><p>Capacity</p></th>
+<th class="head"><p>Cost/$</p></th>
+<th class="head"><p>Cost/ $ per GB</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1957</p></td>
+<td><p>3.75 MB</p></td>
+<td><p>34,500</p></td>
+<td><p>9.2M</p></td>
+</tr>
+<tr class="row-odd"><td><p>1989</p></td>
+<td><p>40 MB</p></td>
+<td><p>1,200</p></td>
+<td><p>30,000</p></td>
+</tr>
+<tr class="row-even"><td><p>1995</p></td>
+<td><p>1 GB</p></td>
+<td><p>850</p></td>
+<td><p>850</p></td>
+</tr>
+<tr class="row-odd"><td><p>2004</p></td>
+<td><p>250 GB</p></td>
+<td><p>250</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>2011</p></td>
+<td><p>2 TB</p></td>
+<td><p>70</p></td>
+<td><p>0.035</p></td>
+</tr>
+<tr class="row-odd"><td><p>2018</p></td>
+<td><p>4 TB</p></td>
+<td><p>75</p></td>
+<td><p>0.019</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Trend</strong>: The reduction in cost over time shows an exponential decay pattern.</p>
+<ul class="simple">
+<li><p><strong>Link for further reading</strong>: <a class="reference external" href="https://phys.org/news/2021-06-ultra-high-density-hard-graphene-ten.html">Ultra-high-density hard drives using graphene</a></p></li>
+</ul>
+<p><img alt="plot of storage size for a range of device types on a log scale" src="../_images/HD_devices.jpg" /></p>
+<p>Figure 3.2 Storage Device Data over time.</p>
+<p>It might be suprising to see that magentic tape devices are still used (Fig 3.2)</p>
+</section>
+<hr class="docutils" />
+<section id="scaling-laws-in-nanotechnology">
+<h2>3.4 Scaling Laws in Nanotechnology<a class="headerlink" href="#scaling-laws-in-nanotechnology" title="Link to this heading">#</a></h2>
+<section id="what-are-scaling-laws">
+<h3>3.4.1 What are Scaling Laws?<a class="headerlink" href="#what-are-scaling-laws" title="Link to this heading">#</a></h3>
+<p>Scaling laws allow us to simplify complex systems by estimating how physical quantities change as the size of the system is scaled. We as, physicsists, always make the simplist possible model and then add complexity - not the other way around. Rather than worrying about multiple dimensions we will simplify objects as have a single characteristic size, L.</p>
+</section>
+<section id="surface-area-to-volume-ratio">
+<h3>3.4.2 Surface Area to Volume Ratio<a class="headerlink" href="#surface-area-to-volume-ratio" title="Link to this heading">#</a></h3>
+<p><img alt="A green box with the sides labeled" src="../_images/box.png" /></p>
+<p>Figure 3.3  A box of height, h, width, w, and thickness, t.</p>
+<ul class="simple">
+<li><p><strong>Volume (V)</strong>:</p></li>
+</ul>
+<p>Using the box in Fig 3.3</p>
+<p><span class="math notranslate nohighlight">\( V = wht \)</span></p>
+<ul class="simple">
+<li><p>Where <code class="docutils literal notranslate"><span class="pre">w</span></code>, <code class="docutils literal notranslate"><span class="pre">h</span></code>, and <code class="docutils literal notranslate"><span class="pre">t</span></code> are the width, height and thickness of the box.</p></li>
+<li><p><strong>Surface Area (S)</strong>:</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\( S=2(tw +th +wh)\)</span></p>
+<ul class="simple">
+<li><p>When all dimensions are equal (<code class="docutils literal notranslate"><span class="pre">w</span> <span class="pre">=</span> <span class="pre">h</span> <span class="pre">=</span> <span class="pre">t</span> <span class="pre">=</span> <span class="pre">L</span></code>), the characteristic length (<code class="docutils literal notranslate"><span class="pre">L</span></code>) can be used to see how the volume and surface area change as we shrink or enlarge the box.</p></li>
+</ul>
+<p>Therefore:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( V \propto L^3 \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\( S \propto L^2 \)</span></p></li>
+</ul>
+<p><strong>Conclusion</strong>:</p>
+<ul class="simple">
+<li><p>The surface area to volume ratio <span class="math notranslate nohighlight">\( \frac{S}{V} \)</span> is inversely proportional to the characteristic length: <span class="math notranslate nohighlight">\( \frac{S}{V} \propto \frac{1}{L} \)</span>
+While this seems trival, it is a <strong>keypoint</strong> as we shrink object the surface area becomes much large compared to the volume.</p></li>
+</ul>
+<section id="examples">
+<h4>3.4.3 Examples:<a class="headerlink" href="#examples" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Heat Loss</strong>: Heat loss to the environment is proportional to surface area. As objects get larger, the relative heat loss decreases.</p></li>
+<li><p><strong>Catalytic Activity</strong>: Activity scales with surface area, so reducing volume of the catalyst (while maintaining the total mass) increases catalytic efficiency per unit mass.  This is a key for saving energy in chemical reactions.</p></li>
+</ol>
+<section id="bergmann-s-rule">
+<h5>Bergmann’s Rule<a class="headerlink" href="#bergmann-s-rule" title="Link to this heading">#</a></h5>
+<p>Bergmann’s Rule is an ecological principle that states that within a species of warm-blooded animals tend to be larger in colder environments and smaller in warmer environments.</p>
+<p><img alt="A plot of penguin size versus latitude" src="../_images/penguins.png" /></p>
+<p>Figure 3.4 A plot of penguin mass versus latitude.</p>
+<ol class="arabic simple">
+<li><p>Humans native to colder climates tend to have higher average mass and shorter limbs. Higher mass and short limbs reduces the surface area meaning heat loss is lower.</p></li>
+<li><p>The brown bear is much smaller than its cousin the polar bear.</p></li>
+<li><p>The largest penguins are found in the coldest climates.</p></li>
+<li><p>Deer Species: the moose is much larger than the white-tailed deer.</p></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="mechanical-scaling-laws">
+<h2>3.5 Mechanical Scaling Laws<a class="headerlink" href="#mechanical-scaling-laws" title="Link to this heading">#</a></h2>
+<section id="how-properties-scale">
+<h3>3.5.1 How Properties Scale<a class="headerlink" href="#how-properties-scale" title="Link to this heading">#</a></h3>
+<p>If a body has a mass, m, then we can write:
+<span class="math notranslate nohighlight">\( m= \rho V \)</span></p>
+<p>where <span class="math notranslate nohighlight">\(\rho \)</span> is the density of the body.  Since <span class="math notranslate nohighlight">\(V \propto\ L^3\)</span></p>
+<p>Therefore:</p>
+<ul class="simple">
+<li><p><strong>Mass</strong>: <span class="math notranslate nohighlight">\(m \propto L^3 \)</span></p>
+<ul>
+<li><p>The mass of bodies increase cubically with size (not suprising, but important for propagating the concept).</p></li>
+</ul>
+</li>
+<li><p><strong>Friction</strong>: At the macro-scale, friction is <strong>independent of the contact surface area</strong>. However, at the nanoscale, friction and adhesion increase with contact area <span class="math notranslate nohighlight">\( \propto L^2 \)</span>.  Interestingly the understanding of friction at different scale is actually not fully understood.  What is the friction between to atoms? DOes it make sense to even call it friction.</p></li>
+<li><p><strong>Wear and Lifetime (LT)</strong>: Wear is related to device lifetime, as it scales with the thickness of the material. Thinner materials tend to have shorter lifetimes because erosion rates are linear. A pair of shoes with a thick sole last longer than a shoe with a thin sole.  In fact the lifetime of the shoe is proportional to the thickness of the sole (assuming nothing else breaks!!). Use <span class="math notranslate nohighlight">\(LT \propto L\)</span>.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="examples-of-mechanical-scaling-laws">
+<h2>3.6 Examples of Mechanical Scaling Laws<a class="headerlink" href="#examples-of-mechanical-scaling-laws" title="Link to this heading">#</a></h2>
+<section id="why-can-a-mouse-survive-a-big-fall-but-a-human-can-t">
+<h3>3.6.1 Why can a mouse survive a big fall but a human can’t?<a class="headerlink" href="#why-can-a-mouse-survive-a-big-fall-but-a-human-can-t" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Concept</strong>: Terminal velocity is the speed at which the drag force equals the gravitational force, leading to no further acceleration.  The forces are balanced and to there is no acceleration.</p></li>
+</ul>
+<section id="drag-force">
+<h4>Drag Force<a class="headerlink" href="#drag-force" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(F_d=\frac{1}{2} \rho\ A C_d v^2 \)</span></p>
+</section>
+<section id="force-due-to-gravity">
+<h4>Force due to gravity<a class="headerlink" href="#force-due-to-gravity" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(F=mg\)</span></p>
+<p>The net force is the sum of the two forces (each force is acting in opposite directions). At terminal velocity:</p>
+<p><span class="math notranslate nohighlight">\(F-F_d=mg-\frac{1}{2} \rho A C_d v^2=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(v_T=\sqrt{\frac{2mg}{\rho C_d A}}\)</span></p>
+<p>From here we now analyse the expression and decide which ones do not change with size.</p>
+<ul class="simple">
+<li><p>2 is just a number</p></li>
+<li><p><span class="math notranslate nohighlight">\( m \propto L^3 \)</span></p></li>
+<li><p>note:  remember <span class="math notranslate nohighlight">\(m=\rho V\)</span> and <span class="math notranslate nohighlight">\(V \propto L^3\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\( g \)</span> is a constant</p></li>
+<li><p><span class="math notranslate nohighlight">\( C_d \)</span> is a constant</p></li>
+<li><p><span class="math notranslate nohighlight">\(A \propto L^2 \)</span></p></li>
+</ul>
+<p>therefore we can set all constants and numbers to 1, change the ‘equals’ to ‘proportional’ to and sub in the characteristic lengths where there is a dimension depedent term. This gives the scaling law in this case:</p>
+<p><span class="math notranslate nohighlight">\( v_T \propto \sqrt{\frac{L^3}{L^2}} = \sqrt{L}\)</span></p>
+</section>
+<section id="for-a-human">
+<h4>For a Human:<a class="headerlink" href="#for-a-human" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Approximate Parameters</strong>:</p>
+<ul>
+<li><p>Area A = <span class="math notranslate nohighlight">\(1 m^2\)</span></p></li>
+<li><p>Drag coefficient <span class="math notranslate nohighlight">\(C_d\)</span> = 0.5</p></li>
+<li><p>Mass m = 75 kg</p></li>
+<li><p>Air density <span class="math notranslate nohighlight">\(\rho\)</span> = 1.225 <span class="math notranslate nohighlight">\(kgm^{-3}\)</span></p></li>
+</ul>
+</li>
+<li><p>Terminal Velocity, <span class="math notranslate nohighlight">\(v_T=59.5 ms^{-1}\)</span></p></li>
+<li><p>Characteristic Size, L: L=~0.7 m</p></li>
+</ul>
+</section>
+<section id="for-a-mouse">
+<h4>For a Mouse:<a class="headerlink" href="#for-a-mouse" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Characteristic Size</strong>: L~0.04 m</p></li>
+<li><p>A mouse has a much smaller terminal velocity and significantly lower momentum <span class="math notranslate nohighlight">\(mv\)</span> and kinetic energy, KE, allowing it to survive falls from great heights.</p></li>
+</ul>
+<p><img alt="A plot of terminal velocity versus length scale" src="../_images/vt.png" /></p>
+<p>Figure 3.5  Terminal velocity versus characteristic length in metres.</p>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="more-mechanical-scaling-laws">
+<h2>3.7 More Mechanical Scaling Laws<a class="headerlink" href="#more-mechanical-scaling-laws" title="Link to this heading">#</a></h2>
+<ul>
+<li><p><strong>Hook’s Law</strong>:<br />
+Force in a spring is proportional to the displacement:<br />
+<span class="math notranslate nohighlight">\( F = -kx \)</span></p>
+<p>The force therefore scale with size (<span class="math notranslate nohighlight">\(L\)</span>) as <span class="math notranslate nohighlight">\(x\)</span> is the ‘size’. For example, the force of a spring is proportional to the characteristic dimension.</p>
+</li>
+<li><p><strong>Mechanical Energy</strong>:</p>
+<ul class="simple">
+<li><p><strong>Kinetic Energy</strong>: Depends on mass and velocity.</p></li>
+<li><p><strong>Potential Energy (PE)</strong>: <span class="math notranslate nohighlight">\(PE = mgh \propto L^3 \)</span><br />
+(<span class="math notranslate nohighlight">\(h\)</span> is not normally scaled in typical problems as it is normally a constant parameter)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="electrical-resistance">
+<h2>3.8 Electrical Resistance<a class="headerlink" href="#electrical-resistance" title="Link to this heading">#</a></h2>
+<section id="ohm-s-law">
+<h3>3.8.1 Ohm’s Law<a class="headerlink" href="#ohm-s-law" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\( V=IR\)</span></p>
+<ul class="simple">
+<li><p>Current, voltage, and resistance relationships, and how power is dissipated through resistive components.</p></li>
+</ul>
+<p><img alt="A cuboid of length l and cross-sctional area A" src="../_images/resistivity.png" /></p>
+<p>Fig 3.6 A material that has resistance of length and area.</p>
+<p>Resistivity of a meterial is given by:</p>
+<p><span class="math notranslate nohighlight">\(\rho=\frac{RA}{l}\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> is the cross-sectional area and <span class="math notranslate nohighlight">\(l\)</span> is the length of the material.</p>
+<p>Making <span class="math notranslate nohighlight">\(R\)</span> the subject:</p>
+<p><span class="math notranslate nohighlight">\(R=\frac{\rho l}{A}\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A\)</span> is an area so is <span class="math notranslate nohighlight">\(\propto L^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(l\)</span> is a length so is <span class="math notranslate nohighlight">\(\propto L\)</span> (length scale)</p></li>
+</ul>
+<p>this means that resistance scales as follows:</p>
+<p><span class="math notranslate nohighlight">\(R \propto \frac{1}{L}\)</span></p>
+<p><strong>Key point</strong> As materials get smaller the resistance of the material increases non-linearly.</p>
+<p>Current, <span class="math notranslate nohighlight">\(I\)</span>, from Ohm’s law is:</p>
+<p><span class="math notranslate nohighlight">\(I=\frac {V}{R}\)</span></p>
+<p>Since we now know that <span class="math notranslate nohighlight">\(R \propto \frac{1}{L}\)</span> current must be proportional to <span class="math notranslate nohighlight">\(L\)</span></p>
+<p>Power, <span class="math notranslate nohighlight">\(P\)</span> is given by:</p>
+<p><span class="math notranslate nohighlight">\(P=RI^2\)</span></p>
+<p>Since <span class="math notranslate nohighlight">\(R \propto \frac{1}{L}\)</span> and <span class="math notranslate nohighlight">\(I \propto L\)</span></p>
+<p>we can show power,
+<span class="math notranslate nohighlight">\(P \propto \frac{L^2}{L} \propto L\)</span>.</p>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">R</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">L</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">/</span><span class="n">L</span> 
+
+<span class="c1">#Plotting resistance with characteristic size</span>
+<span class="n">start</span><span class="o">=-</span><span class="mi">8</span> <span class="c1"># equivlent to 10 nm</span>
+<span class="n">stop</span><span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="c1"># equivlent to 1 cm</span>
+
+<span class="c1"># Create a range of sizes</span>
+<span class="n">L</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">base</span><span class="o">=</span><span class="mf">10.0</span><span class="p">)</span>
+<span class="n">constant</span><span class="o">=</span><span class="mi">1</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="n">R</span><span class="p">(</span><span class="n">constant</span><span class="p">,</span><span class="n">L</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39; Log plot of resistance against size&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;L /m&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;R/$R_0$ $\Omega$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/da734bffee38920a490a7fe5d34fb1dbed324453287ed8e957cdcfbbf7078b2b.png" src="../_images/da734bffee38920a490a7fe5d34fb1dbed324453287ed8e957cdcfbbf7078b2b.png" />
+</div>
+</div>
+<section id="this-results-in-high-resistance-for-small-ojbects-assuming-no-other-effects-note-this-is-a-log-scale">
+<h4>This results in high resistance for small ojbects (assuming no other effects!).  Note this is a log scale.<a class="headerlink" href="#this-results-in-high-resistance-for-small-ojbects-assuming-no-other-effects-note-this-is-a-log-scale" title="Link to this heading">#</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Occationally you will be told some clue in a question which tells you to treat a particular parameter as something that does NOT scale will length.  For example, in the case of long wires you can assume the wire length is not dependent on the charateristic length, L, and therefore R is inversely proportional to L squared.</p>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">clear_output</span><span class="p">,</span> <span class="n">HTML</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;style&gt;</span>
+<span class="s2">.widget-radio-box label {</span>
+<span class="s2">    white-space: normal !important;  /* Allow wrapping */</span>
+<span class="s2">    display: block !important;       /* Force block layout */</span>
+<span class="s2">    margin: 6px 0px;                 /* Add vertical spacing */</span>
+<span class="s2">}</span>
+<span class="s2">.widget-label {</span>
+<span class="s2">    font-weight: bold;</span>
+<span class="s2">}</span>
+<span class="s2">&lt;/style&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<style>
+.widget-radio-box label {
+    white-space: normal !important;  /* Allow wrapping */
+    display: block !important;       /* Force block layout */
+    margin: 6px 0px;                 /* Add vertical spacing */
+}
+.widget-label {
+    font-weight: bold;
+}
+</style>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q1</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;How does resistance scale with size of material?&lt;/b&gt;&quot;</span><span class="p">)</span>
+<span class="n">q1_options</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;Proportional to L&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Proportional to 1/L&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Proportional to 1/L²&quot;</span>
+    <span class="p">],</span>
+    <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">),</span>  <span class="c1"># Prevent forced shrinking</span>
+    <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Answer:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">q1_output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">q1_check</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="n">q1_output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">q1_output</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">change</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Proportional to 1/L&quot;</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;✅ **Correct!** The dimensions come from length/area.&quot;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;❌ **Try again.** Think about the resistivity equation.&quot;</span><span class="p">))</span>
+
+<span class="n">q1_options</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">q1_check</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="n">q1_options</span><span class="p">,</span> <span class="n">q1_output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "39a2275599b947dc80f51def29b5a22c"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "a5855536d7eb4321b276620a9c1bb60c"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "2dc835e4f6ec44a78991a8fda5205634"}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">q2</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;If a 3 cm spring can have a maxiumum force of 25 N, what is the maximum force of a 1 mm spring?&lt;/b&gt;&quot;</span><span class="p">)</span>
+<span class="n">q2_options</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;8.3 N&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;0.83 N&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;750 N&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;75 N&quot;</span>
+    <span class="p">],</span>
+    <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">),</span>  <span class="c1"># Prevent forced shrinking</span>
+    <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Answer:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">q2_output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">q2_check</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="n">q2_output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">q2_output</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">change</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;0.83 N&quot;</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;✅ **Correct!** Yes, it&#39;s proportional to L.&quot;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;❌ **Try again.** Think about Hook&#39;s law and the units used.&quot;</span><span class="p">))</span>
+
+<span class="n">q2_options</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">q2_check</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">q2</span><span class="p">,</span> <span class="n">q2_options</span><span class="p">,</span> <span class="n">q2_output</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "b25607ffed4c40c18481622a9b4b44f2"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "0cdf69fd6f094bdb88d40311ef63f38a"}</script><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "8cbe05e6872d4daf8527560831d17e52"}</script></div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Lecture2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">2. The Smallest Things</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lecture4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">4. Importance of Physics Scaling Laws in Nanotechnology</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-make-things-smaller">3.1 Why make things smaller?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#greater-efficiency-and-speed">3.1.1 Greater Efficiency and Speed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lower-power-consumption">3.1.2 Lower Power Consumption</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#portability-and-convenience">3.1.3 Portability and Convenience</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-reduction-at-scale">3.1.4  Cost Reduction (at scale)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-applications">3.1.5 New Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#improved-functionality">3.1.6 Improved Functionality</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-changes-in-functionality-and-size-of-mobile-phones-since-the-mid-1990s">3.2 Example: Changes in Functionality and Size of Mobile Phones Since the Mid-1990s</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#early-2000s-mid-2000s-miniaturisation-and-added-features">3.2.1 <strong>Early 2000s – Mid-2000s: Miniaturisation and Added Features</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mid-2000s-today-smartphones-connectivity-and-smart-integration">3.2.2 <strong>Mid-2000s – Today: Smartphones, Connectivity, and Smart Integration</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cost-and-size-of-data-storage-devices">3.3 The Cost and Size of Data Storage Devices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scaling-laws-in-nanotechnology">3.4 Scaling Laws in Nanotechnology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-scaling-laws">3.4.1 What are Scaling Laws?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-area-to-volume-ratio">3.4.2 Surface Area to Volume Ratio</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">3.4.3 Examples:</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#bergmann-s-rule">Bergmann’s Rule</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanical-scaling-laws">3.5 Mechanical Scaling Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-properties-scale">3.5.1 How Properties Scale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-mechanical-scaling-laws">3.6 Examples of Mechanical Scaling Laws</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-can-a-mouse-survive-a-big-fall-but-a-human-can-t">3.6.1 Why can a mouse survive a big fall but a human can’t?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#drag-force">Drag Force</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#force-due-to-gravity">Force due to gravity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-a-human">For a Human:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#for-a-mouse">For a Mouse:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-mechanical-scaling-laws">3.7 More Mechanical Scaling Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-resistance">3.8 Electrical Resistance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ohm-s-law">3.8.1 Ohm’s Law</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#this-results-in-high-resistance-for-small-ojbects-assuming-no-other-effects-note-this-is-a-log-scale">This results in high resistance for small ojbects (assuming no other effects!).  Note this is a log scale.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Critchley
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

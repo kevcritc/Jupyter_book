@@ -1,0 +1,1223 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>6. Quantum Mechanics and Atomic Structure &#8212; Introduction to Nanotechnology PHAS1500</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Lecture6';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="7. Electronic Structure" href="Lecture7.html" />
+    <link rel="prev" title="5. Nanophysics - The Atom" href="Lecture5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Introduction to Nanotechnology PHAS1500</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Jupyter Nanotechnology Course Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Lecture1.html">1. Introduction to the Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture2.html">2. The Smallest Things</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture3.html">3. Introducing Scaling Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture4.html">4. Importance of Physics Scaling Laws in Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture5.html">5. Nanophysics - The Atom</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Quantum Mechanics and Atomic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture7.html">7. Electronic Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture8.html">8. Molecular Orbitals and Covalent Bonding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture9.html">9. Carbon Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Lecture10.html">10. Introduction to Carbon Nanomaterials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture11.html">11. Metal Nanoparticles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture12.html">12.  Introduction to Semiconductors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture13.html">13. Semiconductors to Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture14.html">14. Semiconductor Materials and Quantum Dots</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture15.html">15.  Colliodal Stability and Self-Assembled Monolayers.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture16.html">16. Nanotechnology &amp; Biology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture17.html">17. From Bionano to Nanomedicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture18.html">18. Nanomedicine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture19.html">19. Nanomedicine – Cancer Targeting, Theranostics &amp; Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lecture20.html">20. Seeing the Nano World – Quick Introduction into Imaging Techniques in Nanotechnology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examfeedback2025.html">21. Exam Feedback from 2025 Exam Paper</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/Lecture6.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>6. Quantum Mechanics and Atomic Structure</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-particle-duality-and-quantum-mechanics">6.1 Wave-Particle Duality and Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-wave-particle-duality">6.1.1 The Wave-Particle Duality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-slit-experiment-and-wave-particle-duality">6.1.2 Double-Slit Experiment and Wave-Particle Duality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">6.1.2.1 <strong>Overview</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">6.1.2.2 <strong>Setup</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">6.1.2.3 <strong>Observations</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">6.1.2.4 <strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#significance-of-wave-particle-duality">6.1.3 Significance of Wave-Particle Duality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#foundational-principle-of-quantum-mechanics">6.1.3.1 Foundational Principle of Quantum Mechanics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#replaces-classical-intuition">6.1.3.2 Replaces Classical Intuition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#led-to-development-of-quantum-theory">6.1.3.3 Led to Development of Quantum Theory</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#philosophical-importance">6.1.3.4 Philosophical Importance</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-table">6.1.3.5 <strong>Summary Table</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-mechanics">6.2 Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-schrodinger-equation">6.2.1 The Schrödinger Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-independent-schrodinger-equation">6.2.2 Time-Independent Schrödinger Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-the-solutions-to-this-equation">6.2.3 What are the solutions to this equation?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-1d-well">6.2.3.1 Infinite 1D Well</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#finite-1d-well">6.2.3.2 Finite 1D Well</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-three-dimensions-spherical-form">6.2.4 In Three Dimensions (Spherical Form)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-the-hamiltonian-operator">6.2.5 The Role of the Hamiltonian Operator</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-numbers-and-electron-configurations">6.3 Quantum Numbers and Electron Configurations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-quantum-number-n">6.3.1 Principal Quantum Number (n)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orbital-quantum-number-l">6.3.2 Orbital Quantum Number (l)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetic-quantum-number-m">6.3.3 Magnetic Quantum Number (m)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spin-quantum-number-s">6.3.4 Spin Quantum Number (s)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-orbitals-and-their-shapes">6.4 Atomic Orbitals and Their Shapes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-this-wavefunction">6.5 What is this wavefunction?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantized-angular-momentum-bohr-model-vs-quantum-mechanics">6.6 Quantized Angular Momentum: Bohr Model vs. Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-model-and-its-assumptions">6.6.1 Bohr Model and Its Assumptions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-mechanical-angular-momentum">6.6.2 Quantum Mechanical Angular Momentum</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-the-bohr-model-was-incorrect">6.6.3 Why the Bohr Model Was Incorrect</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-spin-and-the-pauli-exclusion-principle">6.7 Electron Spin and the Pauli Exclusion Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermions-vs-bosons">6.7.1 Fermions vs. Bosons</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.8 Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="quantum-mechanics-and-atomic-structure">
+<h1>6. Quantum Mechanics and Atomic Structure<a class="headerlink" href="#quantum-mechanics-and-atomic-structure" title="Link to this heading">#</a></h1>
+<p>Quantum mechanics is a fundamental theory in physics that describes the behavior of matter and energy at atomic and subatomic scales. Classical mechanics fails to explain many phenomena observed in microscopic systems, such as the stability of atoms and the discrete energy levels of electrons.</p>
+<p>In quantum mechanics, the <strong>wavefunction (Ψ)</strong> represents the state of a quantum system, and its square (|Ψ|²) or more exactly the complex conjugation <span class="math notranslate nohighlight">\( \Psi \Psi^* \)</span> gives the probability of finding a particle in a given region of space. The behavior of the wavefunction is governed by the <strong>Schrödinger equation</strong>, which determines the allowed energy levels of quantum systems.</p>
+<section id="wave-particle-duality-and-quantum-mechanics">
+<h2>6.1 Wave-Particle Duality and Quantum Mechanics<a class="headerlink" href="#wave-particle-duality-and-quantum-mechanics" title="Link to this heading">#</a></h2>
+<section id="the-wave-particle-duality">
+<h3>6.1.1 The Wave-Particle Duality<a class="headerlink" href="#the-wave-particle-duality" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Matter and light exhibit both <strong>wave-like and particle-like</strong> properties.</p></li>
+<li><p>Each particle has an associated <strong>de Broglie wavelength</strong>:</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\lambda = \frac{h}{p} = \frac{h}{mv} \)</span></p>
+<ul class="simple">
+<li><p>This led to the concept of <strong>quantised electron waves</strong> around the nucleus.</p></li>
+<li><p>Here we are using non-relativistic momentum.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="sd">&#39;&#39;&#39; We can make a sketch of a wavepaket by </span>
+<span class="sd">combining a Guassian funciton with a cosine wave&#39;&#39;&#39;</span>
+
+<span class="c1"># Parameters for the wavepacket</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>        <span class="c1"># position array</span>
+<span class="n">k0</span> <span class="o">=</span> <span class="mf">0.4</span>                                <span class="c1"># central wavenumber</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">20</span>                              <span class="c1"># width of the Gaussian envelope</span>
+
+<span class="c1"># Gaussian envelope</span>
+<span class="n">envelope</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="c1"># Carrier wave</span>
+<span class="n">carrier</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">k0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">wavepacket</span> <span class="o">=</span> <span class="n">envelope</span> <span class="o">*</span> <span class="n">carrier</span>
+
+<span class="c1"># Plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">wavepacket</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Wavepacket&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">envelope</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Envelope&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">-</span><span class="n">envelope</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;A Gaussian Wavepacket&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Position /x&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Amplitude&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/c81e9c9c23657bcd35913664cbee6331a8f6a9ad495328f2adecfff57a13beea.png" src="../_images/c81e9c9c23657bcd35913664cbee6331a8f6a9ad495328f2adecfff57a13beea.png" />
+</div>
+</div>
+<p>Fig 6.1 An cartoon of a 1D wavepacket representing a particle.</p>
+</section>
+<hr class="docutils" />
+<section id="double-slit-experiment-and-wave-particle-duality">
+<h3>6.1.2 Double-Slit Experiment and Wave-Particle Duality<a class="headerlink" href="#double-slit-experiment-and-wave-particle-duality" title="Link to this heading">#</a></h3>
+<section id="overview">
+<h4>6.1.2.1 <strong>Overview</strong><a class="headerlink" href="#overview" title="Link to this heading">#</a></h4>
+<p>One of the most famous and illustrative experiments demonstrating <strong>wave-particle duality</strong> is the <strong>double-slit experiment</strong> using electrons (or photons).</p>
+</section>
+<hr class="docutils" />
+<section id="setup">
+<h4>6.1.2.2 <strong>Setup</strong><a class="headerlink" href="#setup" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>A source emits <strong>single electrons</strong> (or photons) toward a barrier with <strong>two narrow slits</strong>.</p></li>
+<li><p>Beyond the slits, a <strong>detection screen</strong> (e.g. a phosphor screen or CCD detector) records where each particle lands.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="observations">
+<h4>6.1.2.3 <strong>Observations</strong><a class="headerlink" href="#observations" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>If <strong>both slits are open</strong>, and <strong>no measurement is made</strong> to determine which slit the electron passed through:</p>
+<ul>
+<li><p>An <strong>interference pattern</strong> forms on the detection screen — a series of light and dark fringes, <strong>typical of wave behavior</strong> despite the electrons entering one by one.</p></li>
+</ul>
+</li>
+<li><p>If a detector is placed to determine <strong>which slit</strong> the electron goes through:</p>
+<ul>
+<li><p>The <strong>interference pattern disappears</strong>.</p></li>
+<li><p>Instead, two <strong>single-slit patterns</strong> appear — consistent with <strong>particle-like behavior</strong>.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Here is a link to a <a class="reference external" href="https://www.youtube.com/watch?v=A9tKncAdlHQ">video</a> of Jim Al-Khalili discussing this experiment.</strong></p>
+</section>
+<hr class="docutils" />
+<section id="conclusion">
+<h4>6.1.2.4 <strong>Conclusion</strong><a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>When <strong>not observed</strong>, electrons behave like <strong>waves</strong>, interfering with themselves.</p></li>
+<li><p>When <strong>observed</strong>, they behave like <strong>particles</strong>, going through one slit or the other.</p></li>
+</ul>
+<p>This experiment reveals that particles such as electrons exhibit <strong>both wave-like and particle-like properties</strong>, depending on the measurement context.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="significance-of-wave-particle-duality">
+<h3>6.1.3 Significance of Wave-Particle Duality<a class="headerlink" href="#significance-of-wave-particle-duality" title="Link to this heading">#</a></h3>
+<section id="foundational-principle-of-quantum-mechanics">
+<h4>6.1.3.1 Foundational Principle of Quantum Mechanics<a class="headerlink" href="#foundational-principle-of-quantum-mechanics" title="Link to this heading">#</a></h4>
+<p>Wave-particle duality shows that classical distinctions between “particles” and “waves” <strong>break down at quantum scales</strong>.</p>
+</section>
+<section id="replaces-classical-intuition">
+<h4>6.1.3.2 Replaces Classical Intuition<a class="headerlink" href="#replaces-classical-intuition" title="Link to this heading">#</a></h4>
+<p>Electrons, photons, and even atoms cannot be described <strong>solely</strong> as particles or waves. They are described by a <strong>wavefunction</strong>, which encodes probability amplitudes. The function is typically complex (it has real and imaginary parts).</p>
+</section>
+<section id="led-to-development-of-quantum-theory">
+<h4>6.1.3.3 Led to Development of Quantum Theory<a class="headerlink" href="#led-to-development-of-quantum-theory" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Inspired <strong>Schrödinger’s wave equation</strong>, which treats particles as <strong>wave-like entities</strong> evolving over time.</p></li>
+<li><p>Led to concepts like <strong>quantum superposition</strong>, <strong>entanglement</strong>, and <strong>uncertainty</strong>.</p></li>
+</ul>
+</section>
+<section id="philosophical-importance">
+<h4>6.1.3.4 Philosophical Importance<a class="headerlink" href="#philosophical-importance" title="Link to this heading">#</a></h4>
+<p>Challenges classical ideas of <strong>reality and measurement</strong> — the outcome depends on how the system is observed.</p>
+</section>
+<section id="summary-table">
+<h4>6.1.3.5 <strong>Summary Table</strong><a class="headerlink" href="#summary-table" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Aspect</strong></p></th>
+<th class="head"><p><strong>Wave Behaviour</strong></p></th>
+<th class="head"><p><strong>Particle Behaviour</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Evidence</strong></p></td>
+<td><p>Interference pattern</p></td>
+<td><p>Single impacts on detector</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Conditions</strong></p></td>
+<td><p>No which-path detection</p></td>
+<td><p>With which-path detection</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Interpretation</strong></p></td>
+<td><p>Delocalized, spread-out wavefunction</p></td>
+<td><p>Localized particle</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Significance</strong></p></td>
+<td><p>Quantum superposition and interference</p></td>
+<td><p>Measurement collapses wavefunction</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<p><strong>In essence</strong>, wave-particle duality forces us to rethink the fundamental nature of matter and light.<br />
+It is a powerful reminder that at the quantum scale, nature does not conform to our everyday experience.</p>
+</section>
+</section>
+</section>
+<section id="quantum-mechanics">
+<h2>6.2 Quantum Mechanics<a class="headerlink" href="#quantum-mechanics" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The Bohr model was an important step in understanding atomic structure, but <strong>modern quantum mechanics</strong> provides a more complete picture.</p></li>
+<li><p>Instead of treating electrons as <strong>orbiting particles</strong>, quantum mechanics describes them as <strong>waves</strong> using a function called the <strong>wavefunction</strong> <span class="math notranslate nohighlight">\( \Psi(x,t) \)</span>, which contains all the information about the electron.</p></li>
+</ul>
+<section id="the-schrodinger-equation">
+<h3>6.2.1 The Schrödinger Equation<a class="headerlink" href="#the-schrodinger-equation" title="Link to this heading">#</a></h3>
+<p>The fundamental equation of quantum mechanics is the <strong>Schrödinger equation</strong>, which determines how the wavefunction <span class="math notranslate nohighlight">\(\Psi\)</span> behaves.</p>
+</section>
+<section id="time-independent-schrodinger-equation">
+<h3>6.2.2 Time-Independent Schrödinger Equation<a class="headerlink" href="#time-independent-schrodinger-equation" title="Link to this heading">#</a></h3>
+<p>For an electron in an atom, we use the <strong>time-independent Schrödinger equation</strong>. Below is a 1D version of the equation:</p>
+<p><span class="math notranslate nohighlight">\(\frac{\hbar^2}{2m} \frac{d^2\Psi}{dx^2} + V(x)\Psi = E\Psi \)</span></p>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\hbar = \frac{h}{2\pi} \)</span> is the <strong>reduced Planck’s constant</strong>.</p></li>
+<li><p><span class="math notranslate nohighlight">\( m \)</span> is the <strong>mass of the electron</strong>.</p></li>
+<li><p><span class="math notranslate nohighlight">\( V(x) \)</span> is the <strong>potential energy</strong> (for a hydrogen atom, this is the electrostatic attraction to the nucleus).</p></li>
+<li><p><span class="math notranslate nohighlight">\( E \)</span> is the <strong>total energy</strong> of the electron.</p></li>
+<li><p><span class="math notranslate nohighlight">\( \Psi(x) \)</span> is the <strong>wavefunction</strong>, which tells us where the electron is <strong>most likely</strong> to be found.<br />
+It is interesting to note that apart from the complication of the partial differientials and <span class="math notranslate nohighlight">\(\psi\)</span> that the form is <span class="math notranslate nohighlight">\(K + U=E\)</span>.  The left hand side has a strange way of writting KE.  <span class="math notranslate nohighlight">\(KE= \frac{1}{2}mv^2\)</span> which be written as <span class="math notranslate nohighlight">\(KE= \frac{p}{2m}\)</span>where m is mass and p is momentum.  This is the form KE is in the Equation above.</p></li>
+<li><p>As an extra piece of the information is <span class="math notranslate nohighlight">\( p=i\hbar \frac{d \Psi}{dx}\)</span></p></li>
+<li><p>When we differentiate a function we find the gradient, do this again and we get the gradient of the gradient. This is what the left hand term is doing.  The higher the gradient of the gradient of the wavefunction the higher the KE - in otherwords the more the function bends in space the higher the KE!!</p></li>
+</ul>
+</section>
+<section id="what-are-the-solutions-to-this-equation">
+<h3>6.2.3 What are the solutions to this equation?<a class="headerlink" href="#what-are-the-solutions-to-this-equation" title="Link to this heading">#</a></h3>
+<p>We are not doing 2nd order ordinary differential equations in this course to you are not expected to solve this equation. However, to understand QM it is useful to look at the solutions of some simple cases.</p>
+<ul class="simple">
+<li><p>The solutions come in the form of <strong>wavefunctions, <span class="math notranslate nohighlight">\(\Psi\)</span>,</strong> and there will be multiple solutions based on the boundary conditions. These are called eigenfunctions.</p></li>
+<li><p>The other outcome is that the total <strong>energy values, <span class="math notranslate nohighlight">\(E\)</span>,</strong> are obtained and these comes in the form of values that correspond to the eigenfunctions.</p></li>
+</ul>
+<section id="infinite-1d-well">
+<h4>6.2.3.1 Infinite 1D Well<a class="headerlink" href="#infinite-1d-well" title="Link to this heading">#</a></h4>
+<p>Take the case of a well that has infinte potential everywhere else so a hugh tall wall with no escape route.<br />
+<img alt="Diagram of a infinte well made from three lines" src="../_images/1Dwell_inf.png" /><br />
+Fig 6.2 An infinte square well of width L.</p>
+<p>Some python code is used to solve the equation. The results of which will be below the code.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Wed Feb 11 17:36:06 2026</span>
+
+<span class="sd">@author: phykc</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1">#!/usr/bin/env python3</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">1D Schrödinger solver: infinite and finite square wells</span>
+<span class="sd">- Finite-difference Hamiltonian on a grid</span>
+<span class="sd">- Diagonalize to obtain eigenvalues and eigenfunctions</span>
+
+<span class="sd">Units: we use &quot;dimensionless&quot; units with ħ = 1, m = 1.</span>
+<span class="sd">Then the kinetic operator is  -(1/2) d^2/dx^2.</span>
+
+<span class="sd">If you want SI units, see the notes at the bottom.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># -----------------------------</span>
+<span class="c1"># Core Schrödinger solver</span>
+<span class="c1"># -----------------------------</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">solve_1d_schrodinger</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">n_states</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">hbar</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Solve [-ħ²/(2m) d²/dx² + V(x)] ψ = E ψ on grid x with Dirichlet boundaries ψ=0 at ends.</span>
+<span class="sd">    Returns (E, psi) where:</span>
+<span class="sd">      E: shape (n_states,)</span>
+<span class="sd">      psi: shape (n_states, N) normalized such that ∫|psi|² dx = 1</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">ndim</span> <span class="o">!=</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">V</span><span class="o">.</span><span class="n">ndim</span> <span class="o">!=</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">x</span><span class="o">.</span><span class="n">size</span> <span class="o">!=</span> <span class="n">V</span><span class="o">.</span><span class="n">size</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;x and V must be 1D arrays of the same length&quot;</span><span class="p">)</span>
+
+    <span class="n">N</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">size</span>
+    <span class="k">if</span> <span class="n">N</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Need at least ~5 grid points&quot;</span><span class="p">)</span>
+
+    <span class="n">dx</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">dx</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;x must be uniformly spaced&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Finite-difference second derivative with Dirichlet boundaries:</span>
+    <span class="c1"># d²ψ/dx² ≈ (ψ_{i+1} - 2ψ_i + ψ_{i-1})/dx² for interior points</span>
+    <span class="c1"># We build the Hamiltonian for interior points only (i = 1..N-2),</span>
+    <span class="c1"># enforcing ψ(ends)=0 implicitly.</span>
+    <span class="n">Ni</span> <span class="o">=</span> <span class="n">N</span> <span class="o">-</span> <span class="mi">2</span>
+    <span class="n">main</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">Ni</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.0</span><span class="p">)</span>
+    <span class="n">off</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">Ni</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">D2</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">main</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">off</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">off</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">dx</span> <span class="o">*</span> <span class="n">dx</span><span class="p">)</span>
+
+    <span class="n">T</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">hbar</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="n">D2</span>
+    <span class="n">Vi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">V</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">H</span> <span class="o">=</span> <span class="n">T</span> <span class="o">+</span> <span class="n">Vi</span>
+
+    <span class="c1"># Diagonalize (symmetric real)</span>
+    <span class="n">E</span><span class="p">,</span> <span class="n">vecs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigh</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+    <span class="n">E</span> <span class="o">=</span> <span class="n">E</span><span class="p">[:</span><span class="n">n_states</span><span class="p">]</span>
+    <span class="n">vecs</span> <span class="o">=</span> <span class="n">vecs</span><span class="p">[:,</span> <span class="p">:</span><span class="n">n_states</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>  <span class="c1"># shape (n_states, Ni)</span>
+
+    <span class="c1"># Reconstruct full wavefunctions including boundaries = 0</span>
+    <span class="n">psi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_states</span><span class="p">,</span> <span class="n">N</span><span class="p">))</span>
+    <span class="n">psi</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">vecs</span>
+
+    <span class="c1"># Normalize each state: ∫|ψ|² dx = 1</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_states</span><span class="p">):</span>
+        <span class="n">norm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">psi</span><span class="p">[</span><span class="n">k</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+        <span class="n">psi</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">/=</span> <span class="n">norm</span>
+
+        <span class="c1"># Optional: enforce consistent sign (peak positive)</span>
+        <span class="n">imax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">psi</span><span class="p">[</span><span class="n">k</span><span class="p">]))</span>
+        <span class="k">if</span> <span class="n">psi</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="n">imax</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">psi</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">E</span><span class="p">,</span> <span class="n">psi</span>
+
+
+<span class="c1"># -----------------------------</span>
+<span class="c1"># Potentials: infinite/finite wells</span>
+<span class="c1"># -----------------------------</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">infinite_square_well_potential</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">L</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    For the infinite well, we do not actually need V=∞ outside, because we enforce ψ=0 at boundaries.</span>
+<span class="sd">    We&#39;ll set V=0 everywhere; the boundaries implement the infinite walls.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">finite_square_well_potential</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">V0</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="mf">0.0</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Finite well of width L centered at &#39;center&#39;:</span>
+<span class="sd">      V(x)=0 inside |x-center| &lt;= L/2</span>
+<span class="sd">      V(x)=V0 outside (barriers)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full_like</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">V0</span><span class="p">))</span>
+    <span class="n">inside</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">center</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="n">L</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+    <span class="n">V</span><span class="p">[</span><span class="n">inside</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">return</span> <span class="n">V</span>
+
+
+<span class="c1"># -----------------------------</span>
+<span class="c1"># Demo / main</span>
+<span class="c1"># -----------------------------</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">run_infinite_well_demo</span><span class="p">():</span>
+    <span class="c1"># Well from x=0 to x=L, Dirichlet at both ends</span>
+    <span class="n">L</span> <span class="o">=</span> <span class="mf">1.0</span>
+    <span class="n">N</span> <span class="o">=</span> <span class="mi">1200</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+
+    <span class="n">V</span> <span class="o">=</span> <span class="n">infinite_square_well_potential</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
+
+    <span class="n">n_states</span> <span class="o">=</span> <span class="mi">6</span>
+    <span class="n">E_num</span><span class="p">,</span> <span class="n">psi</span> <span class="o">=</span> <span class="n">solve_1d_schrodinger</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">n_states</span><span class="o">=</span><span class="n">n_states</span><span class="p">)</span>
+
+    <span class="c1"># Analytic energies for infinite well with ħ=m=1:</span>
+    <span class="c1"># E_n = (n^2 π^2) / (2 L^2)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_states</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">E_analytic</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">L</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Infinite square well (ħ=1, m=1, L=1):&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; n    E_numeric        E_analytic      rel.error&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_states</span><span class="p">):</span>
+        <span class="n">rel</span> <span class="o">=</span> <span class="p">(</span><span class="n">E_num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">E_analytic</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">/</span> <span class="n">E_analytic</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">:</span><span class="s2">2d</span><span class="si">}</span><span class="s2">  </span><span class="si">{</span><span class="n">E_num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s2">12.6f</span><span class="si">}</span><span class="s2">  </span><span class="si">{</span><span class="n">E_analytic</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s2">12.6f</span><span class="si">}</span><span class="s2">  </span><span class="si">{</span><span class="n">rel</span><span class="si">:</span><span class="s2"> .3e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Plot eigenfunctions (offset for visibility)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_states</span><span class="p">):</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">psi</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="mf">1.2</span><span class="o">*</span><span class="n">k</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;n=</span><span class="si">{</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Infinite square well eigenfunctions (offset)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;ψ_n(x) + offset&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="c1"># Plot energies</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">E_num</span><span class="p">,</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;numeric&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">E_analytic</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;analytic&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Infinite square well energies&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;E_n&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">run_finite_well_demo</span><span class="p">():</span>
+    <span class="c1"># Use a larger domain so the wavefunction decays well before boundaries</span>
+    <span class="n">L</span> <span class="o">=</span> <span class="mf">1.0</span>       <span class="c1"># well width</span>
+    <span class="n">V0</span> <span class="o">=</span> <span class="mf">200.0</span>    <span class="c1"># barrier height (dimensionless units)</span>
+    <span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span> <span class="o">=</span> <span class="o">-</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">4.0</span>
+    <span class="n">N</span> <span class="o">=</span> <span class="mi">2000</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+
+    <span class="n">V</span> <span class="o">=</span> <span class="n">finite_square_well_potential</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">L</span><span class="o">=</span><span class="n">L</span><span class="p">,</span> <span class="n">V0</span><span class="o">=</span><span class="n">V0</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+
+    <span class="c1"># Solve for several lowest states; bound states should satisfy E &lt; V0 (since V=0 inside, V=V0 outside)</span>
+    <span class="n">n_states</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="n">E</span><span class="p">,</span> <span class="n">psi</span> <span class="o">=</span> <span class="n">solve_1d_schrodinger</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">n_states</span><span class="o">=</span><span class="n">n_states</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Finite square well (ħ=1, m=1, well width L=1, barrier V0=200):&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lowest eigenvalues (bound states typically have E &lt; V0):&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_states</span><span class="p">):</span>
+        <span class="n">tag</span> <span class="o">=</span> <span class="s2">&quot;BOUND&quot;</span> <span class="k">if</span> <span class="n">E</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">V0</span> <span class="k">else</span> <span class="s2">&quot;CONT?&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  k=</span><span class="si">{</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="si">:</span><span class="s2">2d</span><span class="si">}</span><span class="s2">   E=</span><span class="si">{</span><span class="n">E</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="si">:</span><span class="s2">10.6f</span><span class="si">}</span><span class="s2">   </span><span class="si">{</span><span class="n">tag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Plot potential + a few bound eigenfunctions scaled and shifted by energy</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;V(x)&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">n_states</span><span class="p">)):</span>
+        <span class="c1"># Scale wavefunction for visibility and shift by its energy</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mf">0.4</span> <span class="o">*</span> <span class="n">psi</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="n">E</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;state </span><span class="si">{</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">, E=</span><span class="si">{</span><span class="n">E</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Finite square well: V(x) and eigenstates (ψ scaled, shifted by E)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Energy / V and shifted ψ&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">&quot;best&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="c1"># Also plot just the eigenfunctions (offset)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">psi</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="mf">1.0</span><span class="o">*</span><span class="n">k</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;k=</span><span class="si">{</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Finite square well eigenfunctions (offset)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;ψ_k(x) + offset&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">run_infinite_well_demo</span><span class="p">()</span>
+<span class="w">    </span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Notes / extensions:</span>
+
+<span class="sd">1) Units:</span>
+<span class="sd">   Here we used ħ=1, m=1. If you want SI, set:</span>
+<span class="sd">     hbar = 1.054e-34 (J*s)</span>
+<span class="sd">     m = 9.109e-31 (electron mass)</span>
+<span class="sd">   and express x in meters, V in joules. Energies then come out in joules.</span>
+<span class="sd">   Convert to eV by dividing by 1.602e-19.</span>
+
+<span class="sd">2) Infinite well:</span>
+<span class="sd">   The &#39;infinite walls&#39; are imposed by Dirichlet boundary conditions ψ=0 at x=0 and x=L.</span>
+
+<span class="sd">3) Finite well:</span>
+<span class="sd">   The domain must be wide enough that bound-state wavefunctions decay to ~0 before boundaries.</span>
+<span class="sd">   If you see artifacts, increase (x_max - x_min) or increase N.</span>
+
+<span class="sd">4) Higher accuracy:</span>
+<span class="sd">   - Increase N for a finer grid.</span>
+<span class="sd">   - Use higher-order finite differences (more work) if needed.</span>
+
+<span class="sd">5) Other potentials:</span>
+<span class="sd">   Replace V(x) with any 1D potential (harmonic oscillator, double well, etc.).</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Infinite square well (ħ=1, m=1, L=1):
+ n    E_numeric        E_analytic      rel.error
+ 1      4.934799      4.934802  -5.721e-07
+ 2     19.739164     19.739209  -2.288e-06
+ 3     44.412991     44.413220  -5.149e-06
+ 4     78.956112     78.956835  -9.154e-06
+ 5    123.368290    123.370055  -1.430e-05
+ 6    177.649220    177.652879  -2.060e-05
+</pre></div>
+</div>
+<img alt="../_images/d613edf473361677daa66a9f7d3e86f4d0f99b0e8563c9a38125cb8e2ef9d1ad.png" src="../_images/d613edf473361677daa66a9f7d3e86f4d0f99b0e8563c9a38125cb8e2ef9d1ad.png" />
+<img alt="../_images/7042e99e3b23631f516bc153dcc2e0f58b87c66ba794dc2cee638d6fcb400961.png" src="../_images/7042e99e3b23631f516bc153dcc2e0f58b87c66ba794dc2cee638d6fcb400961.png" />
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;\nNotes / extensions:\n\n1) Units:\n   Here we used ħ=1, m=1. If you want SI, set:\n     hbar = 1.054e-34 (J*s)\n     m = 9.109e-31 (electron mass)\n   and express x in meters, V in joules. Energies then come out in joules.\n   Convert to eV by dividing by 1.602e-19.\n\n2) Infinite well:\n   The &#39;infinite walls&#39; are imposed by Dirichlet boundary conditions ψ=0 at x=0 and x=L.\n\n3) Finite well:\n   The domain must be wide enough that bound-state wavefunctions decay to ~0 before boundaries.\n   If you see artifacts, increase (x_max - x_min) or increase N.\n\n4) Higher accuracy:\n   - Increase N for a finer grid.\n   - Use higher-order finite differences (more work) if needed.\n\n5) Other potentials:\n   Replace V(x) with any 1D potential (harmonic oscillator, double well, etc.).\n&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can hopefully see that the wavefunctions are in fact sine waves - standing waves in fact.  You can also see the energy values are never zero.</p>
+<p>The eigenfunctions are in the form:<br />
+<span class="math notranslate nohighlight">\( \Psi =A \sin{kx} + \cos{kx}\)</span> where <span class="math notranslate nohighlight">\(k=\frac{n\pi}{L}\)</span></p>
+<p>and the eigenvalues are <span class="math notranslate nohighlight">\( E=\frac{n^2\pi^2\hbar^2}{2mL^2}\)</span></p>
+<p>where n is 1,2,3…</p>
+<p>Often the solutions are complex numbers- we do not need to worry about what that means right now.</p>
+</section>
+<section id="finite-1d-well">
+<h4>6.2.3.2 Finite 1D Well<a class="headerlink" href="#finite-1d-well" title="Link to this heading">#</a></h4>
+<p>If the walls are limited in potential energy and are just barriers we get a similar solution but there is an important difference.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">run_finite_well_demo</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Finite square well (ħ=1, m=1, well width L=1, barrier V0=200):
+Lowest eigenvalues (bound states typically have E &lt; V0):
+  k= 1   E=  4.071481   BOUND
+  k= 2   E= 16.254080   BOUND
+  k= 3   E= 36.443722   BOUND
+  k= 4   E= 64.431836   BOUND
+  k= 5   E= 99.817673   BOUND
+  k= 6   E=141.725441   BOUND
+  k= 7   E=187.154932   BOUND
+  k= 8   E=200.395270   CONT?
+  k= 9   E=200.420462   CONT?
+  k=10   E=201.579244   CONT?
+</pre></div>
+</div>
+<img alt="../_images/47fb375051fd8b76ef3de1d908e6b8f746d54a7efc1dec715e43da136fdaef8d.png" src="../_images/47fb375051fd8b76ef3de1d908e6b8f746d54a7efc1dec715e43da136fdaef8d.png" />
+<img alt="../_images/9f0fc03bf847d130d777ab9365919f3b764e4282723dae63a103353e195fc483.png" src="../_images/9f0fc03bf847d130d777ab9365919f3b764e4282723dae63a103353e195fc483.png" />
+</div>
+</div>
+<p>This time we show that the wavefunctions extend outside the well.  This result tells us there is a probability of the particle being on the other side of the barrier.  This is actually called quantum tunneling and is not predicted by any classical models.  A finite well is closer to the model of real matter.  Of course real matter is 3D and not simple boxes.</p>
+</section>
+</section>
+<section id="in-three-dimensions-spherical-form">
+<h3>6.2.4 In Three Dimensions (Spherical Form)<a class="headerlink" href="#in-three-dimensions-spherical-form" title="Link to this heading">#</a></h3>
+<p>Since atoms are three-dimensional, we use <strong>spherical coordinates</strong></p>
+<p><img alt="Spherical coordinates" src="../_images/3dcoord.png" /><br />
+Fig 6.3 Spherical coordinate system.</p>
+<p><strong>You do not need to know this maths (this year)!!!</strong></p>
+<p><span class="math notranslate nohighlight">\(\frac{\hbar^2}{2m} \nabla^2 \Psi + V(r) \Psi = E \Psi \)</span></p>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( \nabla^2 \)</span> is the <strong>Laplacian operator</strong>, which accounts for the three-dimensional motion of the electron.</p></li>
+<li><p><span class="math notranslate nohighlight">\( r \)</span> is the <strong>distance from the nucleus</strong>.</p></li>
+<li><p><span class="math notranslate nohighlight">\( V(r) = -\frac{e^2}{4\pi\epsilon_0 r} \)</span> is the <strong>Coulomb potential energy</strong> from the nucleus.</p></li>
+<li><p>The x, y, z coordinates are transformed into <span class="math notranslate nohighlight">\(r, \theta, \phi \)</span> - the solutions will therefore by in <strong>spherical coordinates</strong></p></li>
+</ul>
+</section>
+<section id="the-role-of-the-hamiltonian-operator">
+<h3>6.2.5 The Role of the Hamiltonian Operator<a class="headerlink" href="#the-role-of-the-hamiltonian-operator" title="Link to this heading">#</a></h3>
+<p>The <strong>Hamiltonian operator</strong> <span class="math notranslate nohighlight">\(\hat{H}\)</span> represents the total energy of a quantum system. It consists of kinetic and potential energy terms:</p>
+<div class="math notranslate nohighlight">
+\[\hat{H} \Psi = E \Psi\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\hat{H} \)</span> is the Hamiltonian operator,</p></li>
+<li><p><span class="math notranslate nohighlight">\( E \)</span> is the total energy of the system,</p></li>
+<li><p><span class="math notranslate nohighlight">\( \Psi \)</span> is the wavefunction.</p></li>
+</ul>
+<p>The Hamiltonian depends on the system being studied. In the case of an electron in an atom, the potential energy comes from the Coulomb attraction between the negatively charged electron and the positively charged nucleus.</p>
+</section>
+</section>
+<section id="quantum-numbers-and-electron-configurations">
+<h2>6.3 Quantum Numbers and Electron Configurations<a class="headerlink" href="#quantum-numbers-and-electron-configurations" title="Link to this heading">#</a></h2>
+<p>In three-dimensional quantum systems, such as atoms, the position of an electron is best described in <strong>spherical coordinates (r, θ, ϕ)</strong>. The quantum numbers that arise from solving the Schrödinger equation in this system determine the electron’s allowed states.</p>
+<section id="principal-quantum-number-n">
+<h3>6.3.1 Principal Quantum Number (n)<a class="headerlink" href="#principal-quantum-number-n" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Symbol: <code class="docutils literal notranslate"><span class="pre">n</span></code></p></li>
+<li><p>Values: <code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">...</span></code></p></li>
+<li><p>Represents the <strong>energy level</strong> and <strong>size</strong> of the orbital.</p></li>
+<li><p>Higher values of <code class="docutils literal notranslate"><span class="pre">n</span></code> correspond to orbitals that are farther from the nucleus.</p></li>
+<li><p>Associated with the radius <span class="math notranslate nohighlight">\(r\)</span></p></li>
+</ul>
+</section>
+<section id="orbital-quantum-number-l">
+<h3>6.3.2 Orbital Quantum Number (l)<a class="headerlink" href="#orbital-quantum-number-l" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Symbol: <code class="docutils literal notranslate"><span class="pre">l</span></code></p></li>
+<li><p>Values: <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...,</span> <span class="pre">(n-1)</span></code></p></li>
+<li><p>Defines the <strong>shape</strong> of the orbital.</p></li>
+<li><p>Corresponds to different orbital types:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">0</span></code> → <strong>s-orbital</strong> (spherical)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">1</span></code> → <strong>p-orbital</strong> (dumbbell-shaped)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">2</span></code> → <strong>d-orbital</strong> (cloverleaf-shaped)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">3</span></code> → <strong>f-orbital</strong> (complex shape)</p></li>
+</ul>
+</li>
+<li><p>Associated with the angle <span class="math notranslate nohighlight">\( \theta\)</span></p></li>
+</ul>
+</section>
+<section id="magnetic-quantum-number-m">
+<h3>6.3.3 Magnetic Quantum Number (m)<a class="headerlink" href="#magnetic-quantum-number-m" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Symbol: <code class="docutils literal notranslate"><span class="pre">m</span></code></p></li>
+<li><p>Values: <code class="docutils literal notranslate"><span class="pre">-l,</span> <span class="pre">...,</span> <span class="pre">0,</span> <span class="pre">...,</span> <span class="pre">+l</span></code></p></li>
+<li><p>Determines the <strong>orientation</strong> of the orbital in space.</p></li>
+<li><p>Associated with the angle <span class="math notranslate nohighlight">\( \psi \)</span></p></li>
+</ul>
+</section>
+<section id="spin-quantum-number-s">
+<h3>6.3.4 Spin Quantum Number (s)<a class="headerlink" href="#spin-quantum-number-s" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Symbol: <code class="docutils literal notranslate"><span class="pre">s</span></code></p></li>
+<li><p>Values: <code class="docutils literal notranslate"><span class="pre">+½</span></code> (spin-up) or <code class="docutils literal notranslate"><span class="pre">-½</span></code> (spin-down)</p></li>
+<li><p>Represents the <strong>intrinsic angular momentum</strong> (spin) of the electron.</p></li>
+<li><p>Electrons in the same orbital must have opposite spins due to the <strong>Pauli Exclusion Principle</strong>.</p></li>
+</ul>
+</section>
+</section>
+<section id="atomic-orbitals-and-their-shapes">
+<h2>6.4 Atomic Orbitals and Their Shapes<a class="headerlink" href="#atomic-orbitals-and-their-shapes" title="Link to this heading">#</a></h2>
+<p>The solutions to the Schrödinger equation for an electron confined in a spherical potential define the <strong>atomic orbitals</strong>. These orbitals describe the probability of finding an electron in different regions of space around the nucleus.</p>
+<ul class="simple">
+<li><p><strong>s-orbitals (<code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">0</span></code>)</strong>: Spherical in shape, centered around the nucleus.</p></li>
+<li><p><strong>p-orbitals (<code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">1</span></code>)</strong>: Dumbbell-shaped, oriented along the x, y, and z axes.</p></li>
+<li><p><strong>d-orbitals (<code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">2</span></code>)</strong>: More complex shapes, often resembling cloverleaves.</p></li>
+<li><p><strong>f-orbitals (<code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">3</span></code>)</strong>: Even more intricate shapes, important in heavy elements.</p></li>
+</ul>
+<p>These orbitals do not describe <strong>the path</strong> of an electron but rather the regions where the electron is most likely to be found.</p>
+<p><img alt="Computer 3D rendered srawing of the s,p and d orbital shapes" src="../_images/electron_orbitals.jpg" />.</p>
+<p>Fig 6.4 3D rendered representations of the s, p, d, and f orbital shapes.</p>
+</section>
+<section id="what-is-this-wavefunction">
+<h2>6.5 What is this wavefunction?<a class="headerlink" href="#what-is-this-wavefunction" title="Link to this heading">#</a></h2>
+<p>The physical representation is not straightforward and the functions contain imaginary numbers. However if we multiple the wavefunction by itself (or   strictly by its complex conjugate) then we get a real function which is proportional to the probability density function. If we multiply this by <span class="math notranslate nohighlight">\( 4\pir^2\)</span> we get the radial proability.  This can be used to get the shapes of what we call orbitals and is reasonably easy for 1s function.  It is a 3D shell and the highest probability (the maxima) is at 0.0529 nm.  This is the Bohr radius - remarkably we arrive at the same solution but have taken a very different approach to get there.</p>
+<section id="quantized-angular-momentum-bohr-model-vs-quantum-mechanics">
+<h3>6.6 Quantized Angular Momentum: Bohr Model vs. Quantum Mechanics<a class="headerlink" href="#quantized-angular-momentum-bohr-model-vs-quantum-mechanics" title="Link to this heading">#</a></h3>
+<section id="bohr-model-and-its-assumptions">
+<h4>6.6.1 Bohr Model and Its Assumptions<a class="headerlink" href="#bohr-model-and-its-assumptions" title="Link to this heading">#</a></h4>
+<p>In the Bohr model:</p>
+<ul>
+<li><p>Electrons move in <strong>fixed circular orbits</strong> around the nucleus.</p></li>
+<li><p>The angular momentum of an electron in orbit is <strong>quantized</strong> according to the equation:</p>
+<div class="math notranslate nohighlight">
+\[L =  n \hbar \]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\hbar \)</span> is the <strong>reduced Planck’s constant</strong> <span class="math notranslate nohighlight">\( h/2\pi\)</span>,</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="quantum-mechanical-angular-momentum">
+<h4>6.6.2 Quantum Mechanical Angular Momentum<a class="headerlink" href="#quantum-mechanical-angular-momentum" title="Link to this heading">#</a></h4>
+<p>The <strong>orbital angular momentum</strong> in quantum mechanics is given by:</p>
+<div class="math notranslate nohighlight">
+\[L = \hbar \sqrt{l(l+1)}\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(L\)</span> is the magnitude of the angular momentum,</p></li>
+<li><p><span class="math notranslate nohighlight">\( l\)</span> is the <strong>orbital quantum number</strong> <span class="math notranslate nohighlight">\(( l = 0, 1, 2, ..., n-1 )\)</span>.</p></li>
+</ul>
+</section>
+<section id="why-the-bohr-model-was-incorrect">
+<h4>6.6.3 Why the Bohr Model Was Incorrect<a class="headerlink" href="#why-the-bohr-model-was-incorrect" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Fails for Multi-Electron Atoms</strong></p></li>
+<li><p><strong>Electrons Are Not Classical Particles</strong></p></li>
+<li><p><strong>Orbital Angular Momentum in the Ground State</strong>:</p>
+<ul class="simple">
+<li><p>The Bohr model predicts nonzero angular momentum for <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">1</span></code>.</p></li>
+<li><p>Quantum mechanics predicts <code class="docutils literal notranslate"><span class="pre">L</span> <span class="pre">=</span> <span class="pre">0</span></code> for <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">l</span> <span class="pre">=</span> <span class="pre">0</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Electron Motion is Defined by Wavefunctions</strong>.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="electron-spin-and-the-pauli-exclusion-principle">
+<h2>6.7 Electron Spin and the Pauli Exclusion Principle<a class="headerlink" href="#electron-spin-and-the-pauli-exclusion-principle" title="Link to this heading">#</a></h2>
+<p>In addition to orbital angular momentum, electrons have an <strong>intrinsic angular momentum</strong>, known as <strong>spin</strong>. The concept of spin was first introduced by <strong>Paul Dirac</strong> through a relativistic interpretation of quantum mechanics.</p>
+<ul class="simple">
+<li><p><strong>Spin quantum number (<code class="docutils literal notranslate"><span class="pre">s</span></code>)</strong>: Takes values of <code class="docutils literal notranslate"><span class="pre">+½</span></code> or <code class="docutils literal notranslate"><span class="pre">-½</span></code>.</p></li>
+<li><p>The <strong>Stern-Gerlach experiment (1922)</strong> provided experimental evidence for electron spin.</p></li>
+</ul>
+<p>The <strong>Pauli Exclusion Principle</strong>, formulated by Wolfgang Pauli, states:</p>
+<blockquote>
+<div><p><em>No two fermions (such as electrons) can occupy the same quantum state simultaneously.</em>  I often add ‘Within the same system’ - in otherwords in atoms are far apart they can be considered as seperate non-interacting systems.</p>
+</div></blockquote>
+<section id="fermions-vs-bosons">
+<h3>6.7.1 Fermions vs. Bosons<a class="headerlink" href="#fermions-vs-bosons" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Fermions</strong> (e.g., electrons, neutrons, protons) obey the Pauli Exclusion Principle and have <strong>half-integer spin</strong> (<code class="docutils literal notranslate"><span class="pre">±½</span></code>).</p></li>
+<li><p><strong>Bosons</strong> (e.g., photons, gluons) do <strong>not</strong> obey the exclusion principle and have <strong>integer spin</strong> (<code class="docutils literal notranslate"><span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">...</span></code>).</p></li>
+</ul>
+</section>
+</section>
+<section id="summary">
+<h2>6.8 Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Quantum mechanics describes particles using wavefunctions governed by the Schrödinger equation.</p></li>
+<li><p>Quantum numbers (<code class="docutils literal notranslate"><span class="pre">n,</span> <span class="pre">l,</span> <span class="pre">ml,</span> <span class="pre">s</span></code>) define the allowed energy states and spatial distribution of electrons.</p></li>
+<li><p>Atomic orbitals determine where electrons are likely to be found.</p></li>
+<li><p>Electrons have both orbital and intrinsic angular momentum (spin).</p></li>
+<li><p>The Pauli Exclusion Principle dictates electron configurations in atoms.</p></li>
+</ul>
+<p>These principles are fundamental to understanding <strong>atomic structure, chemical bonding, and nanotechnology applications</strong>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Lecture5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">5. Nanophysics - The Atom</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Lecture7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">7. Electronic Structure</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wave-particle-duality-and-quantum-mechanics">6.1 Wave-Particle Duality and Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-wave-particle-duality">6.1.1 The Wave-Particle Duality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#double-slit-experiment-and-wave-particle-duality">6.1.2 Double-Slit Experiment and Wave-Particle Duality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">6.1.2.1 <strong>Overview</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">6.1.2.2 <strong>Setup</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">6.1.2.3 <strong>Observations</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">6.1.2.4 <strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#significance-of-wave-particle-duality">6.1.3 Significance of Wave-Particle Duality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#foundational-principle-of-quantum-mechanics">6.1.3.1 Foundational Principle of Quantum Mechanics</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#replaces-classical-intuition">6.1.3.2 Replaces Classical Intuition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#led-to-development-of-quantum-theory">6.1.3.3 Led to Development of Quantum Theory</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#philosophical-importance">6.1.3.4 Philosophical Importance</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-table">6.1.3.5 <strong>Summary Table</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-mechanics">6.2 Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-schrodinger-equation">6.2.1 The Schrödinger Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-independent-schrodinger-equation">6.2.2 Time-Independent Schrödinger Equation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-the-solutions-to-this-equation">6.2.3 What are the solutions to this equation?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-1d-well">6.2.3.1 Infinite 1D Well</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#finite-1d-well">6.2.3.2 Finite 1D Well</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-three-dimensions-spherical-form">6.2.4 In Three Dimensions (Spherical Form)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-role-of-the-hamiltonian-operator">6.2.5 The Role of the Hamiltonian Operator</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-numbers-and-electron-configurations">6.3 Quantum Numbers and Electron Configurations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-quantum-number-n">6.3.1 Principal Quantum Number (n)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#orbital-quantum-number-l">6.3.2 Orbital Quantum Number (l)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetic-quantum-number-m">6.3.3 Magnetic Quantum Number (m)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spin-quantum-number-s">6.3.4 Spin Quantum Number (s)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-orbitals-and-their-shapes">6.4 Atomic Orbitals and Their Shapes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-this-wavefunction">6.5 What is this wavefunction?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantized-angular-momentum-bohr-model-vs-quantum-mechanics">6.6 Quantized Angular Momentum: Bohr Model vs. Quantum Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-model-and-its-assumptions">6.6.1 Bohr Model and Its Assumptions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-mechanical-angular-momentum">6.6.2 Quantum Mechanical Angular Momentum</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-the-bohr-model-was-incorrect">6.6.3 Why the Bohr Model Was Incorrect</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-spin-and-the-pauli-exclusion-principle">6.7 Electron Spin and the Pauli Exclusion Principle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fermions-vs-bosons">6.7.1 Fermions vs. Bosons</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.8 Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kevin Critchley
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
