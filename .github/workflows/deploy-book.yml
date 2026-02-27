@@ -25,10 +25,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -U jupyter-book
 
+      - name: Clean previous builds
+        run: |
+        jupyter-book clean .
+
       - name: Build the book
         run: |
-          python -m pip show jupyter-book
-          python -m jupyter_book build .
+        jupyter-book build . --all
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
