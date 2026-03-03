@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -355,17 +355,18 @@
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-properties">10.2.3.2 Electrical Properties</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-conductivity">10.2.3.3 Thermal Conductivity</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#density-and-size">10.2.3.4 Density and Size</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-table">10.1.3.5 Summary Table</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#key-equations">10.2.3.6 Key Equations:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-table">10.2.3.5 Summary Table</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-calculation">10.2.4 Example Calculation:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">10.2.5 Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">10.2.4 Applications</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphene">10.3 Graphene</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-features-and-bonding">10.3.1 Structural Features and Bonding:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">10.3.2 Physical Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">10.3.2 Physical Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-conductivity">10.3.2.1 Electrical Conductivity</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">10.3.3 Applications</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#nanoelectronics"><strong>Nanoelectronics</strong></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#flexible-electronics"><strong>Flexible Electronics</strong></a></li>
@@ -377,9 +378,7 @@
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optoelectronics"><strong>Optoelectronics</strong></a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-equation">10.3.4 Key Equation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">10.3.5 Example Calculation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-graphene-and-carbon-nanotubes-cnts">10.3.6 Comparison of Graphene and Carbon Nanotubes (CNTs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-graphene-and-carbon-nanotubes-cnts">10.3.4 Comparison of Graphene and Carbon Nanotubes (CNTs)</a></li>
 </ul>
 </li>
 </ul>
@@ -510,8 +509,7 @@ Adding 12 pentagons forces the sheet to wrap into a sphere.</p>
 <section id="optical-properties">
 <h3>10.1.7 Optical Properties<a class="headerlink" href="#optical-properties" title="Link to this heading">#</a></h3>
 <p>C60 appears black.</p>
-<p>The delocalised π system produces many electronic transitions across the visible range, causing broad absorption of visible light.<br />
-Very little light is reflected, so the material looks black.</p>
+<p>The delocalised π system produces many electronic transitions across the visible range, causing broad absorption of visible light.  Very little light is reflected, so the material looks black in the soild film form, but in solution the sample will look blue/purple.</p>
 </section>
 <hr class="docutils" />
 <section id="thermal-and-electrical-behaviour">
@@ -544,7 +542,7 @@ Very little light is reflected, so the material looks black.</p>
 <h3>10.1.9 Doping<a class="headerlink" href="#doping" title="Link to this heading">#</a></h3>
 <p>If alkali metals are inserted between the molecules, for example:</p>
 <p>K3C60</p>
-<p>electrons transfer into the LUMO band.</p>
+<p>electrons transfer into the electronic state above the energy gap (later we will call this the band gap).</p>
 <p>The material becomes metallic and even superconducting (~20 K).</p>
 <p>This was one of the first examples of a <strong>molecular superconductor</strong>.</p>
 </section>
@@ -559,7 +557,7 @@ Very little light is reflected, so the material looks black.</p>
 <li><p>C84</p></li>
 <li><p>C100</p></li>
 </ul>
-<p>Stability follows the Isolated Pentagon Rule.</p>
+<p>Stability follows the ‘Isolated Pentagon Rule’.</p>
 </section>
 <hr class="docutils" />
 <section id="importance">
@@ -640,11 +638,19 @@ Fig 10.3 CNT structures thinking of them like rolled up graphene sheets.</p>
 <li><p><strong>Ballistic conduction</strong>: electrons travel with minimal scattering over long distances.</p></li>
 <li><p>Potential use in <strong>nanoscale transistors</strong>, wires, and quantum devices.</p></li>
 </ul>
+<p>Conductance, G, is quantised:<br />
+<span class="math notranslate nohighlight">\( G= \frac{2e^2}{h}M\)</span><br />
+where <span class="math notranslate nohighlight">\(e\)</span> is the charge of an electron, <span class="math notranslate nohighlight">\(h\)</span> is Planck’s constant, and <span class="math notranslate nohighlight">\(M\)</span> is the number of conducatance channels. If you are unfamilar with conductance then just know that it is the inverse of resistance <span class="math notranslate nohighlight">\(R=\frac{1}{G}\)</span></p>
+<p>so,</p>
+<p><span class="math notranslate nohighlight">\( R= \frac{h}{2e^2M}\)</span></p>
+<p>A metallic nanotube has two quantum modes because graphene sheets have two Dirac valleys (let’s go no further than this explaination as it’s beyound scope). For CNTs M=2.</p>
+<p>Resistance of a CNT is <strong>not dependent on its length</strong> it is quantised. The electrons are weakly interacting with phonons - the scattering is extrememly restricted in 1D.</p>
+<p>The exceptions to this would be high bias, a very (&gt;&gt;1µm) long CNT, or impurities.</p>
 </section>
 <section id="thermal-conductivity">
 <h4>10.2.3.3 Thermal Conductivity<a class="headerlink" href="#thermal-conductivity" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>Excellent <strong>thermal conductors</strong> along the tube (~3000–6000 W/m·K).</p></li>
+<li><p>Excellent <strong>thermal conductors</strong> along the tube (~3000–6000 W/m·K). Remember efficent transport through the <span class="math notranslate nohighlight">\(\sigma\)</span> bonds.</p></li>
 <li><p>Poor heat conductors <strong>across</strong> the tube walls due to weak van der Waals forces.</p></li>
 </ul>
 </section>
@@ -658,7 +664,7 @@ Fig 10.3 CNT structures thinking of them like rolled up graphene sheets.</p>
 </section>
 <hr class="docutils" />
 <section id="summary-table">
-<h4>10.1.3.5 Summary Table<a class="headerlink" href="#summary-table" title="Link to this heading">#</a></h4>
+<h4>10.2.3.5 Summary Table<a class="headerlink" href="#summary-table" title="Link to this heading">#</a></h4>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Property</p></th>
@@ -694,31 +700,10 @@ Fig 10.3 CNT structures thinking of them like rolled up graphene sheets.</p>
 </table>
 </div>
 </section>
-<section id="key-equations">
-<h4>10.2.3.6 Key Equations:<a class="headerlink" href="#key-equations" title="Link to this heading">#</a></h4>
-<ul>
-<li><p>Electrical Conductivity:</p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{q n \mu}{m}\)</span></p>
-</li>
-</ul>
-<p>where <span class="math notranslate nohighlight">\( q \)</span> is the charge, <span class="math notranslate nohighlight">\( n \)</span> is the carrier density, <span class="math notranslate nohighlight">\( \mu \)</span> is the mobility, and <span class="math notranslate nohighlight">\( m \)</span> is the effective mass.</p>
-<ul class="simple">
-<li><p>Thermal Conductivity:</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(k = \frac{C_p v l}{3}\)</span></p>
-</section>
-</section>
-<section id="example-calculation">
-<h3>10.2.4 Example Calculation:<a class="headerlink" href="#example-calculation" title="Link to this heading">#</a></h3>
-<p><strong>Find the electrical conductivity of a CNT if charge</strong> <span class="math notranslate nohighlight">\( q = 1.6 \times 10^{-19} \)</span> <strong>C, carrier density</strong> <span class="math notranslate nohighlight">\( n = 10^{28} \)</span> <strong>electrons/m³, mobility</strong> <span class="math notranslate nohighlight">\( \mu = 0.1 \)</span> <strong>m²/Vs, and effective mass</strong> <span class="math notranslate nohighlight">\( m = 9.1 \times 10^{-31} \)</span> <strong>kg.</strong></p>
-<p><strong>Solution:</strong></p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{(1.6 \times 10^{-19}) (10^{28}) (0.1)}{9.1 \times 10^{-31}}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{1.6 \times 10^8}{9.1 \times 10^{-31}}\)</span></p>
-<p><span class="math notranslate nohighlight">\(\sigma = 1.76 \times 10^7 \text{ S/m}\)</span></p>
 </section>
 <hr class="docutils" />
 <section id="applications">
-<h3>10.2.5 Applications<a class="headerlink" href="#applications" title="Link to this heading">#</a></h3>
+<h3>10.2.4 Applications<a class="headerlink" href="#applications" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Electronics</strong>: transistors, interconnects.</p></li>
 <li><p><strong>Composite materials</strong>: strong and lightweight materials.</p></li>
@@ -730,6 +715,7 @@ Fig 10.3 CNT structures thinking of them like rolled up graphene sheets.</p>
 </section>
 <section id="graphene">
 <h2>10.3 Graphene<a class="headerlink" href="#graphene" title="Link to this heading">#</a></h2>
+<p>Until 2004 it was thought that genuine 2D crystals were not stable.  The energy costs of the 2D stucture would be to high.  However, researchers in Manchester isolated single sheets from Graphite using sticky tape. The sidcovery was profound and a Nobel prize was awarded for this discovery. Graphene is an allotrope of carbon.</p>
 <p><img alt="Picture of honeycomb structure of carbons" src="../_images/graphene.jpg" />
 <img alt="Picture the sp2 bonding within graphene" src="../_images/graphene2.png" /></p>
 <p>Fig 10.3 Schematic diagrams of graphene structure.</p>
@@ -749,12 +735,15 @@ Fig 10.3 CNT structures thinking of them like rolled up graphene sheets.</p>
 <section id="id1">
 <h3>10.3.2 Physical Properties<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><strong>High Electrical Conductivity</strong>: Due to the delocalized π-electrons acting as mobile charge carriers.</p></li>
 <li><p><strong>High Mechanical Strength</strong>: Young’s modulus of ~1 TPa — stronger than steel.</p></li>
 <li><p><strong>High Thermal Conductivity</strong>: ~5000 W/m·K — among the highest known for any material.</p></li>
 <li><p><strong>Optical Transparency</strong>: Absorbs only ~2.3% of visible light, despite being a single atom thick.</p></li>
 <li><p><strong>Large Surface Area</strong>: ~2630 m²/g — useful for energy storage and chemical sensing.</p></li>
 </ul>
+<section id="electrical-conductivity">
+<h4>10.3.2.1 Electrical Conductivity<a class="headerlink" href="#electrical-conductivity" title="Link to this heading">#</a></h4>
+<p>The resistance is <span class="math notranslate nohighlight">\( R= \frac{h}{2e^2M}\)</span>, certaintly for L&lt; 1µm.  This is the same expression as for the CNTs.  The difference is that the conductance channels, M, are proportional to the width. This means that the resistance can be lower.  It also means that resistance now scales with 1/width - this is different from the CNTs.  It is now a 2D conductor and a remarkable one.</p>
+</section>
 </section>
 <hr class="docutils" />
 <section id="id2">
@@ -809,27 +798,8 @@ Fig 10.3 CNT structures thinking of them like rolled up graphene sheets.</p>
 </section>
 </section>
 <hr class="docutils" />
-<section id="key-equation">
-<h3>10.3.4 Key Equation<a class="headerlink" href="#key-equation" title="Link to this heading">#</a></h3>
-<p><strong>Conductivity of Graphene:</strong></p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{e^2}{h}\)</span></p>
-<p>Where:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\( e = 1.6 \times 10^{-19} \)</span> C (electron charge)</p></li>
-<li><p><span class="math notranslate nohighlight">\( h = 6.63 \times 10^{-34} \)</span> J·s (Planck’s constant)</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="id3">
-<h3>10.3.5 Example Calculation<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<p><strong>Find the conductivity of graphene:</strong></p>
-<p><span class="math notranslate nohighlight">\(\sigma = \frac{(1.6 \times 10^{-19})^2}{6.63 \times 10^{-34}} = \frac{2.56 \times 10^{-38}}{6.63 \times 10^{-34}} = 3.86 \times 10^{-5} \text{ S}\)</span></p>
-<blockquote>
-<div><p>⚠️ Note: This simplified example shows quantum conductance per channel. In real graphene sheets, multiple conduction channels and sample geometry influence the total conductivity.</p>
-</div></blockquote>
-</section>
 <section id="comparison-of-graphene-and-carbon-nanotubes-cnts">
-<h3>10.3.6 Comparison of Graphene and Carbon Nanotubes (CNTs)<a class="headerlink" href="#comparison-of-graphene-and-carbon-nanotubes-cnts" title="Link to this heading">#</a></h3>
+<h3>10.3.4 Comparison of Graphene and Carbon Nanotubes (CNTs)<a class="headerlink" href="#comparison-of-graphene-and-carbon-nanotubes-cnts" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><strong>Property</strong></p></th>
@@ -977,17 +947,18 @@ Fig 10.3 CNT structures thinking of them like rolled up graphene sheets.</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-properties">10.2.3.2 Electrical Properties</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-conductivity">10.2.3.3 Thermal Conductivity</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#density-and-size">10.2.3.4 Density and Size</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-table">10.1.3.5 Summary Table</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#key-equations">10.2.3.6 Key Equations:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-table">10.2.3.5 Summary Table</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-calculation">10.2.4 Example Calculation:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">10.2.5 Applications</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">10.2.4 Applications</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphene">10.3 Graphene</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-features-and-bonding">10.3.1 Structural Features and Bonding:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">10.3.2 Physical Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">10.3.2 Physical Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-conductivity">10.3.2.1 Electrical Conductivity</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">10.3.3 Applications</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#nanoelectronics"><strong>Nanoelectronics</strong></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#flexible-electronics"><strong>Flexible Electronics</strong></a></li>
@@ -999,9 +970,7 @@ Fig 10.3 CNT structures thinking of them like rolled up graphene sheets.</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optoelectronics"><strong>Optoelectronics</strong></a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-equation">10.3.4 Key Equation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">10.3.5 Example Calculation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-graphene-and-carbon-nanotubes-cnts">10.3.6 Comparison of Graphene and Carbon Nanotubes (CNTs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-graphene-and-carbon-nanotubes-cnts">10.3.4 Comparison of Graphene and Carbon Nanotubes (CNTs)</a></li>
 </ul>
 </li>
 </ul>
