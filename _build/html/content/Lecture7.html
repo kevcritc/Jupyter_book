@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -345,7 +345,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">7.6.1 Example</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transition-rules">7.7 Transition rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transition-selection-rules">7.7 Transition selection rules</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-yourself">7.8 Test yourself</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-takeaways-from-the-lecture">7.9 Main Takeaways from the Lecture</a></li>
 </ul>
@@ -469,18 +469,20 @@ then the 2s is filled <span class="math notranslate nohighlight">\(\uparrow \dow
 <p>instead of pairing up electrons in the same orbital too soon.</p>
 </section>
 </section>
-<section id="transition-rules">
-<h2>7.7 Transition rules<a class="headerlink" href="#transition-rules" title="Link to this heading">#</a></h2>
+<section id="transition-selection-rules">
+<h2>7.7 Transition selection rules<a class="headerlink" href="#transition-selection-rules" title="Link to this heading">#</a></h2>
 <p>There are additional rules governing atomic transitions that are not explained by the Bohr model.
-These are the selection rules.</p>
+These are the selection rules which tell us where an electron can be excited to another state or can drop down to (emission).  In terms of energy calculated from the principle quantum number there is no limitations, however, it is also true that there are only allowed transitions.</p>
 <p>They arise from how light interacts with the atom. Light couples to the electron through the electric dipole interaction, which has the symmetry of a vector field. As a consequence, only transitions compatible with this symmetry can occur. Angular momentum conservation is the mathematical expression of this symmetry requirement.</p>
 <p>For hydrogen, this leads to the dipole selection rules <span class="math notranslate nohighlight">\(\Delta l =\pm 1\)</span> and <span class="math notranslate nohighlight">\(\Delta m =0,\pm 1\)</span>.
 This means an electron can only move between orbitals whose angular shapes differ by one unit (e.g.
 𝑠↔𝑝,s↔p, 𝑝↔𝑑, p↔d), while transitions such as 𝑠→𝑠 are <strong>forbidden</strong> even if the energies match.</p>
+<p>The photon’s angluar moment (which is a vector) is <span class="math notranslate nohighlight">\(L=\pm \hbar\)</span>.  The z-component of the angular moment is given by <span class="math notranslate nohighlight">\(L_z=m\hbar\)</span> so you can see how the <span class="math notranslate nohighlight">\(\Delta m= \pm 1\)</span>. Linearly polarised light is actually a superposition of +1 and −1 photons. When you work through the maths, it allows <span class="math notranslate nohighlight">\( \Delta m =0\)</span>. We won’t take this any further, but I want you to understand that this is a vector based argument around angular moment which results in the rules.</p>
+<p>Another way of thinking about it is if you excited the 1s orbital you would create a dipole like shape which is exactly what a p-orbital looks like. This is all interesting stuff but beyound the scope of this course.</p>
 </section>
 <section id="test-yourself">
 <h2>7.8 Test yourself<a class="headerlink" href="#test-yourself" title="Link to this heading">#</a></h2>
-<p>Which has higher energy, a 3d or a 4s orbital? Why?</p>
+<p>Which has higher energy, a 3d or a 4s orbital? Why? Answer below</p>
 <details>
   <summary>**Click for A  Solution**</summary>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>**Solution:** Due to shielding effects, the 4s orbital is **lower in energy** than the 3d orbital in a neutral atom, leading to it filling first. However, when ionizing, the 4s electrons are removed first because they are higher in energy when considering electron repulsion.
@@ -577,7 +579,7 @@ This means an electron can only move between orbitals whose angular shapes diffe
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">7.6.1 Example</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transition-rules">7.7 Transition rules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transition-selection-rules">7.7 Transition selection rules</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-yourself">7.8 Test yourself</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-takeaways-from-the-lecture">7.9 Main Takeaways from the Lecture</a></li>
 </ul>
